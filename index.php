@@ -1,11 +1,11 @@
 <?php
-    $root_url="/redhawkv2/";
-    $css_url="/redhawkv2/css/";
-    $js_url="/redhawkv2/js/";
-    $images_url="/redhawkv2/img/";
-    $blog_url="/redhawkv2/blog/";
+    $root_url="/redhawk/";
+    $css_url="/redhawk/css/";
+    $js_url="/redhawk/js/";
+    $images_url="/redhawk/img/";
+    $blog_url="/redhawk/blog/";
 
-    define("INCLUDES", $_SERVER["DOCUMENT_ROOT"] . "/redhawkv2/inc/");
+    define("INCLUDES", $_SERVER["DOCUMENT_ROOT"] . "/redhawk/inc/");
     $page_title="Home - Alpeche Pancha - Phixyn";
     $site_description="Phixyn's personal website";
     $site_keywords="Phixyn, is, awesome";
@@ -67,7 +67,7 @@
 
         <!-- Main content -->
         <div class="container" id="main-content">
-            <h1>Hello! My name is Ashee</h1>
+            <h1>Hello! My name is Phixyn</h1>
             <div class="row">
                 <div class="col-md-12">
                     <p> ...and I like to make videogames. During the day, I live life as a <a href="#">Computer Science</a> student at the University of Essex, in England. Later on in the day, you might catch me frivolously coding in my bedroom and <a href="#">tweeting</a> about my coding adventures. At night, I play games while watching live <a href="#">streams</a> of other people who also happen to play games. Welcome to my life! </p>
