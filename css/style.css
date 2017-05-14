@@ -1,323 +1,136 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	border: 0;
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* -----------------------------------
-	DEFAULT / ELEMENTS
------------------------------------ */
- 
+/* elements */
 html, body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	/* background: #000000 url('../img/black_paper.png'); */
 	background: #121212 url('../img/zwartevilt.png');
-	color: #FFFFFF;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1;
+    color: #D9D9D9;
+    /*line-height: 1;*/
 }
 
-img {
-	max-width: 100%;
+a {
+	color: #DB5A7F;
 }
 
-.parent-clear {
-	clear: both; /* Make parent element automatically expand to child elements' heights */
+a:focus,
+a:hover
+{
+	color: #D993A7;
+    text-decoration: none;
 }
 
-/* -----------------------------------
-	MEDIA RULES
------------------------------------ */
-
-@media screen and (min-width: 0px) and (max-width: 320px) {
-	header, #header-wrapper-800px, #banner-800px,
-	#body-wrapper-800px, #content-800px,
-	#footer-800px { display: none; }
+/* bootstrap overrides : .thumbnail / .caption */
+.thumbnail {
+    background-color: transparent;
+    border: none;
 }
 
-@media screen and (min-width: 321px) {
-	#header-wrapper-320px, #banner-320px,
-	#body-wrapper-320px, #content-320px,
-	#footer-320px { display: none; }
+.caption p {
+    color: #D9D9D9;
 }
 
-/* -----------------------------------
-	HEADER SECTION
------------------------------------ */
-
-.header-wrapper {
-	overflow: auto;
-	background-color: #000000;
-	/* background: #000000 url('../img/logo.png') 0px -70px repeat-x; */
-	border-bottom: 2px solid #A62139;
-	box-shadow: 0 0 7px 2px #A62139;
-	width: 100%;
+/* bootstrap overrides : .navbar-* */
+.navbar {
+    background-color: #000000;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
 }
 
-#header-wrapper-800px {
-	min-width: 800px;
-	min-height: 70px;
-	height: 10%;
-	max-height: 80px;
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 15px;
 }
 
-.row {
-	display: table;
-	table-layout: fixed;
-	width: 100%;
-	height: 100%;
-	border-spacing: 0 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.col {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-#site-logo {
-	width: 15%;
-	/* color: #AAAAAA; */
-	color: #777777;
-	font-size: 1.9em;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: 5px;
-}
-
-#top-menu-800px {
-	width: 50%;
-}
-
-#top-menu-800px ul {
-	text-align: center;
-	margin-right: 5%;
-}
-
-#top-menu-800px li {
-	display: inline;
-	float: right;
-	/* margin: 0% 1.5%; */
-	margin: 0% 2%;
-}
-
-#top-menu-800px a {
-	padding-bottom: 0.4%;
-	color: #AAAAAA;
+.navbar-inverse .navbar-nav > li > a {
 	font-size: 1.2em;
-	text-decoration: none;
 }
 
-#top-menu-800px a:hover {
-	border-bottom: 1px solid #A62139;
-	color: #FFFFFF;
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    box-shadow: 0 -2px 0 0 #A62139 inset;
 }
 
-#top-menu-800px a.current {
-	color: #A62139;
-	border: none;
+/* TODO: Add a pink box-shadow bottom to active links */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover
+{
+    box-shadow: none;
+	/* box-shadow: 0 -2px 0 0 #A62139 inset; */
+    background-color: transparent;
 }
 
-#top-menu-800px a.current:hover {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus
+{
+    color: #A62139;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover
+{
 	color: #A92F41;
 }
 
-header {
-	background: #000000 url('../img/logo.png') 0px -250px repeat-x;
-	/* box-shadow: 0 0 7px 2px #A62139; */
-	border-bottom: 2px solid #222222;
-	min-width: 800px;
-	width: 100%;
-	min-height: 220px;
-	height: 35%;
+.navbar-brand {
+    font-size: 1.9em;
+	font-weight: 500;
+	letter-spacing: 5px;
 }
 
-#social-icons {
-	display: block;
-	float: right;
-	color: #FFFFFF;
-	width: 18%;
-	/*border: 1px solid blue;*/
-	margin-right: 2.8%;
-	position: relative;
-	top: -15px;
+#top-navbar {
+	border-bottom: 2px solid #A62139;
+	box-shadow: 0 0 7px 2px #A62139;
 }
 
-#social-icons ul {
-	text-align: center;
+/* highlight-box */
+#highlight-box {
+    background-color: #000000;
+    margin-bottom: 4%;
 }
 
-#social-icons li {
-	display: inline;
-	margin: 0% 3.5%;
+/* bootstrap overrides : .carousel-* / .item */
+#highlight-box,
+.carousel .item,
+.carousel-inner > .item > img {
+    border-bottom: 2px solid #222222;
+    min-height: 400px;
 }
 
-#social-icons a img {
-	opacity: 0.75;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+    bottom: 25%;
 }
 
-#social-icons a:hover img {
-	opacity: 1;
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 200px;
+    background-color: #000000;
 }
 
-/* -----------------------------------
-	HEADER SECTION MOBILE
------------------------------------ */
-
-#header-wrapper-320px {
-	min-width: 300px;	
-	min-height: 45px;
-	height: 7.5%;
-	max-height: 55px;
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
 }
 
-#top-menu-320px ul {
-	color: #FFFFFF;
-	text-align: center;
-}
-
-#top-menu-320px li a {
-	float: left;
-	width: 16.8%;
-	padding: 1.6%;
-	height: 100%;
-	opacity: 0.75;
-}
-
-#top-menu-320px a img {
-	max-height: 1.6em;
-	padding-top: 0.15em;
-}
-
-#top-menu-320px a.current,
-#top-menu-320px a:hover {
-	opacity: 1;
-}
-
-/* -----------------------------------
-	BODY SECTION
------------------------------------ */
-
-.banner {
-	border-style: solid none;
-	border-width: 1px;
-	border-color: #252525;
-	clear: both;
-	padding: 0.3em 0 0.5em 0;
-	color: #555555;
-	text-align: center;
-}
-
-#banner-800px {
-	position: relative;
-	top: 10%;
-	min-width: 800px;
-	width: 70%;
-	margin: 0% auto 5% auto;
-	font-size: 1.8em;
-}
-
-#banner-320px {
-	min-width: 300px;
-	margin: 12% auto 3% auto;
-	font-size: 1.4em;
-}
-
-.body-wrapper {
-	width: 75%;
-	margin: 3% auto;
-}
-
-#body-wrapper-800px {
-	min-width: 800px;
-}
-
-#body-wrapper-320px {
-	min-width: 300px;	
-}
-
-.main-content {
+/* main-content */
+#main-content {
 	/* background-color: #131313; */
 	background-color: rgb(19, 19, 19);
 	background-color: rgba(19, 19, 19, 0.7);
 	/* box-shadow: 0 16px 20px 6px #000000; */
 	box-shadow: 0px 5px 20px 6px #000000;
 	/* padding: 1% 5%; */
-	padding-bottom: 2%;
-	color: #D9D9D9;
+	padding: 1% 3% 2% 3%;
 	/* color: #E9E1B4; */
+    width: 75%;
 }
 
-.main-content a {
-	/* color: #BBBBBB; */
-	/* color: #D96C8B; */
-	color: #DB5A7F;
-	text-decoration: none;
-	/* border-bottom: 1px dotted #AA0000; */
-}
-
-.main-content a:hover {
-	/* border-bottom: 1px solid #DB5A7F; */
-	/* color: #DDDDDD; */
-	color: #D993A7;
-}
-
-#content-800px {
-	margin-bottom: 10%;
-	padding-bottom: 4%;
-}
-
-#content-800px h1 {
-	padding: 2% 4%;
+#main-content h1 {
+    padding-bottom: 2%;
 	/* color: #A92F41; */
 	/* color: #73192A; */
 	color: #A62139;
@@ -325,364 +138,38 @@ header {
 	font-size: 1.4em;
 }
 
-#content-800px h2 {
-	padding: 1% 4% 2% 4%;
+#main-content h2 {
 	color: #A62139;
 	font-weight: bold;
 	font-size: 1.4em;
 }
 
-#content-800px h3 {
+#main-content h3 {
 	padding-bottom: 2%;
 	color: #A62139;
 	font-weight: bold;
 	font-size: 1.2em;
 }
 
-#content-800px p {
-	padding: 1% 4%;
-	font-size: 1em;
+#main-content p {
 	line-height: 1.5em;
 }
 
-
-#content-800px ul {
-	padding: 2% 0;
-}
-
-#content-800px li {
-	padding: 1% 3% 0 3%;
-	line-height: 1.5em;
-}
-
-#content-800px img.my-avatar {
-	float: right;
-	width: 226px;
-	height: 218px;
-	padding: 0% 3% 2% 0%;
-}
-
-#content-intro-800px {
-	/* background-color: #191919; */
-	background-color: rgb(25, 25, 25);
-	background-color: rgba(25, 25, 25, 0.8);
-	min-height: 218px; /* same as img height (it's below, you dummy!) */
-}
-
-#content-intro-800px p {
-	padding: 1% 0% 1% 4%;
-}
-
-#content-intro-800px img {
-	float: right;
-	width: 226px;
-	height: 218px;
-	padding-left: 8%;
-}
-
-#content-body-800px {
-	width: 90%;
-	margin: 2% auto;
-	padding: 2% 0;
-}
-
-#index-projects {
-	width: 100%;
-	margin: 2% auto 0% auto;
-}
-
-.index-project {
-	/* border: 1px solid blue; */
-	float: left;
-	width: 28%;
-	height: 30%;
-	margin: 0% 0% 3% 4%;
-}
-
-.index-project-desc {
-	width: 100%;
-	/* float: left; */
-	padding: 2% 2%;
-}
-
-#index-projects img {
-	/* temporary place holder "image" */
-	background-color: #121212;
-	width: 100%;
-	height: 180px;
-	margin-right: 2%;
-}
-
-#index-projects h3 {
-	padding: 4% 4% 3% 0;
-	font-weight: 500;
-}
-
-#index-projects h3 a {
-	color: #A62139;
-}
-
-#index-projects h3 a:hover {
-	color: #DB5A7F;
-}
-
-#index-projects p {
-	padding: 2% 4% 2% 0;
-	font-size: 0.9em;
-	line-height: 1.5em;
-}
-
-/* -----------------------------------
-	MOBILE CONTENT
------------------------------------ */
-
-#content-320px {
-	/* text-align: center; */
-	margin: 12% 0 20% 0;
-	padding: 5% 0;
-}
-
-#content-320px h1 {
-	margin: 5% auto;
-	padding: 0% 2% 2% 7%;
-	color: #A62139;
-	font-weight: bold;
-	font-size: 1.2em;
-}
-
-#content-320px p {
-	margin: 7% auto 2.5% auto;
-	padding: 0% 7% 2% 9%;
-	font-size: 1em;
-	line-height: 1.1em;
-}
-
-#content-320px img.my-avatar {
-	width: 50%;
-	max-width: 100%;
-}
-
-#content-320px img {
-	width: 70%;
-	max-width: 100%;
-	margin: 4% auto;
-}
-
-
-/* -----------------------------------
-	ABOUT PAGE
------------------------------------ */
-
-#about-body-800px {
-	clear: both;
-	width: 92%;
-	padding: 2% 4%;
-	
-}
-
-#about-body-800px h3 {
-	padding: 1% 6% 2% 3%;
-}
-
-#about-body-800px p {
-	padding: 1% 6% 1% 3%;
-}
-
-/* -----------------------------------
-	ABOUT PAGE (MOBILE)
------------------------------------ */
-
-/* -----------------------------------
-	BLOG PAGE
------------------------------------ */
-
-.blog-post {
-	/* border: 1px solid blue; */
-	border-bottom: 1px dashed #333333;
-	background-color: rgb(25, 25, 25);
-	background-color: rgba(25, 25, 25, 0.8);
-	width: 90%;
-	min-height: 218px; /* same as our avatar img height */
-	margin: 2% auto;
-	padding-bottom: 1%;
-}
-
-.blog-header {
-	border-bottom: 1px solid #222222;
-	margin-bottom: 2%;
-}
-
-.blog-title {
-	padding: 2% 4% 1% 4%;
-	font-weight: 600;
-	color: #A62139;
-	font-size: 1.4em;
-}
-
-.blog-title-320px {
-	font-size: 1.2em;
-}
-
-.blog-title a, .blog-title-320px a {
-	color: #A62139;
-}
-
-.blog-title a:hover {
-	color: #DB5A7F;
-}
-
-.blog-meta {
-	padding: 0% 4% 1% 4%;
-	font-size: 0.9em;
-	line-height: 1.5em;
-}
-
-/* -----------------------------------
-	BLOG PAGE (MOBILE)
------------------------------------ */
-
-/* -----------------------------------
-	CONTACT PAGE
------------------------------------ */
-
-#contact-form-800px {
-	/*border: 1px dashed #333333;*/
-	float: left;
-	width: 47%;
-	margin: 5% 2% 0 5%;
-}
-
-#contact-form-800px ul li {
-	width: 100%;
-	margin-bottom: 20px;
-	color: red;
-	float: left;
-}
-
-#contact-form-800px label {
-	background-color: #171717;
-	width: 22%;
-	height: 25px;
-	padding: 1% 4%;
-	color: #AAAAAA;
-	display: block;
-	float: left;
-}
-
-#contact-form-800px input {
-	float: left;
-	width: 58%;
-	padding-left: 2%;
-	height: 25px;
-}
-
-#contact-form-800px input#submit-contact {
-	float: right;
-	width: 25%;
-	height: 50px;
-	margin-right: 8%;
-}
-
-#contact-form-800px ul li.contact-msg {
-	float: left;
-	min-height: 150px;
-	height: 150px;
-}
-
-#contact-form-800px ul li.contact-msg label {
-	float: left;
-	min-height: 150px;
-	height: 150px;
-	float: left;
-}
-
-#contact-form-800px ul li.contact-msg textarea {
-	float: left;
-	resize: none;
-	min-height: 150px;
-	height: 150px;
-	width: 58%;
-	padding-left: 2%;
-}
-
-#contact-details-800px {
-	border: 1px dashed #333333;
-	float: left;
-	width: 40%;
-	margin: 6.5% 5% 0 0;
-}
-
-#contact-details-800px ul#social-media-icons {
-	border-right: 1px dashed #333333;
-	float: left;
-	width: 20%;
-	text-align: center;
-	padding: 10% 4%;
-	margin-right: 8%;
-}
-
-
-/* -----------------------------------
-	CONTACT PAGE (MOBILE)
------------------------------------ */
-
-/* -----------------------------------
-	FOOTER SECTION
------------------------------------ */
-
-.footer {
-	clear: both;
+/* footer */
+#footer {
+    margin-bottom: 0;
+    margin-top: 4%;
 	background-color: #000000;
 	border-top: 2px solid #A62139;
 	box-shadow: 0 0 5px 2px #A62139;
-	/* background: #121212 url('../img/zwartevilt.png'); */;
-	width: 100%;
-}
-
-#footer-800px {
-	min-width: 800px;
-	min-height: 105px;
+    padding: 1% 0;
 }
 
 .copyright-msg {
 	border-top: 1px solid #252525;
-	margin: 3% 5% 1% 5%; /* this is different in Phixboard btw, change it here later */
-	padding-top: 1.5%;
+	margin: 1% 5%;
+	padding-top: 1%;
 	color: #777777;
 	font-size: 0.9em;
 	text-align: right;
 }
-
-#footer-320px {
-	min-width: 300px;
-	padding-top: 1%;
-}
-
-#footer-320px p {
-	border-top: 1px solid #252525;
-	margin: 3% 5% 0% 5%;
-	padding-top: 1.7%;
-	color: #A62139;
-	font-size: 0.9em;
-	font-style: italic;
-	text-align: center;
-}
-
-#footer-320px .copyright-msg {
-	color: #777777;
-	font-size: 0.7em;
-	font-style: normal;
-	padding-bottom: 1.5%;
-}
-
-#footer-320px a {
-	color: #BBB;
-	text-decoration: none;
-}
-
-#footer-320px a:hover {
-	border-bottom: 1px dotted #AA0000;
-	color: #DDD;
-}
-
-/* END OF FILE */
