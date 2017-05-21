@@ -21,7 +21,7 @@ $config = array(
         "js" => "/redhawk/js",
         "fonts" => "/redhawk/fonts",
         "includes" => array(
-            "templates" => __DIR__ . DIRECTORY_SEPARATOR . "../templates"
+            "templates" => __DIR__ . DIRECTORY_SEPARATOR . "/templates"
         )
     )
 );
