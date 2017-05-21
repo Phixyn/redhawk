@@ -1,3 +1,7 @@
+<?php
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/config/config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,12 +9,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="<?php echo $site_description; ?>" />
-        <meta name="keywords" content="<?php echo $site_keywords; ?>" />
-        <title><?php echo $page_title; ?></title>
+        <meta name="description" content="<?php echo $config['metadata']['site_description']; ?>" />
+        <meta name="keywords" content="<?php echo $config['metadata']['site_keywords']; ?>" />
+        <title><?php echo $config['page_title']; ?></title>
 
-        <link href="<?php echo $css_url; ?>bootstrap.min.css" rel="stylesheet" />
-        <link href="<?php echo $css_url; ?>style.css" rel="stylesheet" />
+        <link href="<?php echo $config['paths']['css']; ?>/bootstrap.min.css" rel="stylesheet" />
+        <link href="<?php echo $config['paths']['css']; ?>/style.css" rel="stylesheet" />
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
