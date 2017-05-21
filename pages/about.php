@@ -1,10 +1,7 @@
 <?php 
-define("INCLUDES", $_SERVER["DOCUMENT_ROOT"] . "/redhawk/inc/");
-$page_title="About - Alpeche Pancha - Phixyn";
-$site_description="Phixyn's personal website";
-$site_keywords="Phixyn, is, awesome";
-
-require_once(INCLUDES . "header.php"); ?>
+	require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/phix.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+?>
 
 <div class="body-wrapper" id="body-wrapper-800px">
 
@@ -14,7 +11,7 @@ require_once(INCLUDES . "header.php"); ?>
 		<h1 style="text-align: center; padding: 4% 0;"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> student <span style="color: #BBBBBB;">at the </span>University of Essex.</h1>
 				
 		<div id="content-intro-800px">
-			<img src="<?php echo $images_url; ?>me3.png" style="width: 226px; height: 218px; float: right; padding-left: 8%;" />
+			<img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="width: 226px; height: 218px; float: right; padding-left: 8%;" />
 			<h1> What I do </h1>
 			<p> I make videogames, websites and everything in between. Currently, I'm an undergraduate computer science student on my second year, at the University of Essex, England. As my third and final year approaches, I am looking to start building up my career and making my first steps into the real world. While that does sound a bit daunting, it is mostly exciting for me and it is the moment that I've been waiting for ever since I started high school. </p>
 			<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
@@ -44,7 +41,7 @@ require_once(INCLUDES . "header.php"); ?>
 
 	<div class="main-content" id="content-320px">
 		<h1> Hello, my name is Alpeche Pancha! </h1>
-		<img src="<?php echo $images_url; ?>me3.png" class="my-avatar"/>
+		<img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" class="my-avatar"/>
 		<p> This is my mobile portfolio. You can view the full site by <a href="#">clicking here!</a>
 		<p> If you want, check out some of the links above or below! </p>
 		<h1> Some of my work... </h1>
@@ -55,4 +52,4 @@ require_once(INCLUDES . "header.php"); ?>
 
 </div>	<!-- .body-wrapper#body-wrapper-320px -->
 
-<?php require_once(INCLUDES . "footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

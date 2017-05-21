@@ -1,16 +1,6 @@
 <?php
-    $root_url="/redhawk/";
-    $css_url="/redhawk/css/";
-    $js_url="/redhawk/js/";
-    $images_url="/redhawk/img/";
-    $blog_url="/redhawk/blog/";
-
-    define("INCLUDES", $_SERVER["DOCUMENT_ROOT"] . "/redhawk/inc/");
-    $page_title="Home - Alpeche Pancha - Phixyn";
-    $site_description="Phixyn's personal website";
-    $site_keywords="Phixyn, is, awesome";
-
-    require_once(INCLUDES . "header.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/phix.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
         <!-- Carousel -->
@@ -23,7 +13,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide img-responsive" src="img/logo.png" alt="First slide">
+                    <img class="first-slide img-responsive" src="<?php echo $config['paths']['images']['root']; ?>/logo.png" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Watch me on Twitch!</h1>
@@ -79,7 +69,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="img/gameplay3.png" alt="...">
+                        <img src="<?php echo $config['paths']['images']['root']; ?>/gameplay3.png" alt="...">
                         <div class="caption">
                             <h3>TetrisPhix</h3>
                             <p>Tetris clone written in Java using the AWT and Swing libraries.</p>
@@ -90,7 +80,7 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="img/colorPulse_V4.jpg" alt="...">
+                        <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="...">
                         <div class="caption">
                             <h3>ZoeyBot</h3>
                             <p>IRC and Twitch.tv bot written in Python.</p>
@@ -101,7 +91,7 @@
 
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="img/starphix.png" alt="...">
+                        <img src="<?php echo $config['paths']['images']['root']; ?>/starphix.png" alt="...">
                         <div class="caption">
                             <h3>StarPhix</h3>
                             <p>Retro space arcade game, written in Python using the pyGame module.</p>
@@ -112,4 +102,4 @@
             </div> <!-- /.row -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once(INCLUDES . "footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
