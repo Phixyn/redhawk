@@ -5,11 +5,11 @@
 			<h1> Projects </h1>
 
 			<ul>
-				<li><a href="<?php echo $pages_url; ?>redhawk.php" title="Project Redhawk"> Redhawk </a></li>
-				<li><a href="<?php echo $pages_url; ?>projects.php" title="ZoeyBot"> ZoeyBot </a></li>
-				<li><a href="<?php echo $pages_url; ?>projects.php" title="StarPhix"> StarPhix </a></li>
-				<li><a href="<?php echo $pages_url; ?>minephix.php" title="Minephix"> Minephix </a></li>
-				<li><a href="<?php echo $pages_url; ?>testing.php" title="Test page"> Test page </a></li>
+				<li><a href="<?php echo $config['urls']['pages']; ?>/redhawk.php" title="Project Redhawk"> Redhawk </a></li>
+				<li><a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="ZoeyBot"> ZoeyBot </a></li>
+				<li><a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="StarPhix"> StarPhix </a></li>
+				<li><a href="<?php echo $config['urls']['pages']; ?>/minephix.php" title="Minephix"> Minephix </a></li>
+				<li><a href="<?php echo $config['urls']['pages']; ?>/testing.php" title="Test page"> Test page </a></li>
 			</ul>
 	
 		</div>	<!-- .left-menu -->

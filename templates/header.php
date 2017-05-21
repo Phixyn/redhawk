@@ -1,7 +1,3 @@
-<?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/config/config.php");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -43,12 +39,12 @@
                 <div class="collapse navbar-collapse" id="top-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="<?php echo $blog_url; ?>#">Blog</a></li>
-                        <li><a href="<?php echo $root_url; ?>#">Projects</a></li>
+                        <li><a href="<?php echo $config['urls']['blog']; ?>/#">Blog</a></li>
+                        <li><a href="<?php echo $config['urls']['root']; ?>/#">Projects</a></li>
                         <li><a href="https://www.twitch.tv/phixyn">Twitch</a></li>
-                        <li><a href="<?php echo $root_url; ?>#">About</a></li>
-                        <li><a href="<?php echo $root_url; ?>#">Contact</a></li>
-                        <li><a href="<?php echo $root_url; ?>#">Donate</a></li>
+                        <li><a href="<?php echo $config['urls']['pages']; ?>/about.php">About</a></li>
+                        <li><a href="<?php echo $config['urls']['root']; ?>/#">Contact</a></li>
+                        <li><a href="<?php echo $config['urls']['root']; ?>/#">Donate</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>
                             <ul class="dropdown-menu">
