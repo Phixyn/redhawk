@@ -3,7 +3,7 @@
     require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
-		<!-- <div class="banner" id="banner-800px"> About </div> -->
+		<div class="banner"> About </div>
 
 		<!-- Main content -->
         <div class="container" id="main-content">

@@ -86,7 +86,7 @@ a:hover
 /* highlight-box */
 #highlight-box {
     background-color: #000000;
-    margin-bottom: 4%;
+    /* margin-bottom: 3%; */
 }
 
 /* bootstrap overrides : .carousel-* / .item */
@@ -121,6 +121,20 @@ a:hover
 	/* background-color: #191919; */
 	background-color: rgb(25, 25, 25);
 	background-color: rgba(25, 25, 25, 0.8);
+}
+
+/* banner */
+.banner {
+	border-style: solid none;
+	border-width: 1px;
+	border-color: #252525;
+	padding: 0.3em 0 0.5em 0;
+	clear: both;
+	margin: 3% auto;
+	width: 70%;
+	color: #555555;
+	font-size: 1.8em;
+	text-align: center;
 }
 
 #content-intro p {

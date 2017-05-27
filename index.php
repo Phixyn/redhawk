@@ -4,6 +4,10 @@
     require_once($config["paths"]["includes"]["templates"] . "/carousel.php");
 ?>
 
+        <div class="banner">
+            Student. Game dev. Programmer. Web designer.
+        </div> <!-- /.banner -->
+
         <!-- Main content -->
         <div class="container" id="main-content">
             <div class="row" id="content-intro">
