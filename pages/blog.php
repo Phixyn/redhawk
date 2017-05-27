@@ -64,4 +64,4 @@
 
 </div>	<!-- .body-wrapper#body-wrapper-320px -->
 
-<?php require_once(INCLUDES . "footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

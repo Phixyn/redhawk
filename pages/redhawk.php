@@ -36,4 +36,4 @@
 	<div class="parent-clear"></div>	<!-- make parent element automatically expand to child elements' heights -->
 </div>	<!-- #body-wrapper -->
 
-<?php require_once(INCLUDES . "footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
