@@ -15,7 +15,7 @@ $config = array(
     "paths" => array(
         "images" => array(
             "root" => "/redhawk/img",
-            "social" => "/redhawk/social"
+            "social" => "/redhawk/img/social"
         ),
         "css" => "/redhawk/css",
         "js" => "/redhawk/js",
