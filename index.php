@@ -22,8 +22,8 @@
                 </div>
             </div> <!-- /.row -->
 
-            <h1> My projects </h1>
             <div class="row">
+                <h1> My projects </h1>
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
                         <img src="<?php echo $config['paths']['images']['root']; ?>/gameplay3.png" alt="...">
