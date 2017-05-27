@@ -1,10 +1,7 @@
 <?php
-define("INCLUDES", $_SERVER["DOCUMENT_ROOT"] . "/redhawk/inc/");
-$page_title="Minephix - Projects - Project Redhawk";
-$site_description="Phixyn's personal website";
-$site_keywords="Phixyn, is, awesome";
-
-require_once(INCLUDES . "header.php"); ?>
+	require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/phix.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+?>
 
 <div id="body-wrapper">
 
