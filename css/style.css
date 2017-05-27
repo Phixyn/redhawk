@@ -20,6 +20,11 @@ a:hover
     text-decoration: none;
 }
 
+/* Make parent element automatically expand to child elements' heights */
+.parent-clear {
+	clear: both;
+}
+
 /* bootstrap overrides : .thumbnail / .caption */
 .thumbnail {
     background-color: transparent;
