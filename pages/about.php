@@ -7,15 +7,18 @@
 
 		<!-- Main content -->
         <div class="container" id="main-content">
-            <div class="row">
-				<h1 style="text-align: center; padding: 4% 0;"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> student <span style="color: #BBBBBB;">at the </span>University of Essex.</h1>
-                <div class="col-md-12">
-                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="width: 226px; height: 218px; float: right; padding-left: 8%;" />
+			<h1 style="text-align: center; padding: 4% 0;"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> student <span style="color: #BBBBBB;">at the </span>University of Essex.</h1>
+            <div class="row" id="content-intro">
+                <div class="col-sm-6 col-md-10">
 					<h1> What I do </h1>
 					<p> I make videogames, websites and everything in between. Currently, I'm an undergraduate computer science student on my second year, at the University of Essex, England. As my third and final year approaches, I am looking to start building up my career and making my first steps into the real world. While that does sound a bit daunting, it is mostly exciting for me and it is the moment that I've been waiting for ever since I started high school. </p>
 					<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
                 </div>
-            </div> <!-- /.row -->
+
+                <div class="col-sm-6 col-md-2">
+                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="max-width: 226px; max-height: 218px;" />
+                </div>
+            </div> <!-- /.row /#content-intro -->
 
 			<div class="row">
 				<h1> My projects </h1>
