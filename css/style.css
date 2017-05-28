@@ -5,8 +5,9 @@ html, body {
 
 body {
 	background: #121212 url('../img/zwartevilt.png');
-    color: #D9D9D9;
-    /*line-height: 1;*/
+    color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
 }
 
 a {
@@ -162,6 +163,7 @@ a:hover
 	/* padding: 1% 5%; */
 	/* padding: 1% 3% 2% 3%; */
 	/* color: #E9E1B4; */
+	color: #D9D9D9;
     width: 80%;
 }
 
@@ -189,6 +191,90 @@ a:hover
 
 #main-content p {
 	line-height: 1.5em;
+}
+
+/* -----------------------------------
+	CONTACT PAGE
+----------------------------------- */
+
+#contact-form ul,
+#contact-details ul {
+	list-style: outside none none;
+}
+
+#contact-form {
+	/*border: 1px dashed #333333;*/
+	float: left;
+	width: 47%;
+	margin: 5% 2% 0 5%;
+}
+
+#contact-form ul li {
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+#contact-form label {
+	background-color: #171717;
+	width: 22%;
+	height: 25px;
+	padding: 1% 4%;
+	color: #AAAAAA;
+	display: block;
+	float: left;
+}
+
+#contact-form input {
+	float: left;
+	width: 58%;
+	padding-left: 2%;
+	height: 25px;
+}
+
+#contact-form input#submit-contact {
+	float: right;
+	width: 25%;
+	height: 50px;
+	margin-right: 8%;
+}
+
+#contact-form ul li.contact-msg {
+	float: left;
+	min-height: 150px;
+	height: 150px;
+}
+
+#contact-form ul li.contact-msg label {
+	float: left;
+	min-height: 150px;
+	height: 150px;
+	float: left;
+}
+
+#contact-form ul li.contact-msg textarea {
+	float: left;
+	resize: none;
+	min-height: 150px;
+	height: 150px;
+	width: 58%;
+	padding-left: 2%;
+}
+
+#contact-details {
+	border: 1px dashed #333333;
+	float: left;
+	width: 40%;
+	margin: 6.5% 5% 0 0;
+}
+
+#contact-details ul#social-media-icons {
+	border-right: 1px dashed #333333;
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 10% 4%;
+	margin-right: 8%;
 }
 
 /* footer */
