@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">PHIXYN</a>
+                    <a class="navbar-brand" href="<?php echo $config['urls']['root']; ?>/index.php">PHIXYN</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
