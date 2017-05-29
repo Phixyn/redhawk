@@ -194,6 +194,51 @@ a:hover
 }
 
 /* -----------------------------------
+	BLOG PAGE
+----------------------------------- */
+
+.blog-post {
+	/* border: 1px solid blue; */
+	border-bottom: 1px dashed #333333;
+	background-color: rgb(25, 25, 25);
+	background-color: rgba(25, 25, 25, 0.8);
+	width: 90%;
+	min-height: 218px; /* same as our avatar img height */
+	margin: 2% auto;
+	padding-bottom: 1%;
+}
+
+.blog-header {
+	border-bottom: 1px solid #222222;
+	margin-bottom: 2%;
+}
+
+.blog-title {
+	padding: 2% 4% 1% 4%;
+	font-weight: 600;
+	color: #A62139;
+	font-size: 1.4em;
+}
+
+.blog-title-320px {
+	font-size: 1.2em;
+}
+
+.blog-title a, .blog-title-320px a {
+	color: #A62139;
+}
+
+.blog-title a:hover {
+	color: #DB5A7F;
+}
+
+.blog-meta {
+	padding: 0% 4% 1% 4%;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+/* -----------------------------------
 	CONTACT PAGE
 ----------------------------------- */
 
