@@ -1,4 +1,7 @@
-/* elements */
+/* -----------------------------------
+	DEFAULT / ELEMENTS
+----------------------------------- */
+
 html, body {
     height: 100%;
 }
@@ -21,12 +24,18 @@ a:hover
     text-decoration: none;
 }
 
-/* Make parent element automatically expand to child elements' heights */
+/* Make parent element automatically expand to child elements' heights
+ * TODO: Not currently used
+ */
 .parent-clear {
 	clear: both;
 }
 
-/* bootstrap overrides : .thumbnail / .caption */
+/* -----------------------------------
+	BOOTSTRAP OVERRIDES
+		.thumbnail / .caption
+----------------------------------- */
+
 .thumbnail {
     background-color: transparent;
     border: none;
@@ -36,7 +45,11 @@ a:hover
     color: #D9D9D9;
 }
 
-/* bootstrap overrides : .navbar-* */
+/* -----------------------------------
+	BOOTSTRAP OVERRIDES
+		.navbar-*
+----------------------------------- */
+
 .navbar {
     background-color: #000000;
     border: none;
@@ -44,7 +57,8 @@ a:hover
     margin-bottom: 0;
 }
 
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
     margin-left: 15px;
 }
 
@@ -84,18 +98,29 @@ a:hover
 	letter-spacing: 5px;
 }
 
+/* -----------------------------------
+	TOP NAVBAR
+----------------------------------- */
+
 #top-navbar {
 	border-bottom: 2px solid #A62139;
 	box-shadow: 0 0 7px 2px #A62139;
 }
 
-/* highlight-box */
+/* -----------------------------------
+	HIGHLIGHT BOX
+----------------------------------- */
+
 #highlight-box {
     background-color: #000000;
     /* margin-bottom: 3%; */
 }
 
-/* bootstrap overrides : .carousel-* / .item */
+/* -----------------------------------
+	BOOTSTRAP OVERRIDES
+		.carousel-* / .item
+----------------------------------- */
+
 #highlight-box,
 .carousel .item,
 .carousel-inner > .item > img {
@@ -122,7 +147,10 @@ a:hover
     min-width: 100%;
 }
 
-/* banner */
+/* -----------------------------------
+	BANNER
+----------------------------------- */
+
 .banner {
 	border-style: solid none;
 	border-width: 1px;
@@ -136,7 +164,10 @@ a:hover
 	text-align: center;
 }
 
-/* main-content */
+/* -----------------------------------
+	MAIN CONTENT SECTION
+----------------------------------- */
+
 #main-content {
 	/* background-color: #131313; */
 	background-color: rgb(19, 19, 19);
@@ -178,7 +209,10 @@ a:hover
     padding: 1% 4%;
 }
 
-/* content-intro */
+/* -----------------------------------
+	CONTENT INTRO SECTION
+----------------------------------- */
+
 #content-intro {
 	/* background-color: #191919; */
 	background-color: rgb(25, 25, 25);
@@ -324,7 +358,10 @@ a:hover
 	margin-right: 8%;
 }
 
-/* footer */
+/* -----------------------------------
+	FOOTER SECTION
+----------------------------------- */
+
 #footer {
     margin-bottom: 0;
     margin-top: 4%;
