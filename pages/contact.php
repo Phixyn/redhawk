@@ -33,9 +33,9 @@
 						<li><a href="http://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
 					</ul>
 
-					<p style="font-size: 1.2em; color: #999999;"> Alpeche Pancha <br />
-					phixyn@phixyn.me </p>
-					<p> Colchester, Essex <br />
+					<p id="contact-details-header"> Alpeche Pancha <br />
+					phixyn@gmail.com </p>
+					<p> Ipswich, Suffolk <br />
 					England, UK </p>
 				</div> <!-- /.col-* /#contact-details -->
             </div> <!-- /.row -->
