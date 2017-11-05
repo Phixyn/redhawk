@@ -33,6 +33,23 @@ a:hover
 
 /* -----------------------------------
 	BOOTSTRAP OVERRIDES
+		elements
+----------------------------------- */
+
+ol, ul, ol li, ul li {
+	padding: 0;
+	margin: 0;
+}
+
+label {
+	display: block;
+	max-width: 100%;
+	margin: 0;
+	font-weight: normal;
+}
+
+/* -----------------------------------
+	BOOTSTRAP OVERRIDES
 		.thumbnail / .caption
 ----------------------------------- */
 
@@ -306,50 +323,51 @@ a:hover
 	float: left;
 }
 
-#contact-form label {
-	background-color: #171717;
-	width: 22%;
-	height: 25px;
-	padding: 1% 4%;
-	color: #AAAAAA;
+#contact-form li label,
+#contact-form li input {
+	float: left;
+	height: 40px;
+}
+
+#contact-form li label {
+	/*background-color: #171717;*/
+	background-color: rgb(15, 4, 173);
 	display: block;
-	float: left;
+	width: 22%;
+	padding: 2% 4%;
+	color: #AAAAAA;
 }
 
-#contact-form input {
-	float: left;
-	width: 58%;
-	padding-left: 2%;
-	height: 25px;
+#contact-form li input,
+#contact-form ul li.contact-msg textarea {
+	width: 70%;
+	padding: 1.5% 2%;
+	color: #000000;
 }
 
-#contact-form input#submit-contact {
+#contact-form li input#submit-contact {
 	float: right;
 	width: 25%;
 	height: 50px;
 	margin-right: 8%;
 }
 
-#contact-form ul li.contact-msg {
-	float: left;
-	min-height: 150px;
-	height: 150px;
+#contact-form li label,
+#contact-form li input,
+#contact-form ul li.contact-msg textarea,
+#contact-form li input#submit-contact {
+	font-size: 1.2em;
 }
 
-#contact-form ul li.contact-msg label {
+#contact-form ul li.contact-msg,
+#contact-form ul li.contact-msg label,
+#contact-form ul li.contact-msg textarea {
 	float: left;
-	min-height: 150px;
-	height: 150px;
-	float: left;
+	height: 200px;
 }
 
 #contact-form ul li.contact-msg textarea {
-	float: left;
 	resize: none;
-	min-height: 150px;
-	height: 150px;
-	width: 58%;
-	padding-left: 2%;
 }
 
 #contact-details {
@@ -366,6 +384,19 @@ a:hover
 	text-align: center;
 	padding: 10% 4%;
 	margin-right: 8%;
+}
+
+#contact-details ul#social-media-icons li a img {
+	opacity: 0.85;
+	padding: 4%;
+}
+#contact-details ul#social-media-icons li a:hover img {
+    opacity: 1;
+}
+
+#contact-details p#contact-details-header {
+	font-size: 1.2em;
+	color: #999999;
 }
 
 /* -----------------------------------
