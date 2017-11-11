@@ -7,8 +7,8 @@
 
         <!-- Main content -->
         <div class="container" id="main-content">
-            <div class="row">
-                <h1> Portfolio </h1>
+            <h1> Portfolio </h1>
+            <div id="content-projects" class="row">
                 <div class="col-sm-4 col-md-4">
                     <div class="thumbnail">
                         <img src="<?php echo $config['paths']['images']['root']; ?>/gameplay3.png" alt="...">
