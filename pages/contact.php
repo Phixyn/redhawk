@@ -11,15 +11,31 @@
                 <div class="col-sm-8 col-md-6" id="contact-form">
 					<form name="contactForm" method="post" action="#" >
 						<fieldset>
-						<!-- TODO label tag needs a "for" attribute apparently -->
-						<ul>
-							<li><label>Name</label><input type="text" name="cName" id="contact-name" /></li>
-							<li><label>Email</label><input type="text" name="cEmail" id="contact-email" /></li>
-							<li><label>Website</label><input type="text" name="cWebsite" id="contact-website" /></li>
-							<li class="contact-msg"><label>Message</label><textarea name="cMessage" id="contact-message"> </textarea></li>
-							<li><input type="submit" name="submitContact" id="submit-contact" value="Send" /></li>
-							<input type="hidden" name="contactSubmitted" id="contact-submitted" value="true" />
-						</ul>
+							<ul>
+								<li>
+									<label for="contact-name">Name</label>
+									<input type="text" name="cName" id="contact-name" required="required" disabled="disabled" />
+								</li>
+								<li>
+									<label for="contact-email">Email</label>
+									<input type="text" name="cEmail" id="contact-email" required="required" disabled="disabled" />
+								</li>
+								<li>
+									<label for="contact-website">Website</label>
+									<input type="text" name="cWebsite" id="contact-website" disabled="disabled" />
+								</li>
+								<li class="contact-msg">
+									<label for="contact-message">Message</label>
+									<textarea name="cMessage" id="contact-message" maxlength="500" required="required" placeholder="Describe your query..." disabled="disabled">The contact form is not yet implemented. To contact me, please send an email to the address on the right-hand side.
+
+Alternatively, use the social media links on the right-hand side to get in touch.
+									</textarea>
+								</li>
+								<li>
+									<input type="submit" name="submitContact" id="submit-contact" value="Send" disabled="disabled" />
+								</li>
+								<input type="hidden" name="contactSubmitted" id="contact-submitted" value="true" disabled="disabled" />
+							</ul>
 						</fieldset>
 					</form>
                 </div> <!-- /.col-* /#contact-form -->
