@@ -18,6 +18,6 @@ _Tick all that apply_
 # Merging checklist
 _Before you merge..._
 
-- [ ] Code documentation up-to-date and DoxyGen generated
+- [ ] Code documentation up-to-date
 - [ ] Project documentation up-to-date
 - [ ] Project builds and runs
