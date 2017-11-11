@@ -17,7 +17,7 @@
 
                     <p>In my little spare time, I like to work on my personal projects, such as this website. I also play video games (of course) and play the bass guitar. On this website you can find out more about my hobbies, including music and gaming, and <a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="Projects">my projects.</a> The website is very much a work in progress and a new iteration gets deployed to my live server approximately every two weeks (this can vary depending on coursework and my full-time job).</p>
 
-                    <p>If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter">Twitter.</a></p>
+                    <p>If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
                 </div>
 
                 <div class="col-sm-6 col-md-2">
