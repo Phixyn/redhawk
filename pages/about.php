@@ -7,7 +7,7 @@
 
 		<!-- Main content -->
         <div class="container" id="main-content">
-			<h1 style="text-align: center; padding: 4% 0;"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> student <span style="color: #BBBBBB;">at the </span>University of Essex.</h1>
+			<h1 class="main-content-main-title"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> student <span style="color: #BBBBBB;">at the </span>University of Essex.</h1>
             <div class="row" id="content-intro">
                 <div class="col-sm-6 col-md-10">
 					<h1> What I do </h1>
