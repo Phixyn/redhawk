@@ -14,7 +14,7 @@
                 <div class="col-sm-6 col-md-10">
                     <h1>Hello! My name is Phixyn</h1>
                     <p> ...and I like to make videogames. During the day, I live life as a <a href="#">Computer Science</a> student at the University of Essex, in England. Later on in the day, you might catch me frivolously coding in my bedroom and <a href="#">tweeting</a> about my coding adventures. At night, I play games while watching live <a href="#">streams</a> of other people who also happen to play games. Welcome to my life! </p>
-                    <p> Don't forget to change box-shadows to rgb()! </p>
+                    <p> Don't forget to follow on Twitter! </p>
                 </div>
 
                 <div class="col-sm-6 col-md-2">
@@ -22,8 +22,8 @@
                 </div>
             </div> <!-- /.row /#content-intro -->
 
-            <div class="row">
-                <h1> My projects </h1>
+            <h1> My projects </h1>
+            <div class="row" id="content-projects">
                 <div class="col-sm-4 col-md-4">
                     <div class="thumbnail">
                         <img src="<?php echo $config['paths']['images']['root']; ?>/gameplay3.png" alt="...">
