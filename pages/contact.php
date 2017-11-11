@@ -8,7 +8,7 @@
 		<!-- Main content -->
         <div class="container" id="main-content">
             <div class="row">
-                <div class="col-md-6" id="contact-form">
+                <div class="col-sm-8 col-md-6" id="contact-form">
 					<form name="contactForm" method="post" action="#" >
 						<fieldset>
 						<!-- TODO label tag needs a "for" attribute apparently -->
@@ -24,7 +24,7 @@
 					</form>
                 </div> <!-- /.col-* /#contact-form -->
 
-				<div class="col-md-6" id="contact-details">
+				<div class="col-sm-4 col-md-6" id="contact-details">
 					<ul id="social-media-icons">
 						<li><a href="http://www.facebook.com/phixyn" title="Facebook"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" /></a></li>
 						<li><a href="http://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
