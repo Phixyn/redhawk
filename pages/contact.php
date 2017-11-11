@@ -42,11 +42,11 @@ Alternatively, use the social media links on the right-hand side to get in touch
 
 				<div class="col-sm-4 col-md-6" id="contact-details">
 					<ul id="social-media-icons">
-						<li><a href="http://www.facebook.com/phixyn" title="Facebook"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" /></a></li>
-						<li><a href="http://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
-						<li><a href="http://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
-						<li><a href="http://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
-						<li><a href="http://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
+						<li><a href="https://www.facebook.com/phixyn" title="Facebook"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" /></a></li>
+						<li><a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
+						<li><a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
+						<li><a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
+						<li><a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
 					</ul>
 
 					<p id="contact-details-header"> Alpeche Pancha <br />
