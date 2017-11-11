@@ -64,6 +64,24 @@ label {
 
 /* -----------------------------------
 	BOOTSTRAP OVERRIDES
+		.col-*
+	this was messing EVERYTHING up!
+----------------------------------- */
+
+/*
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4,
+.col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10,
+.col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12,
+.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+.col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3,
+.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	padding: 0;
+}
+*/
+
+/* -----------------------------------
+	BOOTSTRAP OVERRIDES
 		.navbar-*
 ----------------------------------- */
 
@@ -199,7 +217,7 @@ label {
 }
 
 #main-content h1 {
-	padding: 2% 4%;
+	padding: 1% 4%;
 	/* color: #A92F41; */
 	/* color: #73192A; */
 	color: #A62139;
@@ -236,8 +254,13 @@ label {
 	line-height: 1.5em;
 }
 
+#main-content.container h1.main-content-main-title {
+	text-align: center;
+	padding: 2% 0;
+}
+
 /* -----------------------------------
-	CONTENT INTRO SECTION
+	CONTENT SUB-SECTIONS
 ----------------------------------- */
 
 #content-intro {
@@ -256,6 +279,10 @@ label {
 	height: 100%;
 }
 
+#content-projects {
+	padding: 0% 3%;
+}
+
 /* -----------------------------------
 	BLOG PAGE
 ----------------------------------- */
@@ -268,7 +295,6 @@ label {
 	width: 90%;
 	min-height: 218px; /* same as our avatar img height */
 	margin: 2% auto;
-	padding-bottom: 1%;
 }
 
 .blog-header {
@@ -305,6 +331,11 @@ label {
 	CONTACT PAGE
 ----------------------------------- */
 
+/* Do not include Bootstrap's .col-*-* padding */
+div#contact-details.col-md-6 {
+	padding: 0;
+}
+
 #contact-form ul,
 #contact-details ul {
 	list-style: outside none none;
@@ -330,11 +361,11 @@ label {
 }
 
 #contact-form li label {
-	/*background-color: #171717;*/
-	background-color: rgb(15, 4, 173);
+	background-color: #171717;
+	/* background-color: rgb(15, 4, 173); */
 	display: block;
 	width: 22%;
-	padding: 2% 4%;
+	padding: 1.5% 4%;
 	color: #AAAAAA;
 }
 
@@ -388,7 +419,8 @@ label {
 
 #contact-details ul#social-media-icons li a img {
 	opacity: 0.85;
-	padding: 4%;
+	/*padding: 4%;*/
+	padding: 5% 0%;
 }
 #contact-details ul#social-media-icons li a:hover img {
     opacity: 1;
