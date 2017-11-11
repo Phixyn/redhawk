@@ -2,7 +2,7 @@
         <div class="jumbotron" id="footer">
             <div class="container-fluid">
                 <div class="copyright-msg">
-                    &copy; <?php $fromYear = 2014; $thisYear = (int)date('Y'); echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?> Phixyn &amp; Zoey. All rights reserved
+                    &copy; <?php $fromYear = 2014; $thisYear = (int)date('Y'); echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?> Alpeche Pancha. All rights reserved.
                 </div>
             </div>
         </div> <!-- /#footer -->

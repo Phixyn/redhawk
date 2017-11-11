@@ -7,27 +7,46 @@
 
         <!-- Main content -->
         <div class="container" id="main-content">
+
+			<div class="row blog-post">
+				<div class="blog-header">
+					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/welcome-to-redhawk-20171111.php" title="Welcome to the website">Welcome To The Website</a></div>
+					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
+				</div>	<!-- .blog-header -->
+
+				<p>Welcome to my website! This is the first iteration of my website, after a complete refactor and some re-design. It is very much a work in progress. I aim to release a new iteration at least every two weeks, but this may vary depending on how busy I am with coursework and my full-time job.</p>
+
+				<p><a href="<?php echo $config['urls']['blog']; ?>/welcome-to-redhawk-20171111.php" title="Continue reading">Continue reading &raquo;</a></p>
+            </div> <!-- /.row /.blog-post -->
+
+			<div class="row blog-post">
+				<div class="blog-header">
+					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/v020-release-notes-20171111.php" title="v0.2.0 release notes">v0.2.0 Release Notes</a></div>
+					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
+				</div>	<!-- .blog-header -->
+
+				<p>
+					<b>New features:</b><br /><br />
+					* The old website content, style and layout were migrated to new template-based engine (released in v0.1.0)<br />
+					* Re-designed sections such as the top navigation bar<br />
+					* Integrated Bootstrap in new layout<br />
+					* Added a "carousel" section to the homepage
+				</p>
+
+				<p><a href="<?php echo $config['urls']['blog']; ?>/v020-release-notes-20171111.php" title="Continue reading">Continue reading &raquo;</a></p>
+            </div> <!-- /.row /.blog-post -->
+
             <div class="row blog-post">
 				<div class="blog-header">
-					<div class="blog-title"><a href="blog/test-post.php">Sample post</a></div>
-					<div class="blog-meta">Posted on December 25, 2014 in <a href="#">Christmas</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/new-years-resolutions-20141225.php" title="On New Years' resolutions">On New Years' Resolutions</a></div>
+					<div class="blog-meta">Posted on December 25, 2014 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>A new year is quickly approaching and with this, people are starting to jot down their plans and goals for the year ahead. New years' resolutions are a great way to motivate yourself and get hyped. However, they might not always work and each year, you might end up with a few goals and plans left unattended, which can make you feel rather disappointed in yourself.</p>
 
-				<p><a href="blog/test-post.php">Continue reading &raquo;</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/new-years-resolutions-20141225.php" title="Continue reading">Continue reading &raquo;</a></p>
             </div> <!-- /.row /.blog-post -->
 
-            <div class="row blog-post">
-				<div class="blog-header">
-					<div class="blog-title"><a href="#">Lorem Ipsum</a></div>
-					<div class="blog-meta">Posted on December 25, 2014 in <a href="#">Christmas</a> &nbsp; | &nbsp; Comments: Off</div>
-				</div>	<!-- .blog-header -->
-			
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus urna at leo varius tempus. Morbi non rhoncus lorem. Sed tempor eu felis ultrices bibendum. Cras feugiat, ex nec blandit ultrices, tellus nisi iaculis nisl, a mattis erat dolor at nibh. Sed placerat posuere ligula vel placerat. Sed sit amet lorem sit amet nunc sagittis tincidunt. Donec imperdiet nunc ut augue semper, rutrum commodo metus accumsan. Vivamus fermentum erat et elit bibendum dapibus eu nec mauris. Mauris fermentum dui eu vestibulum varius. Duis volutpat, erat at ultrices imperdiet, nunc magna efficitur sem, in volutpat nunc diam eget tortor. Aliquam erat volutpat. </p>
-			
-				<p><a href="#">Continue reading &raquo;</a></p>
-            </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
 <?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

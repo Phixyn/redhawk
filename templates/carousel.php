@@ -12,7 +12,7 @@
                     <img class="first-slide img-responsive" src="<?php echo $config['paths']['images']['root']; ?>/logo.png" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Watch me on Twitch!</h1>
+                            <h1>Welcome</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                         </div>
@@ -22,7 +22,7 @@
                 <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Check out my Youtube</h1>
+                            <h1>Under development</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                         </div>
@@ -32,7 +32,7 @@
                 <div class="item">
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Catch me on Livecoding.tv</h1>
+                            <h1>Check back for more updates</h1>
                             <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
                         </div>

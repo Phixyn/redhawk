@@ -12,9 +12,12 @@
         <div class="container" id="main-content">
             <div class="row" id="content-intro">
                 <div class="col-sm-6 col-md-10">
-                    <h1>Hello! My name is Phixyn</h1>
-                    <p> ...and I like to make videogames. During the day, I live life as a <a href="#">Computer Science</a> student at the University of Essex, in England. Later on in the day, you might catch me frivolously coding in my bedroom and <a href="#">tweeting</a> about my coding adventures. At night, I play games while watching live <a href="#">streams</a> of other people who also happen to play games. Welcome to my life! </p>
-                    <p> Don't forget to follow on Twitter! </p>
+                    <h1>Hello! I am Phixyn</h1>
+                    <p>My name is Alpeche Pancha. I work full-time as a <a href="https://en.wikipedia.org/wiki/Test_engineer" title="Wikipedia - Test Engineer">Software Test Engineer</a> and study part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree. I am based in Suffolk, work at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a> and study at the <a href="https://www.uos.ac.uk/" title="University of Suffolk">University of Suffolk</a>. Currently, I am on my second year at University.</p>
+
+                    <p>In my little spare time, I like to work on my personal projects, such as this website. I also play video games (of course) and play the bass guitar. On this website you can find out more about my hobbies, including music and gaming, and <a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="Projects">my projects.</a> The website is very much a work in progress and a new iteration gets deployed to my live server approximately every two weeks (this can vary depending on coursework and my full-time job).</p>
+
+                    <p>If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter">Twitter.</a></p>
                 </div>
 
                 <div class="col-sm-6 col-md-2">
