@@ -1,5 +1,5 @@
 <?php 
-	require_once($_SERVER["DOCUMENT_ROOT"] . "/redhawk/phix.php");
+	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
     require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 

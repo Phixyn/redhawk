@@ -14,13 +14,13 @@ $config = array(
     ),
     "paths" => array(
         "images" => array(
-            "root" => "/redhawk/img",
-            "social" => "/redhawk/img/social"
+            "root" => "/img",
+            "social" => "/img/social"
         ),
-        "css" => "/redhawk/css",
-        "js" => "/redhawk/js",
-        "lib" => "/redhawk/lib",
-        "fonts" => "/redhawk/fonts",
+        "css" => "/css",
+        "js" => "/js",
+        "lib" => "/lib",
+        "fonts" => "/fonts",
         "includes" => array(
             "templates" => __DIR__ . DIRECTORY_SEPARATOR . "/templates"
         )
