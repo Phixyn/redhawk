@@ -1,5 +1,6 @@
 <?php 
-	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+    $config['page_title'] = "v0.2.0 Release Notes - Blog - Phixyn";
     require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 

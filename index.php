@@ -1,5 +1,6 @@
 <?php
     require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+    // Override title and metadata variables here before including header
     require_once($config["paths"]["includes"]["templates"] . "/header.php");
     require_once($config["paths"]["includes"]["templates"] . "/carousel.php");
 ?>
