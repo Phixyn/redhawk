@@ -12,7 +12,12 @@
             <div class="row" id="content-intro">
                 <div class="col-sm-6 col-md-10">
 					<h1> What I do </h1>
-					<p> I make videogames, websites and everything in between. Currently, I'm an undergraduate computer science student on my second year, at the University of Essex, England. As my third and final year approaches, I am looking to start building up my career and making my first steps into the real world. While that does sound a bit daunting, it is mostly exciting for me and it is the moment that I've been waiting for ever since I started high school. </p>
+
+					<p> I am a Software Test Engineer for a small software development company based at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a>, Suffolk. I am studying part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree at the University of Suffolk. During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence. </p>
+
+					<p> Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
+					If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
+
 					<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
                 </div>
 
@@ -23,9 +28,10 @@
 
 			<div class="row">
 				<h1> My projects </h1>
-				<p> This site is designed to be responsive, with a fluid layout that adjusts to the user's screen. It is also mobile friendly! That is just an example of what I can achieve with 6 years of experience in web development. I am capable of developing solid, standards compliant frontends with XHTML, HTML5, CSS2/3 and JavaScript, with PHP backends that offer awesome features and functionality. In the past, I have worked with Wordpress and developed a custom theme in PHP for my Wordpress site. All of my projects are hosted in a VPS running a Linux OS. As such, and considering I use Linux regularly on my laptop, I am confortable with Unix like systems and have used several distributions. I am confortable with command-line interfaces and even know how to script in Bash! </p>
 
-				<p> I am also a keen programmer with 6 years of experience in Python, backed by my ongoing "ZoeyBot" project and my Starphix game. During my first year at University, I started learning Java and achieved 100% grades on both of my Java assignments. This year I'm learning C++ and applying my Java skills in a game development project. My second year Application Programming module assignment involves developing my own version of the classic Tetris game. This project will be completed by December and there will be a potential dev blog while I work on it! </p>
+				<p> Project "Redhawk" is this website. In 2014, I released its first version, but didn't continue maintaining it regularly due to other workload. In 2017, I finally picked up the project again and decided to rewrite it. The previous version had a template based engine written in JavaScript, and some CSS to deal with different sized screens. This new version has a template based engine written in PHP, based on Wordpress but much more lightweight, and uses the Bootstrap framework for its layout and responsiveness across multiple devices. </p>
+
+				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
 				<p> You can find out more about my experience, skills and qualities by <a href="#">requesting a CV.</a> Alternatively, feel free to <a href="#">contact me!</a></p>
 			</div> <!-- /.row -->
