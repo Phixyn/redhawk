@@ -11,6 +11,18 @@
 
 			<div class="row blog-post">
 				<div class="blog-header">
+					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-home-automation-20180220.php" title="SmartPhix - A home automation project">SmartPhix - A home automation project</a></div>
+					<div class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+				</div>	<!-- .blog-header -->
+
+				<p>SmartPhix is a small smart home project. The goal is to monitor temperatures in houses, offices and other interior rooms. <br />
+				Phidget project.</p>
+
+				<p><a href="<?php echo $config['urls']['blog']; ?>/smartphix-home-automation-20180220.php" title="Continue reading">Continue reading &raquo;</a></p>
+			</div> <!-- /.row /.blog-post -->
+
+			<div class="row blog-post">
+				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/welcome-to-redhawk-20171111.php" title="Welcome to the website">Welcome To The Website</a></div>
 					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
