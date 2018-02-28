@@ -38,13 +38,13 @@
 					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
-				<p>
-					<b>New features:</b><br /><br />
-					* The old website content, style and layout were migrated to new template-based engine (released in v0.1.0)<br />
-					* Re-designed sections such as the top navigation bar<br />
-					* Integrated Bootstrap in new layout<br />
-					* Added a "carousel" section to the homepage
-				</p>
+                <p><b>New features:</b></p>
+                <ul>
+                    <li>The old website content, style and layout were migrated to new template-based engine (released in v0.1.0)</li>
+                    <li>Re-designed sections such as the top navigation bar</li>
+                    <li>Integrated Bootstrap in new layout</li>
+                    <li>Added a "carousel" section to the homepage</li>
+                </ul>
 
 				<p><a href="<?php echo $config['urls']['blog']; ?>/v020-release-notes-20171111.php" title="Continue reading">Continue reading &raquo;</a></p>
             </div> <!-- /.row /.blog-post -->
