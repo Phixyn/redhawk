@@ -14,30 +14,35 @@
 					<div class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
-                <p>SmartPhix is a small smart home project. The goal is to monitor temperatures in houses, offices and other interior rooms. <br />
-Phidget project.</p>
+                <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Hero image for IoT / connected devices" style="width: 40%;height:50%;" />
 
-                <img alt="Hero image for IoT / connected devices" />
+                <p>SmartPhix is a small smart home project. The goal is to monitor temperatures in houses, offices and other interior rooms. It is currently being prototyped using <a href="#">Phidget</a> components.</p>
+
+
 
                 <p>IoT and home automation projects have been on my to-do list for a couple of years. Recently, my co-workers set up a home automation channel on our Discord server to discuss their latest inventions. It made sense for me to join in and start my own project.</p>
 
                 <p>I had a few ideas, mostly revolving around smart LED lights or similar. I saw a <a href="#">cool project</a> where a temperature sensor is used to set the color of the lights in the room based on the current temperature. I thought it was pretty neat and wanted to do something similar. My first thought was to use the Philips Hue lights. I am a big fan of Razer peripherals, and recently Philips and Razer have <a href="#">teamed up</a> with some cool integrations between their products and SDKs.</p>
 
-                <img alt="Phidget board and temperature sensor real picture" />
+                <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Phidget board and temperature sensor real picture" style="width: 35%;height:50%;" />
 
                 <p>As for the temperature sensor, I was given a <a href="#">Phidget</a> at <a href="#">University</a> for the project. However, this project had two problems:</p>
 
-                1. Considering that this was also a project for University coursework, it would be difficult to demo it
-                2. It felt too simple and too easy (even if the APIs were somehow horrible to work with, I was confident that it wouldn't take too long to complete)
+                <ol>
+                    <li>Considering that this was also a project for University coursework, it would be difficult to demo it</li>
+                    <li>It felt too simple and too easy (even if the APIs were somehow horrible to work with, I was confident that it wouldn't take too long to complete)</li>
+                </ol>
 
                 <p>So I decided to take the project a step further and make a simple Android app to display the current temperature. That alone would make the scope of the project change drastically, as I had to consider how the app was going to communicate with the Phidgets, in addition to how everything would work with the smart LED lights.</p>
 
-                <todo>
+                <!-- <todo> -->
                 <p>The main idea so far is:</p>
 
-                1. A Phidget will provide the current temperature from its sensor via a RESTful API server with endpoints such as `GET /temperature`
-                2. An Android app will hit the API server with requests to display the current temperature (in Celsius and Fahrenheit)
-                3. Based on the current temperature, interior lights (smart LED lights such as Philips Hue) will change color
+                <ol>
+                    <li>A Phidget will provide the current temperature from its sensor via a RESTful API server with endpoints such as `GET /temperature`</li>
+                    <li>An Android app will hit the API server with requests to display the current temperature (in Celsius and Fahrenheit)</li>
+                    <li>Based on the current temperature, interior lights (smart LED lights such as Philips Hue) will change color</li>
+                </ol>
 
                 <h2>Components</h2>
 
@@ -63,10 +68,12 @@ Phidget project.</p>
 
                 <p>Some endpoint examples:</p>
 
-                * GET /temperature
-                * GET /avg_temperature
-                * GET /min_temperature
-                * GET /max_temperature
+                <ul>
+                    <li>GET /temperature</li>
+                    <li>GET /avg_temperature</li>
+                    <li>GET /min_temperature</li>
+                    <li>GET /max_temperature</li>
+                </ul>
 
                 <p>The reason I chose to have a standalone server to deal with grabbing the sensor data is so that I can, in the future, make the server accessible remotely (and securely!) so I can monitor my house temperature while I'm at work or elsewhere.</p>
 
@@ -76,26 +83,30 @@ Phidget project.</p>
 
                 <h3>Smart LED integration</h3>
 
-                <img alt="Philips Hue" />
+                <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Philips Hue" style="width: 35%;height:50%;" />
 
                 <p>I have not yet decided where the integration with the smart LED lights will happen. In theory, it could be done with the app, by sending API requests to smart lights on the network. However, this might not be the best place to do it from, and may even be a separate background application that monitors the temperature on its own and sets the light colors at a pre-determined interval.</p>
 
                 <h2>Future plans / improvements</h2>
 
-                * There will be a database that stores details about different sensors in a home (or other local) network
-                * The app will access the database and display a list of all available sensors
-                * When a user selects a sensor, more information about it is displayed (e.g. min, max and average temperature, room name, etc)
-                * The database mentioned above should also securely store user login details
-                * The app should make use of this feature to allow users to register user accounts and login
-                * This enhances security and allows the user to be in control of who can access their sensors
-                * API requests to get the temperature should make use of a secure token that is generated when the user logs in, and expired when they log out (or after a certain amount of time).
-                * SSDP broadcast and discovery
+                <ul>
+                    <li>There will be a database that stores details about different sensors in a home (or other local) network</li>
+                    <li>The app will access the database and display a list of all available sensors</li>
+                    <li>When a user selects a sensor, more information about it is displayed (e.g. min, max and average temperature, room name, etc)</li>
+                    <li>The database mentioned above should also securely store user login details</li>
+                    <li>The app should make use of this feature to allow users to register user accounts and login</li>
+                    <li>This enhances security and allows the user to be in control of who can access their sensors</li>
+                    <li>API requests to get the temperature should make use of a secure token that is generated when the user logs in, and expired when they log out (or after a certain amount of time).</li>
+                    <li>SSDP broadcast and discovery</li>
+                </ul>
 
                 <h3>Security considerations</h3>
 
-                * HTTPS
-                * Database
-                * Securing Phidgets on a network
+                <ul>
+                    <li>HTTPS</li>
+                    <li>Database</li>
+                    <li>Securing Phidgets on a network</li>
+                </ul>
 				
 				<p><a href="<?php echo $config['urls']['blog']; ?>/" title="Back to blog">&laquo; Back to blog</a></p>
 
