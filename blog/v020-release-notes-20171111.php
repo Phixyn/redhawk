@@ -31,7 +31,7 @@
                     * Blog comments are unavailable at this time
                 </p>
 				
-				<p><a href="<?php echo $config['urls']['pages']; ?>/blog.php" title="Back to blog">&laquo; Back to blog</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
