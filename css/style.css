@@ -312,7 +312,8 @@ label {
 	padding: 1% 4% 2% 4%;
 }
 
-.blog-post img {
+.blog-post img,
+.blog-post iframe {
 	display: block;
 	margin: 0 auto;
 }
