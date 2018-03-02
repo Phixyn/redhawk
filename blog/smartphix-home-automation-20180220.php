@@ -18,8 +18,6 @@
 
                 <p>SmartPhix is a small smart home project. The goal is to monitor temperatures in houses, offices and other interior rooms. It is currently being prototyped using <a href="#">Phidget</a> components.</p>
 
-
-
                 <p>IoT and home automation projects have been on my to-do list for a couple of years. Recently, my co-workers set up a home automation channel on our Discord server to discuss their latest inventions. It made sense for me to join in and start my own project.</p>
 
                 <p>I had a few ideas, mostly revolving around smart LED lights or similar. I saw a <a href="#">cool project</a> where a temperature sensor is used to set the color of the lights in the room based on the current temperature. I thought it was pretty neat and wanted to do something similar. My first thought was to use the Philips Hue lights. I am a big fan of Razer peripherals, and recently Philips and Razer have <a href="#">teamed up</a> with some cool integrations between their products and SDKs.</p>
@@ -49,6 +47,8 @@
                 <p>The project is divided into several components.</p>
 
                 <h3>Phidget and temperature sensor (double check these models)</h3>
+
+                <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Philips Hue" style="width: 35%;height:50%;" />
 
                 <p><a href="#">Phidgets Inc</a> offers a range of I/O boards, digital and analog I/O components, and many other hardware components used for rapid prototyping of a wide variety of projects.</p>
 
