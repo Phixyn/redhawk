@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
-                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="max-width: 226px; max-height: 218px;" />
+                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" class="img-thumbnail" />
                 </div>
             </div> <!-- /.row /#content-intro -->
 
