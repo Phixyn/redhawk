@@ -20,7 +20,7 @@
 
                 <p>The links and images currently in use throughout the website are subject to change and may not work or represent the current state of a project. To keep up with updates to the website and new content introduced in each iteration, you may follow me on <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
 				
-				<p><a href="<?php echo $config['urls']['pages']; ?>/blog.php" title="Back to blog">&laquo; Back to blog</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->

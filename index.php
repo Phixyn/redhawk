@@ -12,7 +12,7 @@
         <!-- Main content -->
         <div class="container" id="main-content">
             <div class="row" id="content-intro">
-                <div class="col-sm-6 col-md-10">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
                     <h1>Hello! I am Phixyn</h1>
                     <p>My name is Alpeche Pancha. I work full-time as a <a href="https://en.wikipedia.org/wiki/Test_engineer" title="Wikipedia - Test Engineer">Software Test Engineer</a> and study part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree. I am based in Suffolk, work at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a> and study at the <a href="https://www.uos.ac.uk/" title="University of Suffolk">University of Suffolk</a>. Currently, I am on my second year at University.</p>
 
@@ -21,8 +21,8 @@
                     <p>If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
                 </div>
 
-                <div class="col-sm-6 col-md-2">
-                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="max-width: 226px; max-height: 218px;" />
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" class="img-thumbnail" />
                 </div>
             </div> <!-- /.row /#content-intro -->
 

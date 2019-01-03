@@ -10,7 +10,7 @@
         <div class="container" id="main-content">
 			<h1 class="main-content-main-title"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> Test Engineer <span style="color: #BBBBBB;">at</span> Adastral Park.</h1>
             <div class="row" id="content-intro">
-                <div class="col-sm-6 col-md-10">
+				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
 					<h1> What I do </h1>
 
 					<p> I am a Software Test Engineer for a small software development company based at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a>, Suffolk. I am studying part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree at the University of Suffolk. During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence. </p>
@@ -21,9 +21,9 @@
 					<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
                 </div>
 
-                <div class="col-sm-6 col-md-2">
-                    <img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" style="max-width: 226px; max-height: 218px;" />
-                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+					<img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" class="img-thumbnail" />
+				</div>
             </div> <!-- /.row /#content-intro -->
 
 			<div class="row">

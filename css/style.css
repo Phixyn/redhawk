@@ -2,11 +2,21 @@
 	DEFAULT / ELEMENTS
 ----------------------------------- */
 
-html, body {
-    height: 100%;
+html {
+	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
+	/* Required for having a sticky footer element that sticks to the bottom of
+	the page no matter how much content there is */
+	position: relative;
+	/* margin: 0; */ /* already in Bootstrap normalize.less */
+	min-height: 100%;
+	/* Must be the same as the margin-bottom of the element that is before the
+	footer element */
+	padding-bottom: 5%;
+	/* Rest of body style */
 	background: #121212 url('../img/zwartevilt.png');
     color: #FFFFFF;
 	font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +113,7 @@ label {
 
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-    box-shadow: 0 -2px 0 0 #A62139 inset;
+    box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
 }
 
 /* TODO: Add a pink box-shadow bottom to active links */
@@ -112,7 +122,7 @@ label {
 .navbar-inverse .navbar-nav > .active > a:hover
 {
     box-shadow: none;
-	/* box-shadow: 0 -2px 0 0 #A62139 inset; */
+	/* box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset; */
     background-color: transparent;
 }
 
@@ -139,7 +149,7 @@ label {
 
 #top-navbar {
 	border-bottom: 2px solid #A62139;
-	box-shadow: 0 0 7px 2px #A62139;
+	box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
 }
 
 /* -----------------------------------
@@ -207,13 +217,17 @@ label {
 	/* background-color: #131313; */
 	background-color: rgb(19, 19, 19);
 	background-color: rgba(19, 19, 19, 0.7);
-	/* box-shadow: 0 16px 20px 6px #000000; */
-	box-shadow: 0px 5px 20px 6px #000000;
+	/* box-shadow: 0 16px 20px 6px rgba(0, 0, 0, 1.0); */
+	box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 1.0);
 	/* padding: 1% 5%; */
 	padding-bottom: 2%;
 	/* color: #E9E1B4; */
 	color: #D9D9D9;
-    width: 80%;
+	width: 80%;
+	/* Required for having a sticky footer element that sticks to the bottom of
+	the page no matter how much content there is */
+	/* Must be the same as the padding-bottom of the body element */
+	margin-bottom: 5%;
 }
 
 #main-content h1 {
@@ -245,14 +259,16 @@ label {
     line-height: 1.5em;
 }
 
-#main-content ul {
+/* Moved to contact-form section */
+/*#main-content ul {
 	padding: 2% 0;
-}
+}*/
 
-#main-content li {
+/* Moved to contact-form section */
+/*#main-content li {
 	padding: 1% 3% 0 3%;
 	line-height: 1.5em;
-}
+}*/
 
 #main-content.container h1.main-content-main-title {
 	text-align: center;
@@ -273,10 +289,11 @@ label {
 	padding: 1% 0% 1% 4%;
 }
 
-/* TODO: to improve (task #2 on Taiga) */
-#content-intro img {
-	width: 100%;
-	height: 100%;
+/* Override Bootstrap's img-thumbnail */
+#content-intro img.img-thumbnail {
+	background-color: transparent;
+	border: 0 none transparent;
+	border-radius: 0;
 }
 
 #content-projects {
@@ -297,6 +314,36 @@ label {
 	margin: 2% auto;
 }
 
+/*.blog-post h1 {
+
+}
+*/
+
+/*.blog-post h2 {
+
+}*/
+
+.blog-post h3 {
+	padding: 1% 4% 2% 4%;
+}
+
+.blog-post img,
+.blog-post iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.blog-post ul,
+.blog-post ol {
+	padding: 0% 7%;
+}
+
+.blog-post ul li,
+.blog-post ol li {
+	padding: 0% 3% 0% 1%;
+	line-height: 1.5em;
+}
+
 .blog-header {
 	border-bottom: 1px solid #222222;
 	margin-bottom: 2%;
@@ -309,11 +356,7 @@ label {
 	font-size: 1.4em;
 }
 
-.blog-title-320px {
-	font-size: 1.2em;
-}
-
-.blog-title a, .blog-title-320px a {
+.blog-title a {
 	color: #A62139;
 }
 
@@ -338,6 +381,7 @@ div#contact-details.col-md-6 {
 
 #contact-form ul,
 #contact-details ul {
+	padding: 2% 0;
 	list-style: outside none none;
 }
 
@@ -351,7 +395,9 @@ div#contact-details.col-md-6 {
 #contact-form ul li {
 	width: 100%;
 	margin-bottom: 20px;
+	padding: 1% 3% 0 3%;
 	float: left;
+	line-height: 1.5em;
 }
 
 #contact-form li label,
@@ -436,11 +482,17 @@ div#contact-details.col-md-6 {
 ----------------------------------- */
 
 #footer {
+	/* Required for having a sticky footer element that sticks to the bottom of
+	the page no matter how much content there is */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/* Rest of footer style */
     margin-bottom: 0;
-    margin-top: 4%;
 	background-color: #000000;
 	border-top: 2px solid #A62139;
-	box-shadow: 0 0 5px 2px #A62139;
+	box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
     padding: 1% 0;
 }
 

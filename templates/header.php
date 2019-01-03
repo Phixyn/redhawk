@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="top-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="<?php echo $config['urls']['root']; ?>/index.php">Home <span class="sr-only">(current)</span></a></li>
-                        <li><a href="<?php echo $config['urls']['pages']; ?>/blog.php">Blog</a></li>
+                        <li><a href="<?php echo $config['urls']['blog']; ?>/">Blog</a></li>
                         <li><a href="<?php echo $config['urls']['pages']; ?>/projects.php">Projects</a></li>
                         <li><a href="https://www.twitch.tv/phixyn">Twitch</a></li>
                         <li><a href="<?php echo $config['urls']['pages']; ?>/about.php">About</a></li>
