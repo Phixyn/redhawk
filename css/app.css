@@ -13,6 +13,10 @@
 }
 /* End of FOUC prevention for top bar */
 
+div.thumbnail > img {
+    width: 100%;
+}
+
 #home-orbit-container,
 .orbit-slide {
     max-height: 25em;
@@ -23,6 +27,10 @@
 }
 
 #main-content-banner {
+    text-align: center;
+}
+
+.blog-post-image {
     text-align: center;
 }
 
