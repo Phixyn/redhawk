@@ -13,11 +13,24 @@
 }
 /* End of FOUC prevention for top bar */
 
-#home-orbit-container {
+#home-orbit-container,
+.orbit-slide {
     max-height: 25em;
+}
+
+#home-orbit-container {
     border-bottom: 2px solid #222222;
 }
 
 #main-content-banner {
     text-align: center;
+}
+
+.copyright-msg {
+	border-top: 1px solid #252525;
+	margin: 1% 5%;
+	padding-top: 1%;
+	color: #777777;
+	font-size: 0.9em;
+	text-align: right;
 }
