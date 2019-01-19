@@ -34,6 +34,22 @@ div.thumbnail > img {
     text-align: center;
 }
 
+#contact-details {
+    border: 1px dashed #333333;
+}
+
+#social-media-icons a {
+    padding-right: 1.5em;
+}
+
+#social-media-icons a img {
+    opacity: 0.85;
+}
+
+#social-media-icons a:hover img {
+    opacity: 1;
+}
+
 .copyright-msg {
 	border-top: 1px solid #252525;
 	margin: 1% 5%;
