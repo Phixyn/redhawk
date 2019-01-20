@@ -17,8 +17,7 @@ div.thumbnail > img {
     width: 100%;
 }
 
-#home-orbit-container,
-.orbit-slide {
+#home-orbit-container {
     max-height: 25em;
 }
 
