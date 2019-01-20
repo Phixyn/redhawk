@@ -38,8 +38,12 @@ div.thumbnail > img {
     border: 1px dashed #333333;
 }
 
+#social-media-icons p {
+    margin: 0 auto;
+}
+
 #social-media-icons a {
-    padding-right: 1.5em;
+    padding-right: 1.2em;
 }
 
 #social-media-icons a img {
