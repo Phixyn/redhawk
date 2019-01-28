@@ -13,6 +13,25 @@
 }
 /* End of FOUC prevention for top bar */
 
+.top-bar,
+.top-bar ul {
+    background-color: #000000;
+    color: #9d9d9d;
+}
+
+.top-bar {
+    border-bottom: 2px solid #A62139;
+    box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
+    padding: 0.3rem;
+}
+
+.menu .menu-text {
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5em;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
 div.thumbnail > img {
     width: 100%;
 }
