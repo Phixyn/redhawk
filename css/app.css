@@ -1,3 +1,21 @@
+body {
+  background: #121212 url('../img/zwartevilt.png');
+  color: #D9D9D9;
+  /* font-family: Arial, Helvetica, sans-serif;
+  line-height: 1; */
+}
+
+a {
+  color: #DB5A7F;
+}
+
+a:focus,
+a:hover
+{
+  color: #D993A7;
+  text-decoration: none;
+}
+
 /* Prevent FOUC (flash of unstyled content) for top bar */
 .no-js .top-bar {
   display: none;
@@ -72,11 +90,19 @@ div.thumbnail > img {
   opacity: 1;
 }
 
+#footer {
+  /* margin-bottom: 0; */
+  background-color: #000000;
+  border-top: 2px solid #A62139;
+  box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
+  padding: 0.9% 0;
+}
+
 .copyright-msg {
   border-top: 1px solid #252525;
   margin: 1% 5%;
-  padding-top: 1%;
+  padding-top: 0.7%;
   color: #777777;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: right;
 }
