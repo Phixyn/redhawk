@@ -82,6 +82,14 @@ a:hover
   color: #a92f41;
 }
 
+/* Down arrow for opening sub-menus */
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  /* border-color: #1779ba transparent transparent; */
+  /* border-color: #db5a7f transparent transparent; */
+  border-color: rgba(166, 33, 57, 1.0) transparent transparent;
+
+}
+
 div.thumbnail > img {
   width: 100%;
 }
