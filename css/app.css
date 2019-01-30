@@ -29,16 +29,16 @@ a:hover
 }
 /* End of FOUC prevention for top bar */
 
-.top-bar,
-.top-bar ul {
-  background-color: #000000;
-  color: #9d9d9d;
-}
-
 .top-bar {
   border-bottom: 2px solid #a62139;
   box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
   padding: 0.3rem;
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: #000000;
+  color: #9d9d9d;
 }
 
 .menu .menu-text {
@@ -55,8 +55,6 @@ a:hover
 .dropdown > li > a:hover {
   color: #ffffff;
 }
-
-.dropdown > li:nth-child(2) > a:nth-child(1)
 
 .dropdown > li > a:focus,
 .dropdown > li > a:hover {
@@ -84,7 +82,6 @@ a:hover
   color: #a92f41;
 }
 
-
 div.thumbnail > img {
   width: 100%;
 }
@@ -99,6 +96,16 @@ div.thumbnail > img {
 
 #main-content-banner {
   text-align: center;
+}
+
+.card {
+  border: 1px solid #444444;
+}
+
+.card,
+.card-divider {
+  background: #333333;
+  color: #d9d9d9;
 }
 
 .blog-post-image {
