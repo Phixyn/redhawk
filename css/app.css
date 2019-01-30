@@ -98,13 +98,28 @@ div.thumbnail > img {
   text-align: center;
 }
 
+/* -----------------------------------
+    CALLOUT
+----------------------------------- */
+
+.callout {
+  border: 1px solid rgba(68, 68, 68, 0.25);
+  background-color: rgba(25, 25, 25, 0.8);
+  color: #d9d9d9;
+}
+
+/* -----------------------------------
+    CARD
+----------------------------------- */
 .card {
-  border: 1px solid #444444;
+  /* border: 1px solid #3d3d3d; */
+  border: 1px solid rgba(68, 68, 68, 0.25);
 }
 
 .card,
 .card-divider {
-  background: #333333;
+  /* background: #333333; */
+  background-color: rgba(25, 25, 25, 0.8);
   color: #d9d9d9;
 }
 
