@@ -168,6 +168,7 @@ div.thumbnail > img {
 
 .callout {
   border: 1px solid rgba(68, 68, 68, 0.25);
+  /* TODO: Improve this color. Maybe darker or more transparent? */
   background-color: rgba(25, 25, 25, 0.8);
   color: #d9d9d9;
 }
