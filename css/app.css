@@ -150,11 +150,11 @@ div.thumbnail > img {
 }
 
 #home-orbit-container {
-  max-height: 25em;
-}
-
-#home-orbit-container {
+  /* Make sure the top bar's box shadow is visible above the orbit.
+   * position: relative declared in .orbit, so not needed here. */
+  z-index: -1;
   border-bottom: 2px solid #222222;
+  max-height: 25em;
 }
 
 /* -----------------------------------
