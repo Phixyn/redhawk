@@ -1,7 +1,7 @@
 /*
  * TODO
  *  Color-related bla at the top
- *  Breadcrumbs (used in project details page)
+ *  Replace all % values with rem (see https://foundation.zurb.com/sites/docs/typography-base.html#type-size)
  */
 
 /* -----------------------------------
@@ -10,10 +10,15 @@
 
 body {
   background: #121212 url('../img/zwartevilt.png');
+}
+
+body,
+.breadcrumbs li {
   color: #d9d9d9;
 }
 
-a {
+a,
+.breadcrumbs a {
   color: #db5a7f;
 }
 
