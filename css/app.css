@@ -1,63 +1,256 @@
-/* Prevent FOUC (flash of unstyled content) for top bar */
+/*
+ * TODO
+ *  Color-related bla at the top
+ *  Replace all % values with rem (see https://foundation.zurb.com/sites/docs/typography-base.html#type-size)
+ */
+
+/* -----------------------------------
+    HTML ELEMENTS
+----------------------------------- */
+
+body {
+  background: #121212 url('../img/zwartevilt.png');
+}
+
+body,
+.breadcrumbs li {
+  color: #d9d9d9;
+}
+
+a,
+.breadcrumbs a {
+  color: #db5a7f;
+}
+
+a:focus,
+a:hover
+{
+  color: #d993a7;
+  text-decoration: none;
+}
+
+hr {
+  border-bottom: 1px solid #424242;
+}
+
+/* -----------------------------------
+    TOP BAR
+----------------------------------- */
+
+/* Prevent FOUC (Flash Of Unstyled Content) for top bar */
 .no-js .top-bar {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 40em) {
-    .no-js .top-bar {
-        display: block;
-    }
-    .no-js .title-bar {
-        display: none;
-    }
+  .no-js .top-bar {
+    display: block;
+  }
+  .no-js .title-bar {
+    display: none;
+  }
 }
 /* End of FOUC prevention for top bar */
 
+.top-bar {
+  border-bottom: 2px solid #a62139;
+  box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
+  padding: 0.1rem;
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: #000000;
+  color: #9d9d9d;
+}
+
+/* -----------------------------------
+    MENUS
+----------------------------------- */
+
+.menu .menu-text {
+  padding: 0 2.5rem;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.menu a,
+.dropdown > li > a {
+  color: #9d9d9d;
+}
+
+.menu a:focus,
+.menu a:hover,
+.dropdown > li > a:focus,
+.dropdown > li > a:hover {
+  color: #ffffff;
+}
+
+.dropdown > li > a:focus,
+.dropdown > li > a:hover {
+  box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
+}
+
+/* TODO: Add a pink box-shadow bottom to active links? */
+/* .dropdown.menu > li.is-active > a,
+.dropdown.menu > li.is-active > a:focus,
+.dropdown.menu > li.is-active > a:hover
+{
+  box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
+} */
+
+.dropdown.menu > li.is-active > a,
+.dropdown.menu > li.is-active > a:focus
+{
+  color: #a62139;
+}
+
+.dropdown.menu > li.is-active > a:hover
+{
+  color: #a92f41;
+}
+
+/* Down arrow for opening sub-menus */
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: rgba(166, 33, 57, 1.0) transparent transparent;
+}
+
+.is-dropdown-submenu.js-dropdown-active {
+  border: 1px solid rgba(68, 68, 68, 0.25);
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0.3rem;
+}
+
+li.is-submenu-item > a:focus,
+li.is-submenu-item > a:hover {
+  background: rgba(0, 0, 0, 1.0);
+}
+
+/* -----------------------------------
+    THUMBNAIL
+----------------------------------- */
+
+.thumbnail {
+  /* border: 1px solid rgba(68, 68, 68, 0.25); */
+  /* For now, 4px border around it is fine */
+  border-color: rgba(68, 68, 68, 0.25);
+}
+
 div.thumbnail > img {
-    width: 100%;
+  width: 100%;
+}
+
+/* -----------------------------------
+    ORBIT (CAROUSEL)
+----------------------------------- */
+
+.orbit-bullets button {
+	background-color: #333333;
+}
+
+.orbit-bullets button:hover,
+.orbit-bullets button.is-active {
+	background-color: #666666;
 }
 
 #home-orbit-container {
-    max-height: 25em;
+  /* Make sure the top bar's box shadow is visible above the orbit.
+   * position: relative declared in .orbit, so not needed here. */
+  z-index: -1;
+  border-bottom: 2px solid #222222;
+  max-height: 25em;
 }
 
-#home-orbit-container {
-    border-bottom: 2px solid #222222;
+/* -----------------------------------
+    CALLOUT
+----------------------------------- */
+
+.callout {
+  border: 1px solid rgba(68, 68, 68, 0.25);
+  /* TODO: Improve this color. Maybe darker or more transparent? */
+  background-color: rgba(25, 25, 25, 0.8);
+  color: #d9d9d9;
 }
+
+/* -----------------------------------
+    CARD
+----------------------------------- */
+.card {
+  /* border: 1px solid #3d3d3d; */
+  border: 1px solid rgba(68, 68, 68, 0.25);
+}
+
+.card,
+.card-divider {
+  /* background: #333333; */
+  background-color: rgba(25, 25, 25, 0.8);
+  color: #d9d9d9;
+}
+
+/* -----------------------------------
+    FORMS
+----------------------------------- */
+
+.input-group-label {
+	/* border: 1px solid #cacaca; */
+  /* background: #e6e6e6; */
+  border: 1px solid rgba(68, 68, 68, 0.25);
+  background: rgba(25, 25, 25, 0.8);
+	color: #d9d9d9; /* TODO: Should be darker */
+}
+
+/* TODO: Find out how much this change affects */
+::placeholder {
+	color: #9d9d9d;
+}
+
+/* -----------------------------------
+    OTHER
+----------------------------------- */
 
 #main-content-banner {
-    text-align: center;
+  text-align: center;
 }
 
 .blog-post-image {
-    text-align: center;
+  text-align: center;
 }
 
 #contact-details {
-    border: 1px dashed #333333;
+  border: 1px dashed #333333;
 }
 
 #social-media-icons p {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 #social-media-icons a {
-    padding-right: 1.2em;
+  padding-right: 1.2em;
 }
 
 #social-media-icons a img {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 #social-media-icons a:hover img {
-    opacity: 1;
+  opacity: 1;
+}
+
+#footer {
+  /* margin-bottom: 0; */
+  background-color: #000000;
+  border-top: 2px solid #a62139;
+  box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
+  margin-top: 5%;
+  padding: 0.9% 0;
 }
 
 .copyright-msg {
-	border-top: 1px solid #252525;
-	margin: 1% 5%;
-	padding-top: 1%;
-	color: #777777;
-	font-size: 0.9em;
-	text-align: right;
+  border-top: 1px solid #252525;
+  margin: 1% 5%;
+  padding-top: 0.7%;
+  color: #777777;
+  font-size: 0.8em;
+  text-align: right;
 }
