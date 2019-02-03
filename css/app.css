@@ -1,3 +1,13 @@
+/*
+ * TODO
+ *  Color-related bla at the top
+ *  Breadcrumbs (used in project details page)
+ */
+
+/* -----------------------------------
+    HTML ELEMENTS
+----------------------------------- */
+
 body {
   background: #121212 url('../img/zwartevilt.png');
   color: #d9d9d9;
@@ -22,7 +32,7 @@ hr {
     TOP BAR
 ----------------------------------- */
 
-/* Prevent FOUC (flash of unstyled content) for top bar */
+/* Prevent FOUC (Flash Of Unstyled Content) for top bar */
 .no-js .top-bar {
   display: none;
 }
@@ -102,16 +112,37 @@ hr {
 }
 
 /* WIP, conflicts with Orbit images */
-/* .is-dropdown-submenu.js-dropdown-active {
-  background: transparent;
-} */
+.is-dropdown-submenu.js-dropdown-active {
+  /* background: transparent; */
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 5%;
+}
 
 /* -----------------------------------
     THUMBNAIL
 ----------------------------------- */
 
+.thumbnail {
+  /* border: 1px solid rgba(68, 68, 68, 0.25); */
+  /* For now, 4px border around it is fine */
+  border-color: rgba(68, 68, 68, 0.25);
+}
+
 div.thumbnail > img {
   width: 100%;
+}
+
+/* -----------------------------------
+    ORBIT (CAROUSEL)
+----------------------------------- */
+
+.orbit-bullets button {
+	background-color: #333333;
+}
+
+.orbit-bullets button:hover,
+.orbit-bullets button.is-active {
+	background-color: #666666;
 }
 
 #home-orbit-container {
@@ -120,10 +151,6 @@ div.thumbnail > img {
 
 #home-orbit-container {
   border-bottom: 2px solid #222222;
-}
-
-#main-content-banner {
-  text-align: center;
 }
 
 /* -----------------------------------
@@ -166,6 +193,14 @@ div.thumbnail > img {
 /* TODO: Find out how much this change affects */
 ::placeholder {
 	color: #9d9d9d;
+}
+
+/* -----------------------------------
+    OTHER
+----------------------------------- */
+
+#main-content-banner {
+  text-align: center;
 }
 
 .blog-post-image {
