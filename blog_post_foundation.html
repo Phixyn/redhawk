@@ -37,7 +37,6 @@
               <li><a href="https://twitter.com/Phixyn">Twitter</a></li>
               <li><a href="https://www.facebook.com/phixyn">Facebook</a></li>
               <li><a href="https://www.linkedin.com/in/alpechepancha">LinkedIn</a></li>
-              <hr />
               <li><a href="https://github.com/Phixyn">Github</a></li>
               <li><a href="https://www.livecoding.tv/phixyn/">LiveCoding</a></li>
               <li><a href="https://www.youtube.com/user/Alpeche21/">Youtube</a></li>
@@ -62,9 +61,19 @@
           <small class="blog-meta">Posted on February 20, 2018 in <a href="#">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
         </div> <!-- .cell -->
-        <div class="cell blog-post-image">
+
+        <!-- We can have a simple image without a caption... -->
+        <!-- <div class="cell blog-post-image">
           <img class="thumbnail" src="static/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" />
-        </div> <!-- .cell -->
+        </div> !-- .cell .blog-post-image -->
+
+        <!-- ... or with a caption below it. -->
+        <div class="cell blog-post-image">
+          <figure>
+            <img class="thumbnail" src="static/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" />
+            <figcaption><em>The Internet of Things: Everything is connected.</em></figcaption>
+          </figure>
+        </div> <!-- .cell .blog-post-image -->
 
         <div class="cell">
           <p class="lead">Over the last two decades, technology has grown at an unprecedented pace. Many emerging technologies deserve our attention, including new Artificial Intelligence (AI) and machine learning algorithms, cryptocurrency, Internet of Things (IoT) and Virtual and Augmented Reality. When we take a look at game development, AI, VR and AR seem to be taking the spotlight, rightfully so. However, I believe that there is also place for IoT in game development, which deserves to be explored further.</p>
@@ -114,7 +123,13 @@
 
         <div class="cell">
           <hr />
-          <p><a href="blog_foundation.html" title="Back to blog">&laquo; Back to blog</a></p>
+          <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+              <li><a href="index_foundation.html">Home</a></li>
+              <li><a href="blog_foundation.html">Blog</a></li>
+              <li><span class="show-for-sr">Current: </span>Blog Post Title</li>
+            </ul>
+          </nav>
         </div> <!-- .cell -->
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
