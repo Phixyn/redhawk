@@ -50,7 +50,7 @@ hr {
 .top-bar {
   border-bottom: 2px solid #a62139;
   box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
-  padding: 0.3rem;
+  padding: 0.1rem;
 }
 
 .top-bar,
@@ -64,16 +64,20 @@ hr {
 ----------------------------------- */
 
 .menu .menu-text {
-  padding: 0.5rem 2.5rem;
+  padding: 0 2.5rem;
   font-size: 1.5em;
   font-weight: 100;
   letter-spacing: 5px;
 }
 
+.menu a,
 .dropdown > li > a {
   color: #9d9d9d;
 }
 
+.menu a:focus,
+.menu a:hover,
+.dropdown > li > a:focus,
 .dropdown > li > a:hover {
   color: #ffffff;
 }
@@ -83,15 +87,13 @@ hr {
   box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
 }
 
-/* TODO: Add a pink box-shadow bottom to active links */
-.dropdown.menu > li.is-active > a,
+/* TODO: Add a pink box-shadow bottom to active links? */
+/* .dropdown.menu > li.is-active > a,
 .dropdown.menu > li.is-active > a:focus,
 .dropdown.menu > li.is-active > a:hover
 {
-  box-shadow: none;
-  /* box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset; */
-  background-color: transparent;
-}
+  box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
+} */
 
 .dropdown.menu > li.is-active > a,
 .dropdown.menu > li.is-active > a:focus
@@ -106,16 +108,18 @@ hr {
 
 /* Down arrow for opening sub-menus */
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  /* border-color: #1779ba transparent transparent; */
-  /* border-color: #db5a7f transparent transparent; */
   border-color: rgba(166, 33, 57, 1.0) transparent transparent;
 }
 
-/* WIP, conflicts with Orbit images */
 .is-dropdown-submenu.js-dropdown-active {
-  /* background: transparent; */
+  border: 1px solid rgba(68, 68, 68, 0.25);
   background: rgba(0, 0, 0, 0.5);
-  margin-top: 5%;
+  margin-top: 0.3rem;
+}
+
+li.is-submenu-item > a:focus,
+li.is-submenu-item > a:hover {
+  background: rgba(0, 0, 0, 1.0);
 }
 
 /* -----------------------------------
