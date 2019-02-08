@@ -214,6 +214,7 @@ li.is-submenu-item > a:hover {
 /* -----------------------------------
     CARD
 ----------------------------------- */
+
 .card {
   /* border: 1px solid #3d3d3d; */
   border: 1px solid var(--border-main-color);
@@ -243,16 +244,17 @@ li.is-submenu-item > a:hover {
 }
 
 /* -----------------------------------
-    OTHER
+    GENERAL / OTHER
 ----------------------------------- */
 
-#main-content-banner {
-  text-align: center;
-}
-
+#main-content-banner,
 .blog-post-image {
   text-align: center;
 }
+
+/* -----------------------------------
+    CONTACT DETAILS
+----------------------------------- */
 
 #contact-details {
   border: 1px dashed var(--button-main-color);
@@ -273,6 +275,10 @@ li.is-submenu-item > a:hover {
 #social-media-icons a:hover img {
   opacity: 1;
 }
+
+/* -----------------------------------
+    FOOTER
+----------------------------------- */
 
 #footer {
   background-color: var(--background-dark-color);
