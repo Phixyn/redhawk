@@ -17,7 +17,30 @@ TODO:
     COLORS
 ----------------------------------- */
 
-/* TODO */
+:root {
+  --background-dark-color: #000000;
+  --background-dark-color-alpha: rgba(0, 0, 0, 1.0);
+  --background-dark-transparent-color: rgba(0, 0, 0, 0.5);
+  --background-main-color: #121212;
+  /* TODO: Improve this color. Maybe darker or more transparent? */
+  --sub-section-background-color: rgba(25, 25, 25, 0.8);
+  --separator-darker-color: #222222;
+  --separator-dark-color: #252525;
+  --button-main-color: #333333;   /* Orbit bullet */
+  /* --border-main-color: #3d3d3d; (Not currently used) */
+  --border-main-color: rgba(68, 68, 68, 0.25);
+  --separator-main-color: #424242;
+  --button-hover-color: #666666;  /* Orbit bullet */
+  --text-dark-color: #777777;     /* Used in footer text */
+  --menu-link-main-color: #9d9d9d;
+  --text-main-color: #d9d9d9;
+  --menu-link-hover-color: #ffffff;
+  --link-main-color: #db5a7f;
+  --link-hover-color: #d993a7;
+  --separator-accent-color: #a62139;
+  --highlight-color: #a92f41;
+  --shadow-main-color: rgba(166, 33, 57, 1.0);
+}
 
 /* -----------------------------------
     HTML ELEMENTS
@@ -139,7 +162,7 @@ hr {
 
 li.is-submenu-item > a:focus,
 li.is-submenu-item > a:hover {
-  background: rgba(0, 0, 0, 1.0);
+  background: rgba(0, 0, 0, 1.0); /* TODO change to #000000 */
 }
 
 /* -----------------------------------
@@ -265,7 +288,7 @@ li.is-submenu-item > a:hover {
   background-color: #000000;
   border-top: 2px solid #a62139;
   box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
-  margin-top: 6em;
+  /* margin-top: 6em; */
   padding: 1.11em 0;
 }
 
@@ -279,31 +302,27 @@ li.is-submenu-item > a:hover {
 }
 
 /* -----------------------------------
-    TEMP HACKS FOR STICKY FOOTER
+    HACK FOR STICKY FOOTER
 
-Sometimes required for having a sticky
-footer element that sticks to the
-bottom of the page no matter how
-much content there is.
-Apparently most of this isn't needed,
-but we should test in different
-browsers.
+Required for having a footer div that
+sticks to the bottom of the page no
+matter how much content the page has.
 ----------------------------------- */
 
-/* html {
+html {
 	height: 100%;
-} */
+}
 
-/* body {
-	position: relative; */
-	/* margin: 0; */ /* already present? */
-	/* min-height: 100%; */
+body {
+	position: relative;
+	/* margin: 0; */ /* already present */
+	min-height: 100%;
 	/* Must be the same as the margin-bottom of the element that is before the
 	footer element */
-	/* padding-bottom: 5%;
-} */
+	padding-bottom: 6em;
+}
 
-/* .grid-container { */
+.grid-container {
 	/* Must be the same as the padding-bottom of the body element */
-  /* margin-bottom: 5%;
-} */
+  margin-bottom: 6em;
+}
