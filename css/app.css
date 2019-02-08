@@ -20,7 +20,6 @@ TODO:
   --background-main-color: #121212;
   /* TODO: Improve this color. Maybe darker or more transparent? */
   --sub-section-background-color: rgba(25, 25, 25, 0.8);
-  --separator-darker-color: #222222;
   --separator-dark-color: #252525;
   --button-main-color: #333333;   /* Orbit bullet */
   /* --border-main-color: #3d3d3d; */
@@ -194,7 +193,7 @@ li.is-submenu-item > a:hover {
   /* Make sure the top bar's box shadow is visible above the orbit.
    * position: relative declared in .orbit, so not needed here. */
   z-index: -1;
-  border-bottom: 2px solid var(--separator-darker-color);
+  border-bottom: 2px solid var(--separator-dark-color);
   /* height: 423.25px; */
   max-height: 25em;
 }
