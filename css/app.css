@@ -1,11 +1,18 @@
-/*
- * TODO
- *  Move color-related bla at the top
- *  Add author at the top of this file? And other metadata
- *  Fix for sticky footer
- *  Buttons and labels (dark theme colors)
- *  Orbit + Orbit images
- */
+/* -----------------------------------
+ZURB Foundation Phixed Dark Theme
+
+Author:  Phixyn
+Version: 0.0.3
+----------------------------------- */
+
+/* -----------------------------------
+TODO:
+ * Move color-related bla at the top
+   * Variables
+ * Fix for sticky footer
+ * Buttons and labels (dark theme colors)
+ * Orbit + Orbit images
+----------------------------------- */
 
 /* -----------------------------------
     COLORS
@@ -146,7 +153,7 @@ li.is-submenu-item > a:hover {
   border-color: rgba(68, 68, 68, 0.25);
 }
 
-div.thumbnail > img {
+.thumbnail > img {
   width: 100%;
 }
 
