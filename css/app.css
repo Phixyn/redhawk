@@ -5,9 +5,8 @@ Version: 0.0.3
 Author:  Phixyn
 
 TODO:
- * Better color property names
  * Buttons and labels (dark theme colors)
- * Orbit + Orbit images
+ * Orbit height + Orbit images
 ----------------------------------- */
 
 /* -----------------------------------
@@ -15,28 +14,28 @@ TODO:
 ----------------------------------- */
 
 :root {
+  --background-main-color: #121212;
   --background-dark-color: #000000;
   --background-dark-transparent-color: rgba(0, 0, 0, 0.5);
-  --background-main-color: #121212;
   /* TODO: Improve this color. Maybe darker or more transparent? */
-  --sub-section-background-color: rgba(25, 25, 25, 0.8);
-  --separator-dark-color: #252525;
-  --button-main-color: #333333;   /* Orbit bullet */
+  --background-sub-section-color: rgba(25, 25, 25, 0.8);
   /* --border-main-color: #3d3d3d; */
   /* --border-main-color: #cacaca; */
   --border-main-color: rgba(68, 68, 68, 0.25);
-  --separator-main-color: #424242;
-  --button-hover-color: #666666;  /* Orbit bullet */
-  --text-dark-color: #777777;     /* Used in footer text */
-  --menu-link-main-color: #9d9d9d;
   --text-main-color: #d9d9d9;
-  --menu-link-hover-color: #ffffff;
+  --text-dark-color: #777777;
   --link-main-color: #db5a7f;
   --link-hover-color: #d993a7;
+  --menu-link-main-color: #9d9d9d;
+  --menu-link-hover-color: #ffffff;
+  --separator-main-color: #424242;
+  --separator-dark-color: #252525;
   --separator-accent-color: #a62139;
   /* Shadow can be lighter/darker than accent, if desired */
   --shadow-main-color: #a62139;
-  --highlight-color: #a92f41;
+  /* Orbit bullets */
+  --button-main-color: #333333;
+  --button-hover-color: #666666;
 }
 
 /* -----------------------------------
@@ -143,7 +142,7 @@ hr {
 
 .dropdown.menu > li.is-active > a:hover
 {
-  color: var(--highlight-color);
+  color: var(--separator-accent-color);
 }
 
 /* Down arrow for opening sub-menus */
@@ -204,7 +203,7 @@ li.is-submenu-item > a:hover {
 
 .callout {
   border: 1px solid var(--border-main-color);
-  background-color: var(--sub-section-background-color);
+  background-color: var(--background-sub-section-color);
   color: var(--text-main-color);
 }
 
@@ -220,7 +219,7 @@ li.is-submenu-item > a:hover {
 .card,
 .card-divider {
   /* background: var(--button-main-color); */
-  background-color: var(--sub-section-background-color);
+  background-color: var(--background-sub-section-color);
   color: var(--text-main-color);
 }
 
@@ -231,7 +230,7 @@ li.is-submenu-item > a:hover {
 .input-group-label {
   /* background: #e6e6e6; */
   border: 1px solid var(--border-main-color);
-  background: var(--sub-section-background-color);
+  background: var(--background-sub-section-color);
   color: var(--text-main-color); /* TODO: Should be darker */
 }
 
