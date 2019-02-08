@@ -1,8 +1,17 @@
 /*
  * TODO
- *  Color-related bla at the top
- *  Replace all % values with rem (see https://foundation.zurb.com/sites/docs/typography-base.html#type-size)
+ *  Move color-related bla at the top
+ *  Add author at the top of this file? And other metadata
+ *  Fix for sticky footer
+ *  Buttons and labels (dark theme colors)
+ *  Orbit + Orbit images
  */
+
+/* -----------------------------------
+    COLORS
+----------------------------------- */
+
+/* TODO */
 
 /* -----------------------------------
     HTML ELEMENTS
@@ -159,6 +168,7 @@ div.thumbnail > img {
    * position: relative declared in .orbit, so not needed here. */
   z-index: -1;
   border-bottom: 2px solid #222222;
+  /* height: 423.25px; */
   max-height: 25em;
 }
 
@@ -226,6 +236,7 @@ div.thumbnail > img {
 }
 
 #social-media-icons a {
+  /* TODO: change to rem? */
   padding-right: 1.2em;
 }
 
@@ -242,14 +253,14 @@ div.thumbnail > img {
   background-color: #000000;
   border-top: 2px solid #a62139;
   box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
-  margin-top: 5%;
-  padding: 0.9% 0;
+  margin-top: 6em;
+  padding: 1.11em 0;
 }
 
 .copyright-msg {
   border-top: 1px solid #252525;
-  margin: 1% 5%;
-  padding-top: 0.7%;
+  margin: 1.48em 7.4em;
+  padding-top: 1.04em;
   color: #777777;
   font-size: 0.8em;
   text-align: right;
