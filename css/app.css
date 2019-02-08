@@ -1,11 +1,9 @@
 /* -----------------------------------
 ZURB Foundation Phixed Dark Theme
 
-Author:  Phixyn
 Version: 0.0.3
------------------------------------ */
+Author:  Phixyn
 
-/* -----------------------------------
 TODO:
  * Better color property names
  * Buttons and labels (dark theme colors)
@@ -37,8 +35,9 @@ TODO:
   --link-main-color: #db5a7f;
   --link-hover-color: #d993a7;
   --separator-accent-color: #a62139;
+  /* Shadow can be lighter/darker than accent, if desired */
+  --shadow-main-color: #a62139;
   --highlight-color: #a92f41;
-  --shadow-main-color: rgba(166, 33, 57, 1.0); /* TODO: remove alpha */
 }
 
 /* -----------------------------------
@@ -206,7 +205,6 @@ li.is-submenu-item > a:hover {
 
 .callout {
   border: 1px solid var(--border-main-color);
-  /* TODO: Improve this color. Maybe darker or more transparent? */
   background-color: var(--sub-section-background-color);
   color: var(--text-main-color);
 }
