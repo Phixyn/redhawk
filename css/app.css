@@ -1,7 +1,7 @@
 /* -----------------------------------
 ZURB Foundation Phixed Dark Theme
 
-Version: 0.0.3
+Version: 0.1.0
 Author:  Phixyn
 
 TODO:
@@ -19,6 +19,7 @@ TODO:
   --background-dark-transparent-color: rgba(0, 0, 0, 0.5);
   /* TODO: Improve this color. Maybe darker or more transparent? */
   --background-sub-section-color: rgba(25, 25, 25, 0.8);
+  /* --background-sub-section-color: #e6e6e6; */
   /* --border-main-color: #3d3d3d; */
   /* --border-main-color: #cacaca; */
   --border-main-color: rgba(68, 68, 68, 0.25);
@@ -57,8 +58,7 @@ a,
 }
 
 a:focus,
-a:hover
-{
+a:hover {
   color: var(--link-hover-color);
   text-decoration: none;
 }
@@ -129,19 +129,16 @@ hr {
 /* TODO: Add a pink box-shadow bottom to active links? */
 /* .dropdown.menu > li.is-active > a,
 .dropdown.menu > li.is-active > a:focus,
-.dropdown.menu > li.is-active > a:hover
-{
+.dropdown.menu > li.is-active > a:hover {
   box-shadow: 0 -2px 0 0 var(--shadow-main-color) inset;
 } */
 
 .dropdown.menu > li.is-active > a,
-.dropdown.menu > li.is-active > a:focus
-{
+.dropdown.menu > li.is-active > a:focus {
   color: var(--separator-accent-color);
 }
 
-.dropdown.menu > li.is-active > a:hover
-{
+.dropdown.menu > li.is-active > a:hover {
   color: var(--separator-accent-color);
 }
 
@@ -228,10 +225,10 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 
 .input-group-label {
-  /* background: #e6e6e6; */
   border: 1px solid var(--border-main-color);
   background: var(--background-sub-section-color);
-  color: var(--text-main-color); /* TODO: Should be darker */
+  /* TODO: Should be darker? */
+  color: var(--text-main-color);
 }
 
 /* TODO: Find out how much this change affects */
@@ -309,8 +306,8 @@ body {
 	position: relative;
 	/* margin: 0; */ /* already present */
 	min-height: 100%;
-	/* Must be the same as the margin-bottom of the element that is before the
-	footer element */
+  /* Must be the same as the margin-bottom of the element that is
+  before the footer element. */
 	padding-bottom: 6em;
 }
 
