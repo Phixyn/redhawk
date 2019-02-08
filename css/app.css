@@ -7,8 +7,7 @@ Version: 0.0.3
 
 /* -----------------------------------
 TODO:
- * Move color-related bla at the top
-   * Variables
+ * Better color property names
  * Buttons and labels (dark theme colors)
  * Orbit + Orbit images
 ----------------------------------- */
@@ -19,7 +18,6 @@ TODO:
 
 :root {
   --background-dark-color: #000000;
-  --background-dark-color-alpha: rgba(0, 0, 0, 1.0);
   --background-dark-transparent-color: rgba(0, 0, 0, 0.5);
   --background-main-color: #121212;
   /* TODO: Improve this color. Maybe darker or more transparent? */
@@ -27,7 +25,8 @@ TODO:
   --separator-darker-color: #222222;
   --separator-dark-color: #252525;
   --button-main-color: #333333;   /* Orbit bullet */
-  /* --border-main-color: #3d3d3d; (Not currently used) */
+  /* --border-main-color: #3d3d3d; */
+  /* --border-main-color: #cacaca; */
   --border-main-color: rgba(68, 68, 68, 0.25);
   --separator-main-color: #424242;
   --button-hover-color: #666666;  /* Orbit bullet */
@@ -39,7 +38,7 @@ TODO:
   --link-hover-color: #d993a7;
   --separator-accent-color: #a62139;
   --highlight-color: #a92f41;
-  --shadow-main-color: rgba(166, 33, 57, 1.0);
+  --shadow-main-color: rgba(166, 33, 57, 1.0); /* TODO: remove alpha */
 }
 
 /* -----------------------------------
@@ -47,28 +46,28 @@ TODO:
 ----------------------------------- */
 
 body {
-  background: #121212 url('../img/zwartevilt.png');
+  background: var(--background-main-color) url('../img/zwartevilt.png');
 }
 
 body,
 .breadcrumbs li {
-  color: #d9d9d9;
+  color: var(--text-main-color);
 }
 
 a,
 .breadcrumbs a {
-  color: #db5a7f;
+  color: var(--link-main-color);
 }
 
 a:focus,
 a:hover
 {
-  color: #d993a7;
+  color: var(--link-hover-color);
   text-decoration: none;
 }
 
 hr {
-  border-bottom: 1px solid #424242;
+  border-bottom: 1px solid var(--separator-main-color);
 }
 
 /* -----------------------------------
@@ -91,15 +90,15 @@ hr {
 /* End of FOUC prevention for top bar */
 
 .top-bar {
-  border-bottom: 2px solid #a62139;
-  box-shadow: 0 0 7px 2px rgba(166, 33, 57, 1.0);
+  border-bottom: 2px solid var(--separator-accent-color);
+  box-shadow: 0 0 7px 2px var(--shadow-main-color);
   padding: 0.1rem;
 }
 
 .top-bar,
 .top-bar ul {
-  background-color: #000000;
-  color: #9d9d9d;
+  background-color: var(--background-dark-color);
+  color: var(--menu-link-main-color);
 }
 
 /* -----------------------------------
@@ -115,19 +114,19 @@ hr {
 
 .menu a,
 .dropdown > li > a {
-  color: #9d9d9d;
+  color: var(--menu-link-main-color);
 }
 
 .menu a:focus,
 .menu a:hover,
 .dropdown > li > a:focus,
 .dropdown > li > a:hover {
-  color: #ffffff;
+  color: var(--menu-link-hover-color);
 }
 
 .dropdown > li > a:focus,
 .dropdown > li > a:hover {
-  box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
+  box-shadow: 0 -2px 0 0 var(--shadow-main-color) inset;
 }
 
 /* TODO: Add a pink box-shadow bottom to active links? */
@@ -135,34 +134,34 @@ hr {
 .dropdown.menu > li.is-active > a:focus,
 .dropdown.menu > li.is-active > a:hover
 {
-  box-shadow: 0 -2px 0 0 rgba(166, 33, 57, 1.0) inset;
+  box-shadow: 0 -2px 0 0 var(--shadow-main-color) inset;
 } */
 
 .dropdown.menu > li.is-active > a,
 .dropdown.menu > li.is-active > a:focus
 {
-  color: #a62139;
+  color: var(--separator-accent-color);
 }
 
 .dropdown.menu > li.is-active > a:hover
 {
-  color: #a92f41;
+  color: var(--highlight-color);
 }
 
 /* Down arrow for opening sub-menus */
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  border-color: rgba(166, 33, 57, 1.0) transparent transparent;
+  border-color: var(--shadow-main-color) transparent transparent;
 }
 
 .is-dropdown-submenu.js-dropdown-active {
-  border: 1px solid rgba(68, 68, 68, 0.25);
-  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-main-color);
+  background: var(--background-dark-transparent-color);
   margin-top: 0.3rem;
 }
 
 li.is-submenu-item > a:focus,
 li.is-submenu-item > a:hover {
-  background: rgba(0, 0, 0, 1.0); /* TODO change to #000000 */
+  background: var(--background-dark-color);
 }
 
 /* -----------------------------------
@@ -170,9 +169,9 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 
 .thumbnail {
-  /* border: 1px solid rgba(68, 68, 68, 0.25); */
+  /* border: 1px solid var(--border-main-color); */
   /* For now, 4px border around it is fine */
-  border-color: rgba(68, 68, 68, 0.25);
+  border-color: var(--border-main-color);
 }
 
 .thumbnail > img {
@@ -184,19 +183,19 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 
 .orbit-bullets button {
-	background-color: #333333;
+  background-color: var(--button-main-color);
 }
 
 .orbit-bullets button:hover,
 .orbit-bullets button.is-active {
-	background-color: #666666;
+  background-color: var(--button-hover-color);
 }
 
 #home-orbit-container {
   /* Make sure the top bar's box shadow is visible above the orbit.
    * position: relative declared in .orbit, so not needed here. */
   z-index: -1;
-  border-bottom: 2px solid #222222;
+  border-bottom: 2px solid var(--separator-darker-color);
   /* height: 423.25px; */
   max-height: 25em;
 }
@@ -206,10 +205,10 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 
 .callout {
-  border: 1px solid rgba(68, 68, 68, 0.25);
+  border: 1px solid var(--border-main-color);
   /* TODO: Improve this color. Maybe darker or more transparent? */
-  background-color: rgba(25, 25, 25, 0.8);
-  color: #d9d9d9;
+  background-color: var(--sub-section-background-color);
+  color: var(--text-main-color);
 }
 
 /* -----------------------------------
@@ -217,14 +216,14 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 .card {
   /* border: 1px solid #3d3d3d; */
-  border: 1px solid rgba(68, 68, 68, 0.25);
+  border: 1px solid var(--border-main-color);
 }
 
 .card,
 .card-divider {
-  /* background: #333333; */
-  background-color: rgba(25, 25, 25, 0.8);
-  color: #d9d9d9;
+  /* background: var(--button-main-color); */
+  background-color: var(--sub-section-background-color);
+  color: var(--text-main-color);
 }
 
 /* -----------------------------------
@@ -232,16 +231,15 @@ li.is-submenu-item > a:hover {
 ----------------------------------- */
 
 .input-group-label {
-	/* border: 1px solid #cacaca; */
   /* background: #e6e6e6; */
-  border: 1px solid rgba(68, 68, 68, 0.25);
-  background: rgba(25, 25, 25, 0.8);
-	color: #d9d9d9; /* TODO: Should be darker */
+  border: 1px solid var(--border-main-color);
+  background: var(--sub-section-background-color);
+  color: var(--text-main-color); /* TODO: Should be darker */
 }
 
 /* TODO: Find out how much this change affects */
 ::placeholder {
-	color: #9d9d9d;
+  color: var(--menu-link-main-color);
 }
 
 /* -----------------------------------
@@ -257,7 +255,7 @@ li.is-submenu-item > a:hover {
 }
 
 #contact-details {
-  border: 1px dashed #333333;
+  border: 1px dashed var(--button-main-color);
 }
 
 #social-media-icons p {
@@ -277,32 +275,24 @@ li.is-submenu-item > a:hover {
 }
 
 #footer {
-  /* Required for having a sticky footer element that sticks to the bottom of
-	the page no matter how much content there is */
-	position: absolute;
-	right: 0;
-	bottom: 0;
-  left: 0;
-  /* Rest of footer style */
-  /* margin-bottom: 0; */
-  background-color: #000000;
-  border-top: 2px solid #a62139;
-  box-shadow: 0 0 5px 2px rgba(166, 33, 57, 1.0);
+  background-color: var(--background-dark-color);
+  border-top: 2px solid var(--separator-accent-color);
+  box-shadow: 0 0 5px 2px var(--shadow-main-color);
   /* margin-top: 6em; */
   padding: 1.11em 0;
 }
 
 .copyright-msg {
-  border-top: 1px solid #252525;
+  border-top: 1px solid var(--separator-dark-color);
   margin: 1.18rem 5.967rem; /* 1.48em 7.4em */
   padding-top: 0.85rem; /* 1.04em */
-  color: #777777;
+  color: var(--text-dark-color);
   font-size: 0.8em;
   text-align: right;
 }
 
 /* -----------------------------------
-    HACK FOR STICKY FOOTER
+    STICKY FOOTER
 
 Required for having a footer div that
 sticks to the bottom of the page no
@@ -325,4 +315,11 @@ body {
 .grid-container {
 	/* Must be the same as the padding-bottom of the body element */
   margin-bottom: 6em;
+}
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
