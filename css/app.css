@@ -9,7 +9,6 @@ Version: 0.0.3
 TODO:
  * Move color-related bla at the top
    * Variables
- * Fix for sticky footer
  * Buttons and labels (dark theme colors)
  * Orbit + Orbit images
 ----------------------------------- */
@@ -255,6 +254,13 @@ li.is-submenu-item > a:hover {
 }
 
 #footer {
+  /* Required for having a sticky footer element that sticks to the bottom of
+	the page no matter how much content there is */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+  left: 0;
+  /* Rest of footer style */
   /* margin-bottom: 0; */
   background-color: #000000;
   border-top: 2px solid #a62139;
@@ -271,3 +277,33 @@ li.is-submenu-item > a:hover {
   font-size: 0.8em;
   text-align: right;
 }
+
+/* -----------------------------------
+    TEMP HACKS FOR STICKY FOOTER
+
+Sometimes required for having a sticky
+footer element that sticks to the
+bottom of the page no matter how
+much content there is.
+Apparently most of this isn't needed,
+but we should test in different
+browsers.
+----------------------------------- */
+
+/* html {
+	height: 100%;
+} */
+
+/* body {
+	position: relative; */
+	/* margin: 0; */ /* already present? */
+	/* min-height: 100%; */
+	/* Must be the same as the margin-bottom of the element that is before the
+	footer element */
+	/* padding-bottom: 5%;
+} */
+
+/* .grid-container { */
+	/* Must be the same as the padding-bottom of the body element */
+  /* margin-bottom: 5%;
+} */
