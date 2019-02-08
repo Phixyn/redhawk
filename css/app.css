@@ -236,8 +236,7 @@ div.thumbnail > img {
 }
 
 #social-media-icons a {
-  /* TODO: change to rem? */
-  padding-right: 1.2em;
+  padding-right: 1.2rem;
 }
 
 #social-media-icons a img {
@@ -259,8 +258,8 @@ div.thumbnail > img {
 
 .copyright-msg {
   border-top: 1px solid #252525;
-  margin: 1.48em 7.4em;
-  padding-top: 1.04em;
+  margin: 1.18rem 5.967rem; /* 1.48em 7.4em */
+  padding-top: 0.85rem; /* 1.04em */
   color: #777777;
   font-size: 0.8em;
   text-align: right;
