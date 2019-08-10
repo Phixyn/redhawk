@@ -9,7 +9,7 @@
 		<!-- Main content -->
         <div class="container" id="main-content">
             <div class="row">
-                <div class="col-sm-8 col-md-6" id="contact-form">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-6 col-xl-6" id="contact-form">
 					<form name="contactForm" method="post" action="#" >
 						<fieldset>
 							<ul>
@@ -41,7 +41,7 @@ Alternatively, use the social media links on the right-hand side to get in touch
 					</form>
                 </div> <!-- /.col-* /#contact-form -->
 
-				<div class="col-sm-4 col-md-6" id="contact-details">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-6 col-xl-6" id="contact-details">
 					<ul id="social-media-icons">
 						<li><a href="https://www.facebook.com/phixyn" title="Facebook"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" /></a></li>
 						<li><a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
