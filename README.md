@@ -1,1 +1,1 @@
-Version: v0.2.0 (11 November 2017 67c4f77)
+Version: v0.3.0 (11 August 2019 5563a5a)
