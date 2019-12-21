@@ -30,11 +30,11 @@
                 <p>Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
                 If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
       
-                <p style="text-align: center; font-style:italic;"><a href="projects_foundation.html">Portfolio</a> &nbsp;//&nbsp; <a href="static/Alpeche_Pancha_CV.pdf" title="Download CV">Download CV</a> &nbsp;//&nbsp; <a href="contact_foundation.html">Contact me</a></p>
+                <p style="text-align: center; font-style:italic;"><a href="projects_foundation.html">Portfolio</a> &nbsp;//&nbsp; <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">Download CV</a> &nbsp;//&nbsp; <a href="contact_foundation.html">Contact me</a></p>
               </div> <!-- .media-object-section -->
 
               <div class="media-object-section">
-                <div class="thumbnail"><img src="img/me3.png" alt="Avatar" /></div>
+                <div class="thumbnail"><img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" alt="Avatar" /></div>
               </div> <!-- .media-object-section -->
             </div> <!-- .media-object -->
           </div> <!-- .callout -->
@@ -48,7 +48,7 @@
 
   				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
-          <p> You can find out more about my experience, skills and qualities by <a href="static/Alpeche_Pancha_CV.pdf" title="Download CV">downloading my CV.</a> Alternatively, feel free to <a href="contact_foundation.html">contact me!</a></p>
+          <p> You can find out more about my experience, skills and qualities by <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">downloading my CV.</a> Alternatively, feel free to <a href="contact_foundation.html">contact me!</a></p>
         </div> <!-- .cell -->
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
