@@ -18,9 +18,10 @@ $config = array(
             "social" => "/img/social"
         ),
         "css" => "/css",
+        "fonts" => "/fonts",
         "js" => "/js",
         "lib" => "/lib",
-        "fonts" => "/fonts",
+        "static" => "/static",
         "includes" => array(
             "templates" => __DIR__ . DIRECTORY_SEPARATOR . "/templates"
         )
