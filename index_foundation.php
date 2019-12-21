@@ -107,18 +107,4 @@
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
 
-    <!-- FOOTER -->
-    <div class="grid-container full" id="footer">
-      <div class="grid-x">
-        <div class="cell">
-          <p class="copyright-msg">&copy; 2014 - 2019 Alpeche Pancha. All rights reserved.</p>
-        </div> <!-- .cell -->
-      </div> <!-- .grid-x -->
-    </div> <!-- .grid-container -->
-
-    <script src="lib/vendor/jquery.js"></script>
-    <script src="lib/vendor/what-input.js"></script>
-    <script src="lib/vendor/foundation.min.js"></script>
-    <script src="lib/app.js"></script>
-  </body>
-</html>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_foundation.php"); ?>
