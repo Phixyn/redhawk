@@ -3,7 +3,6 @@
     // Override title and metadata variables here before including header
     $config['page_title'] = "About - Alpeche Pancha - Phixyn";
     require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
-    require_once($config["paths"]["includes"]["templates"] . "/orbit_foundation.php");
 ?>
 
     <!-- MAIN CONTENT -->
