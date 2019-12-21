@@ -9,7 +9,10 @@ $config = array(
     ),
     "urls" => array(
         "root" => $domain,
-        "pages" => $domain . "/pages",
+        "pages" => array(
+            "root" => $domain . "/pages",
+            "projects" => $domain . "/pages/projects",
+        ),
         "blog" => $domain . "/blog"
     ),
     "paths" => array(
