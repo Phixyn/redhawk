@@ -1,8 +1,8 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-    // Override title and metadata variables here before including header
-    $config['page_title'] = "Projects - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "Projects - Alpeche Pancha - Phixyn";
+  require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
 ?>
 
     <!-- MAIN CONTENT -->
@@ -35,7 +35,7 @@
             </div> <!-- .card-section -->
 
             <div class="card-section">
-              <a href="<?php echo $config['urls']['pages']['projects']; ?>/minecart.html" class="button">View Details</a>
+              <a href="<?php echo $config['urls']['pages']['projects']; ?>/minecart.php" class="button">View Details</a>
             </div> <!-- .card-section -->
           </div> <!-- .card -->
         </div> <!-- .cell -->
@@ -57,7 +57,7 @@
             </div> <!-- .card-section -->
 
             <div class="card-section">
-              <a href="phinyxengine.html" class="button">View Details</a>
+              <a href="<?php echo $config['urls']['pages']['projects']; ?>/phinyxengine.php" class="button">View Details</a>
             </div> <!-- .card-section -->
           </div> <!-- .card -->
         </div> <!-- .cell -->
@@ -79,7 +79,7 @@
             </div> <!-- .card-section -->
 
             <div class="card-section">
-              <a href="tetrisphix.html" class="button">View Details</a>
+              <a href="<?php echo $config['urls']['pages']['projects']; ?>/tetrisphix.php" class="button">View Details</a>
             </div> <!-- .card-section -->
           </div> <!-- .card -->
         </div> <!-- .cell -->
@@ -123,31 +123,32 @@
             </div> <!-- .card-section -->
 
             <div class="card-section">
-              <a href="starphix.html" class="button">View Details</a>
+              <a href="<?php echo $config['urls']['pages']['projects']; ?>/starphix.php" class="button">View Details</a>
             </div> <!-- .card-section -->
           </div> <!-- .card -->
         </div> <!-- .cell -->
 
+        <!-- Example project
         <div class="cell large-4 medium-4">
           <div class="card">
             <div class="card-divider">
-              <h3 class="h5">Project</h3>
-            </div> <!-- .card-divider -->
+              <h3 class="h5">Example Project</h3>
+            </div> <!-- .card-divider --
 
             <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Image" />
 
             <div class="card-section">
               <span class="label secondary">On hold</span>
-            </div> <!-- .card-section -->
+            </div> <!-- .card-section --
 
             <div class="card-section">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi libero, pharetra ut volutpat ac, condimentum eget orci.</p>
-            </div> <!-- .card-section -->
+            </div> <!-- .card-section --
 
             <div class="card-section">
-              <a href="#" class="button">View Details</a>
-            </div> <!-- .card-section -->
-          </div> <!-- .card -->
+              <a href="<?php echo $config['urls']['pages']['projects']; ?>/example_project.php" class="button">View Details</a>
+            </div> <!-- .card-section --
+          </div> <!-- .card --
         </div> <!-- .cell -->
 
       </div> <!-- .grid-x -->
