@@ -8,9 +8,9 @@
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
 
-    <script src="lib/vendor/jquery.js"></script>
-    <script src="lib/vendor/what-input.js"></script>
-    <script src="lib/vendor/foundation.min.js"></script>
-    <script src="lib/app.js"></script>
+    <script src="<?php echo $config['paths']['lib']; ?>/vendor/jquery.js"></script>
+    <script src="<?php echo $config['paths']['lib']; ?>/vendor/what-input.js"></script>
+    <script src="<?php echo $config['paths']['lib']; ?>/vendor/foundation.min.js"></script>
+    <script src="<?php echo $config['paths']['lib']; ?>/app.js"></script>
   </body>
 </html>

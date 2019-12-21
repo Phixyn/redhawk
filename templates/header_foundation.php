@@ -9,8 +9,8 @@
     <meta name="keywords" content="<?php echo $config['metadata']['site_keywords']; ?>" />
     <title><?php echo $config['page_title']; ?></title>
 
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="<?php echo $config['paths']['css']; ?>/foundation.css" />
+    <link rel="stylesheet" href="<?php echo $config['paths']['css']; ?>/app.css" />
   </head>
 
   <body>
