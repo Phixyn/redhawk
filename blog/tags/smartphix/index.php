@@ -1,7 +1,7 @@
 <?php 
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
 	$config['page_title'] = "Blog - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> Blog </div>
@@ -128,4 +128,4 @@
 			</div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>

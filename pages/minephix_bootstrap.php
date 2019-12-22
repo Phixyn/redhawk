@@ -1,7 +1,7 @@
 <?php
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
 	$config['page_title'] = "Minephix - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 <div id="body-wrapper">
@@ -50,4 +50,4 @@
 	<div class="parent-clear"></div>	<!-- make parent element automatically expand to child elements' heights -->
 </div>	<!-- #body-wrapper -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>
