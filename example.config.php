@@ -2,6 +2,7 @@
 
 $domain = "//phixyn.com";
 $config = array(
+    "version" => "v0.3.0 (5563a5a)",
     "page_title" => "Home - Alpeche Pancha - Phixyn",
     "metadata" => array(
         "site_description" => "Phixyn's personal website",
