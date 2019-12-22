@@ -3,7 +3,8 @@
     <div class="grid-container full" id="footer">
       <div class="grid-x">
         <div class="cell">
-          <p class="copyright-msg">&copy; <?php $fromYear = 2014; $thisYear = (int)date('Y'); echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?> Alpeche Pancha. All rights reserved.</p>
+          <p class="copyright-msg">&copy; <?php $fromYear = 2014; $thisYear = (int)date('Y'); echo $fromYear . (($fromYear != $thisYear) ? ' - ' . $thisYear : '');?> Alpeche Pancha. All rights reserved. <br />
+          <?php echo $config['version'] ?></p>
         </div> <!-- .cell -->
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
