@@ -2,6 +2,7 @@
 
 $domain = "//phixyn.com";
 $config = array(
+    "version" => "v0.3.0 (5563a5a)",
     "page_title" => "Home - Alpeche Pancha - Phixyn",
     "metadata" => array(
         "site_description" => "Phixyn's personal website",
@@ -9,7 +10,10 @@ $config = array(
     ),
     "urls" => array(
         "root" => $domain,
-        "pages" => $domain . "/pages",
+        "pages" => array(
+            "root" => $domain . "/pages",
+            "projects" => $domain . "/pages/projects",
+        ),
         "blog" => $domain . "/blog"
     ),
     "paths" => array(
@@ -18,9 +22,10 @@ $config = array(
             "social" => "/img/social"
         ),
         "css" => "/css",
+        "fonts" => "/fonts",
         "js" => "/js",
         "lib" => "/lib",
-        "fonts" => "/fonts",
+        "static" => "/static",
         "includes" => array(
             "templates" => __DIR__ . DIRECTORY_SEPARATOR . "/templates"
         )
