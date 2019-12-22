@@ -90,17 +90,6 @@
           </nav>
         </div> <!-- .cell -->
 
-        <!--
-        <div class="cell"><hr /></div>
-
-        <div class="cell medium-10 large-10 medium-offset-2 large-offset-2"> TODO temporary
-          <img src="img/gameplay3.png" alt="Gameplay 2" />
-        </div> .cell
-
-        <div class="cell">
-          <p>Vestibulum tellus risus, pretium et facilisis nec, porta in felis. Nullam fermentum, lorem nec tincidunt tempus, risuslectus venenatis nisi, quis ultrices tortor arcu id diam. Nunc eros est, iaculis non quam et, mattis dignissim lacus. Vivamus finibus id augue eu sagittis. Nam sapien nisi, auctor in vestibulum in, pulvinar vel nibh. Pellentesque malesuada sit amet nulla sit amet porttitor. Proin fringilla nulla eget libero varius, eu blandit sapien consectetur.</p>
-        </div> .cell -->
-
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
 

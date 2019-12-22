@@ -1,8 +1,8 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-    // Override title and metadata variables here before including header
-    $config['page_title'] = "About - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "About - Alpeche Pancha - Phixyn";
+  require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
 ?>
 
     <!-- MAIN CONTENT -->
@@ -29,7 +29,7 @@
                 <p>Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
                 If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
       
-                <p style="text-align: center; font-style:italic;"><a href="projects_foundation.html">Portfolio</a> &nbsp;//&nbsp; <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">Download CV</a> &nbsp;//&nbsp; <a href="contact_foundation.html">Contact me</a></p>
+                <p style="text-align: center; font-style:italic;"><a href="<?php echo $config['urls']['pages']['root']; ?>/projects_foundation.php">Portfolio</a> &nbsp;//&nbsp; <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">Download CV</a> &nbsp;//&nbsp; <a href="<?php echo $config['urls']['pages']['root']; ?>/contact_foundation.php">Contact me</a></p>
               </div> <!-- .media-object-section -->
 
               <div class="media-object-section">
@@ -43,11 +43,11 @@
           <h2 class="h4">My projects</h2>
           <hr />
 
-          <p> I am currently working on my second year group project at UOS, which is a 2D platformer game developed in Unreal Engine 4. You can read more about it <a href="minecart.html">here.</a></p>
+          <p> I am currently working on my second year group project at UOS, which is a 2D platformer game developed in Unreal Engine 4. You can read more about it <a href="<?php echo $config['urls']['pages']['projects']; ?>/minecart.php">here.</a></p>
 
   				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
-          <p> You can find out more about my experience, skills and qualities by <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">downloading my CV.</a> Alternatively, feel free to <a href="contact_foundation.html">contact me!</a></p>
+          <p> You can find out more about my experience, skills and qualities by <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">downloading my CV.</a> Alternatively, feel free to <a href="<?php echo $config['urls']['pages']['root']; ?>/contact_foundation.php">contact me!</a></p>
         </div> <!-- .cell -->
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->

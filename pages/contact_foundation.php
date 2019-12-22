@@ -1,8 +1,8 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-    // Override title and metadata variables here before including header
-    $config['page_title'] = "Contact - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "Contact - Alpeche Pancha - Phixyn";
+  require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
 ?>
 
     <!-- MAIN CONTENT -->
