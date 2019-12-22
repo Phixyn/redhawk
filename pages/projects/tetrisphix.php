@@ -2,7 +2,7 @@
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
   // Override title and metadata variables here before including header
   $config['page_title'] = "TetrisPhix - Projects - Alpeche Pancha";
-  require_once($config["paths"]["includes"]["templates"] . "/header_foundation.php");
+  require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
     <!-- MAIN CONTENT -->
@@ -83,8 +83,8 @@
           <hr />
           <nav aria-label="You are here:" role="navigation">
             <ul class="breadcrumbs">
-              <li><a href="<?php echo $config['urls']['root']; ?>/index_foundation.php">Home</a></li>
-              <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects_foundation.php">Projects</a></li>
+              <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
+              <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php">Projects</a></li>
               <li><span class="show-for-sr">Current: </span>TetrisPhix</li>
             </ul>
           </nav>
@@ -93,4 +93,4 @@
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer_foundation.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

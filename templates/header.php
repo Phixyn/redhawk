@@ -31,12 +31,12 @@
       <div class="top-bar-right">
         <ul class="dropdown menu" data-dropdown-menu>
           <!-- <li class="is-active"><a href="#">Home</a></li> -->
-          <li><a href="<?php echo $config['urls']['root']; ?>/index_foundation.php">Home</a></li>
-          <li><a href="<?php echo $config['urls']['blog']; ?>/index_foundation.php">Blog</a></li>
-          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects_foundation.php">Projects</a></li>
+          <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
+          <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
+          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php">Projects</a></li>
           <li><a href="https://www.twitch.tv/phixyn">Twitch</a></li>
-          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/about_foundation.php">About</a></li>
-          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/contact_foundation.php">Contact</a></li>
+          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/about.php">About</a></li>
+          <li><a href="<?php echo $config['urls']['pages']['root']; ?>/contact.php">Contact</a></li>
           <li class="is-dropdown-submenu-parent has-submenu">
             <a href="#">Social Media</a>
             <ul class="submenu menu vertical" data-submenu>
