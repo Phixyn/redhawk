@@ -1,7 +1,7 @@
 <?php 
     require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
     $config['page_title'] = "v0.2.0 Release Notes - Blog - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> Blog </div>
@@ -31,9 +31,9 @@
                     <li>Blog comments are unavailable at this time</li>
                 </ul>
 				
-				<p><a href="<?php echo $config['urls']['blog']; ?>/" title="Back to blog">&laquo; Back to blog</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>

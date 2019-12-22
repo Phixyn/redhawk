@@ -11,7 +11,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php" title="SmartPhix">SmartPhix - The IoT and Gaming</a></div>
-					<div class="blog-meta">Posted on February 20th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on February 20th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>Over the last two decades, technology has grown at an unprecedented pace. Many emerging technologies deserve our attention, including new Artificial Intelligence (AI) and machine learning algorithms, cryptocurrency, Internet of Things (IoT) and Virtual and Augmented Reality. When we take a look at game development, AI, VR and AR seem to be taking the spotlight, rightfully so. However, I believe that there is also place for IoT in game development, which deserves to be explored further.</p>
@@ -24,7 +24,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-use-case.php" title="SmartPhix">SmartPhix - A use case for IoT in game development</a></div>
-					<div class="blog-meta">Posted on February 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on February 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>In the previous blog post, I briefly discussed one of the potential uses for IoT in game development. This post will expand on the opportunities that this use case can provide to game developers.</p>
@@ -39,7 +39,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-project.php" title="SmartPhix">SmartPhix - A simple IoT project</a></div>
-					<div class="blog-meta">Posted on March 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 <p>SmartPhix is a simple IoT concept project that aims to highlight the features of IoT devices and how interacting with physical objects programmatically can be useful in game development. This is only a concept project and it is prototyped using <a href="https://www.phidgets.com/">Phidget</a> components, a Hue Go light and the <a href="https://www.philips.co.uk/c-p/8718696516850/hue-bridge">Hue Bridge.</a></p>
@@ -52,7 +52,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-http-server.php" title="SmartPhix">SmartPhix - Phidget API and HTTP Server</a></div>
-					<div class="blog-meta">Posted on March 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>For the last couple of weeks, I have been experimenting with the Python Phidget API for my IoT project. I also started looking at ways to implement the backend API server for the project, mainly learning how to write a HTTP server in Python. As with all of my newer projects, I am using Python 3 for this, as more systems are making the move to this version, with the biggest exception being legacy systems.</p>
@@ -65,7 +65,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-server-updates.php" title="SmartPhix">SmartPhix - HTTP Server Updates</a></div>
-					<div class="blog-meta">Posted on March 23rd, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 23rd, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>Last week I was having some issues integrating my Phidget API helper class with a simple HTTP server in Python. I couldn't store an instance of my PhidgetHeper class in a way that the request handler class could access it and use its helper methods to return the current sensor temperature. However, I did not give up so easily. After digging through more documentation and reading the Python docs for the http.server module, I started understanding more about how I should structure my server code. Additionally, I found a way to pass context onto a HTTPServer instance in Python. By context, I mean member variables, additional helper methods, etc. This is exactly what I was having difficulty doing last week, as I simply could not find a way to keep a persistent instance of my PhidgetHelper class anywhere within the server code.</p>
@@ -78,7 +78,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-android-app-and-retrofit.php" title="SmartPhix">SmartPhix - Android App and Retrofit</a></div>
-					<div class="blog-meta">Posted on March 30th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 30th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>With the Smartphix HTTP server complete, it was time to start the Android app. For the past week, I made an Android app with a simple UI and set up Retrofit to be used for the API clients. However, all of the data displayed in the UI is placeholder data for now, until I start using Retrofit to get the data. For this week, I just wanted to set up a project and UI.</p>
@@ -93,7 +93,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-android-app-updates.php" title="SmartPhix">SmartPhix - Android App Updates</a></div>
-					<div class="blog-meta">Posted on April 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on April 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>This week, I managed to make some more progress on my Smartphix Android app. The app now displays the time and date, and the current Celsius temperature.</p>
@@ -106,7 +106,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-parsing-json-in-app.php" title="SmartPhix">SmartPhix - Parsing JSON data in the app</a></div>
-					<div class="blog-meta">Posted on April 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on April 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>This past week I was faced with the challenge of using JSON data in my Android app. Retrofit libraries offer what is known as converters. Converters are classes used for converting Java types to their HTTP representation and parsing HTTP entities back into Java types. For example, a HTTP representation of JSON, which is what my HTTP server sends to the app, should be converted to a POJO (Plain Old Java Object) before being used in the app. This is why I chose to use Retrofit instead of alternative libraries such as OkHTTP. Retrofit’s converters make it very easy to parse JSON HTTP responses into POJOs.</p>
@@ -119,7 +119,7 @@
 			<div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-conclusion.php" title="SmartPhix">SmartPhix - Conclusions and future plans</a></div>
-					<div class="blog-meta">Posted on April 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on April 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 				<p>Generally, I am happy with my prototype app for the Smartphix project, but there is a lot to be improved. It is currently not practical to use, as IP addresses and API tokens for the Hue API have to be hardcoded both in the app and server. Furthermore, the app’s MainActivity class can be improved to boost performance and usability. Currently, the user has to tap the “Update” button to get new temperatures and set their Hue’s color. However, it would be more practical to have the app update at a set interval, which could be configured by the user. Additionally, the app UI should provide a way to specify the IP addresses of the HTTP server and Hue Bridge.</p>

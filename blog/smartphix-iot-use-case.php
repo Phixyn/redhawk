@@ -1,7 +1,7 @@
 <?php 
     require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
     $config['page_title'] = "SmartPhix - A use case for IoT in game development - Blog - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> Blog </div>
@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - A use case for IoT in game development</div>
-					<div class="blog-meta">Posted on February 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on February 27th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
                 <a href="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" target="_blank"><img src="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" alt="Internet of Things" style="width: 40%;height:50%;" /></a>
@@ -28,9 +28,9 @@
 
 <p>Using the aforementioned integration as an example, it is easy to identify one of the main use cases for IoT in gaming: to deliver a more immersive and epic gaming experience. My project aims to take advantage of this integration to develop a concept app that makes use of the Hue API in a simple home automation project. In the next blog post, I will discuss this smart home project idea and technical plan in more detail.</p>
 				
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>
