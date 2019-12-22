@@ -32,15 +32,15 @@
 
         <!-- BLOG POST -->
         <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
-          <div class="thumbnail"><a href="#example_blog_post"><img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Blog post image" /></a></div>
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post_foundation.php"><img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Blog post image" /></a></div>
         </div> <!-- .cell -->
 
         <div class="cell large-8 medium-8 small-9 blog-post-summary">
-          <h2 class="h4 blog-title"><a href="#example_blog_post">Blog Post Title</a></h2>
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post_foundation.php">Example Blog Post</a></h2>
           <small class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt fermentum risus, id tincidunt orci porta eget. Fusce consectetur iaculis porta. Fusce suscipit gravida malesuada. In semper efficitur massa, et cursus odio porttitor non.</p>
-          <p><a href="#example_blog_post" title="Continue reading">Continue reading &raquo;</a></p>
+          <p><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post_foundation.php" title="Continue reading">Continue reading &raquo;</a></p>
         </div> <!-- .cell -->
         <!-- END OF BLOG POST -->
       </div> <!-- .grid-x -->
