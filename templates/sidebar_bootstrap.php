@@ -5,11 +5,11 @@
 			<h1> Projects </h1>
 
 			<ul>
-				<li><a href="<?php echo $config['urls']['pages']; ?>/redhawk.php" title="Project Redhawk"> Redhawk </a></li>
-				<li><a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="ZoeyBot"> ZoeyBot </a></li>
-				<li><a href="<?php echo $config['urls']['pages']; ?>/projects.php" title="StarPhix"> StarPhix </a></li>
-				<li><a href="<?php echo $config['urls']['pages']; ?>/minephix.php" title="Minephix"> Minephix </a></li>
-				<li><a href="<?php echo $config['urls']['pages']; ?>/testing.php" title="Test page"> Test page </a></li>
+				<li><a href="<?php echo $config['urls']['pages']['root']; ?>/redhawk_bootstrap.php" title="Project Redhawk"> Redhawk </a></li>
+				<li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects_bootstrap.php" title="ZoeyBot"> ZoeyBot </a></li>
+				<li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects_bootstrap.php" title="StarPhix"> StarPhix </a></li>
+				<li><a href="<?php echo $config['urls']['pages']['root']; ?>/minephix_bootstrap.php" title="Minephix"> Minephix </a></li>
+				<li><a href="<?php echo $config['urls']['pages']['root']; ?>/testing_bootstrap.php" title="Test page"> Test page </a></li>
 			</ul>
 	
 		</div>	<!-- .left-menu -->

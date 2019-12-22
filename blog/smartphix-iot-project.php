@@ -1,7 +1,7 @@
 <?php 
     require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
     $config['page_title'] = "SmartPhix - A simple IoT project - Blog - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> Blog </div>
@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - A simple IoT project</div>
-					<div class="blog-meta">Posted on March 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 6th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
                 <a href="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" target="_blank"><img src="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" alt="Internet of Things" style="width: 40%;height:50%;" /></a>
@@ -87,9 +87,9 @@ For temperature monitoring, I will be using a Phidget I/O board and temperature 
 <li>A HTTP server must be running at all times when the Android app is being used. In the future, I could conveniently run the server as a service on a Raspberry Pi running a Linux distro.</li>
 <li>In order to use Hue with the concept app, a user must set up their Hue Bridge and Hue lights on their home router before using the app. They may also be prompted to trust the app as a client by pressing a hardware button on their Hue Bridge. They must also ensure that the firmware in their Hue devices is up to date.</li>
 </ul>
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>

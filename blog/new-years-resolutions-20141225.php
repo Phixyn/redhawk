@@ -1,7 +1,7 @@
 <?php 
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
 	$config['page_title'] = "On New Years' Resolutions - Blog - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> Blog </div>
@@ -22,9 +22,9 @@
 				
 				<p>That was just one example of how you can start working towards your new years resolution before the new year. There are many more ways to achieve this, and you can probably come up with a few by taking a look at your new years resolution list. Get ahead of the game by starting to work on your goals and plans for the new year before the fireworks, and you will truly enter the new year on your right foot!</p>
 				
-				<p><a href="<?php echo $config['urls']['blog']; ?>/" title="Back to blog">&laquo; Back to blog</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>

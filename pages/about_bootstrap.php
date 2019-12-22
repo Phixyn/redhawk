@@ -1,7 +1,7 @@
 <?php 
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
 	$config['page_title'] = "About Me - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+    require_once($config["paths"]["includes"]["templates"] . "/header_bootstrap.php");
 ?>
 
 		<div class="banner"> About </div>
@@ -18,7 +18,7 @@
 					<p> Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
 					If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
 
-					<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
+					<p style="text-align: center; font-style:italic;"> <a href="<?php echo $config['urls']['pages']['root']; ?>/projects_bootstrap.php">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="<?php echo $config['urls']['pages']['root']; ?>/contact_bootstrap.php">Contact me</a> </p>
                 </div>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
@@ -33,8 +33,8 @@
 
 				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
-				<p> You can find out more about my experience, skills and qualities by <a href="#">requesting a CV.</a> Alternatively, feel free to <a href="#">contact me!</a></p>
+				<p> You can find out more about my experience, skills and qualities by <a href="#">requesting a CV.</a> Alternatively, feel free to <a href="<?php echo $config['urls']['pages']['root']; ?>/contact_bootstrap.php">contact me!</a></p>
 			</div> <!-- /.row -->
 		</div> <!-- /.container /#main-content -->
 
-<?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
+<?php require_once($config["paths"]["includes"]["templates"] . "/footer_bootstrap.php"); ?>
