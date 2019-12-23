@@ -21,7 +21,7 @@
             <div class="media-object-section">
               <h2 class="h4">Hello! I am Phixyn</h2>
 
-              <p>My name is Alpeche Pancha. I work full-time as a <a href="https://en.wikipedia.org/wiki/Test_engineer" title="Wikipedia - Test Engineer">Software Test Engineer</a> and study part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree. I am based in Suffolk, work at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a> and study at the <a href="https://www.uos.ac.uk/" title="University of Suffolk">University of Suffolk</a>. Currently, I am on my second year at University.</p>
+              <p>My name is Alpeche Pancha. I work full-time as a <a href="https://en.wikipedia.org/wiki/Test_engineer" title="Wikipedia - Test Engineer">Software Test Engineer</a> and study part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree. I am based in Suffolk, work at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a> and study at the <a href="https://www.uos.ac.uk/" title="University of Suffolk">University of Suffolk</a>. Currently, I am on my final year at University.</p>
 
               <p>In my little spare time, I like to work on my personal projects, such as this website. I also play video games (of course) and play the bass guitar. On this website you can find out more about my hobbies and <a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php" title="Projects">projects.</a>
 

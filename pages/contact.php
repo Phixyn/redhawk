@@ -14,34 +14,35 @@
           <hr />
         </div> <!-- .cell -->
 
+        <!-- Contact form
         <div class="cell medium-6 large-6">
           <form>
             <div class="input-group">
               <span class="input-group-label" style="min-width: 20%;">Name</span>
               <input class="input-group-field" type="text" placeholder="Name" />
-            </div> <!-- .input-group -->
+            </div> .input-group
 
             <div class="input-group">
               <span class="input-group-label" style="min-width: 20%;">Email</span>
               <input class="input-group-field" type="email" placeholder="Email" />
-            </div> <!-- .input-group -->
+            </div> .input-group
 
             <div class="input-group">
               <span class="input-group-label" style="min-width: 20%;">Website</span>
               <input class="input-group-field" type="text" placeholder="Website (Optional)" />
-            </div> <!-- .input-group -->
+            </div> .input-group
 
             <div class="input-group">
               <span class="input-group-label" style="min-width: 20%;">Message</span>
               <textarea class="input-group-field" placeholder="Message"></textarea>
-            </div> <!-- .input-group -->
+            </div> .input-group
 
             <button type="button" class="button float-right">Submit</button>
           </form>
-        </div> <!-- .cell -->
+        </div> .cell -->
 
-        <div class="cell medium-5 large-5 medium-offset-1 large-offset-1" id="contact-details">
-        <!-- <div class="cell" id="contact-details"> -->
+        <!-- <div class="cell medium-5 large-5 medium-offset-1 large-offset-1" id="contact-details"> --> <!-- TODO uncomment and comment out div below when form is implemented -->
+        <div class="cell" id="contact-details">
           <h2 class="h5 subheader">
             Alpeche Pancha <br />
             phixyn@gmail.com
@@ -57,8 +58,8 @@
               <a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" alt="Twitter" /></a>
               <a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" alt="LinkedIn" /></a>
               <a href="https://www.facebook.com/phixyn" title="Facebook Profile"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" alt="Facebook profile" /></a>
-              <a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" alt="Twitter" /></a>
-              <a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" alt="LinkedIn" /></a>
+              <!-- <a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" alt="Twitter" /></a>
+              <a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" alt="LinkedIn" /></a> -->
             </p>
           </div> <!-- .button-group -->
         </div> <!-- .cell #contact-details -->

@@ -23,7 +23,7 @@
         </div> <!-- .cell -->
 
         <div class="cell">
-          <p>This is a simple 2D game engine. Developers are able to make levels based on a simple text file format, where they define the layout of the map and what sprites to use. It is written using the standard libraries in C++ 11.</p>
+          <p>This is a simple 2D game engine. Developers are able to make levels based on a simple text file format, where they define the layout of the map and what sprites to use. It is written using the standard libraries in C++ 11 and the <a href="https://www.sfml-dev.org/index.php" title="SFML">SFML Library.</a></p>
         </div> <!-- .cell -->
 
         <div class="cell medium-4 large-4">
@@ -31,7 +31,7 @@
             <dt>Programming Language</dt>
             <dd>C++ 11</dd>
             <dt>Technologies</dt>
-            <dd>Standard libraries</dd>
+            <dd>Standard libraries, <a href="https://www.sfml-dev.org/index.php" title="SFML">SFML</a></dd>
             <dt>Status</dt>
             <dd>In development</dd>
             <dt>Github</dt>

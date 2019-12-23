@@ -84,27 +84,28 @@
           </div> <!-- .card -->
         </div> <!-- .cell -->
 
+        <!-- ZoeyBot
         <div class="cell large-4 medium-4">
           <div class="card">
             <div class="card-divider">
               <h3 class="h5">ZoeyBot</h3>
-            </div> <!-- .card-divider -->
+            </div> .card-divider
 
             <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="ZoeyBot" />
 
             <div class="card-section">
               <span class="label primary">In development</span>
-            </div> <!-- .card-section -->
+            </div> .card-section
 
             <div class="card-section">
               <p>IRC and Twitch.tv bot written in Python.</p>
-            </div> <!-- .card-section -->
+            </div> .card-section
 
             <div class="card-section">
               <a href="#" class="button">View Details</a>
-            </div> <!-- .card-section -->
-          </div> <!-- .card -->
-        </div> <!-- .cell -->
+            </div> .card-section
+          </div> .card
+        </div> .cell -->
 
         <div class="cell large-4 medium-4">
           <div class="card">
@@ -133,23 +134,23 @@
           <div class="card">
             <div class="card-divider">
               <h3 class="h5">Example Project</h3>
-            </div> <!-- .card-divider --
+            </div> .card-divider
 
             <img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Image" />
 
             <div class="card-section">
               <span class="label secondary">On hold</span>
-            </div> <!-- .card-section --
+            </div> .card-section
 
             <div class="card-section">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi libero, pharetra ut volutpat ac, condimentum eget orci.</p>
-            </div> <!-- .card-section --
+            </div> .card-section
 
             <div class="card-section">
               <a href="<?php echo $config['urls']['pages']['projects']; ?>/example_project.php" class="button">View Details</a>
-            </div> <!-- .card-section --
-          </div> <!-- .card --
-        </div> <!-- .cell -->
+            </div> .card-section
+          </div> .card
+        </div> .cell -->
 
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
