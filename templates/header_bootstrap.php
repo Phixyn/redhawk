@@ -53,7 +53,7 @@
                                 <li><a href="https://www.linkedin.com/in/alpechepancha">LinkedIn</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li><a href="https://github.com/Phixyn">Github</a></li>
-                                <li><a href="https://www.livecoding.tv/phixyn/">LiveCoding</a></li>
+                                <!-- <li><a href="https://www.livecoding.tv/phixyn/">LiveCoding</a></li> -->
                                 <li><a href="https://www.youtube.com/user/Alpeche21/">Youtube</a></li>
                             </ul>
                         </li>
