@@ -43,7 +43,7 @@
           <h2 class="h4">My projects</h2>
           <hr />
 
-          <p> I am currently working on my second year group project at UOS, which is a 2D platformer game developed in Unreal Engine 4. You can read more about it <a href="<?php echo $config['urls']['pages']['projects']; ?>/minecart.php">here.</a></p>
+          <p> I am currently working on my final year group project at UOS, which is a third person puzzle game developed in Unity. More info to come soon.</p>
 
   				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
