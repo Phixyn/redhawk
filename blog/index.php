@@ -31,9 +31,10 @@
         <!-- END OF BLOG POST -->
 
         <!-- BLOG POST -->
+        <!--
         <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
           <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php"><img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Blog post image" /></a></div>
-        </div> <!-- .cell -->
+        </div> .cell
 
         <div class="cell large-8 medium-8 small-9 blog-post-summary">
           <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php">Example Blog Post</a></h2>
@@ -41,7 +42,7 @@
           <hr />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt fermentum risus, id tincidunt orci porta eget. Fusce consectetur iaculis porta. Fusce suscipit gravida malesuada. In semper efficitur massa, et cursus odio porttitor non.</p>
           <p><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php" title="Continue reading">Continue reading &raquo;</a></p>
-        </div> <!-- .cell -->
+        </div> .cell -->
         <!-- END OF BLOG POST -->
       </div> <!-- .grid-x -->
     </div> <!-- .grid-container -->
