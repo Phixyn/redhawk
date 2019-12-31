@@ -1,7 +1,15 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  $projectName = "PhinyxEngine";
+  $projectCategory = "Game Engine, C++";
+  $projectSummary = "This is a simple 2D game engine. Developers are able to make levels based on a simple text file format, where they define the layout of the map and what sprites to use. It is written using the standard libraries in C++ 11 and the <a href=\"https://www.sfml-dev.org/index.php\" title=\"SFML\">SFML Library.</a>";
+  $projectLanguage = "C++ 11";
+  $projectTechnologies = "Standard libraries, <a href=\"https://www.sfml-dev.org/index.php\" title=\"SFML\">SFML</a>";
+  $projectStatus = "In development";
+  $projectVCSLink = "https://github.com/Phixyn/PhinyxEngine";
+  $projectStartDate = "29 Apr 2017";
   // Override title and metadata variables here before including header
-  $config['page_title'] = "PhinyxEngine - Projects - Alpeche Pancha";
+  $config['page_title'] = $projectName . " - Projects - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
@@ -10,36 +18,36 @@
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="cell">
           <!-- <hr />
-          <h1 class="h5 subheader" id="main-content-banner">&bull; Example Project &bull;</h1>
+          <h1 class="h5 subheader" id="main-content-banner">&bull; <?php echo $projectName ?> &bull;</h1>
           <hr /> -->
         </div> <!-- .cell -->
 
         <div class="cell medium-6 large-6">
-          <h2 class="h5">PhinyxEngine</h2>
+          <h2 class="h5"><?php echo $projectName ?></h2>
         </div> <!-- .cell -->
         
         <div class="cell medium-6 large-6">
-          <h2 class="h6 subheader float-right">Game Engine, C++</h2>
+          <h2 class="h6 subheader float-right"><?php echo $projectCategory ?></h2>
         </div> <!-- .cell -->
 
         <div class="cell">
-          <p>This is a simple 2D game engine. Developers are able to make levels based on a simple text file format, where they define the layout of the map and what sprites to use. It is written using the standard libraries in C++ 11 and the <a href="https://www.sfml-dev.org/index.php" title="SFML">SFML Library.</a></p>
+          <p><?php echo $projectSummary ?></p>
         </div> <!-- .cell -->
 
         <div class="cell medium-4 large-4">
           <dl>
             <dt>Programming Language</dt>
-            <dd>C++ 11</dd>
+            <dd><?php echo $projectLanguage ?></dd>
             <dt>Technologies</dt>
-            <dd>Standard libraries, <a href="https://www.sfml-dev.org/index.php" title="SFML">SFML</a></dd>
+            <dd><?php echo $projectTechnologies ?></dd>
             <dt>Status</dt>
-            <dd>In development</dd>
+            <dd><?php echo $projectStatus ?></dd>
             <dt>Github</dt>
-            <dd><a href="https://github.com/Phixyn/PhinyxEngine">https://github.com/Phixyn/PhinyxEngine</a></dd>
+            <dd><a href="<?php echo $projectVCSLink ?>"><?php echo $projectVCSLink ?></a></dd>
             <dt>Category</dt>
-            <dd>Game Engine, C++</dd>
+            <dd><?php echo $projectCategory ?></dd>
             <dt>Date Started</dt>
-            <dd>29 Apr 2017</dd>
+            <dd><?php echo $projectStartDate ?></dd>
           </dl>
         </div> <!-- .cell -->
 
@@ -80,7 +88,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php">Projects</a></li>
-              <li><span class="show-for-sr">Current: </span>PhinyxEngine</li>
+              <li><span class="show-for-sr">Current: </span><?php echo $projectName ?></li>
             </ul>
           </nav>
         </div> <!-- .cell -->
