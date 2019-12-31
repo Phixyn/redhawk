@@ -1,7 +1,15 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  $projectName = "Example Project";
+  $projectCategory = "Games, C++";
+  $projectSummary = "This is a short project summary.";
+  $projectLanguage = "C++";
+  $projectTechnologies = "SFML";
+  $projectStatus = "On hold";
+  $projectVCSLink = "https://github.com/Phixyn/ExampleProject";
+  $projectStartDate = "January 31st, 2019";
   // Override title and metadata variables here before including header
-  $config['page_title'] = "Example Project - Projects - Alpeche Pancha";
+  $config['page_title'] = $projectName . " - Projects - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
@@ -10,36 +18,36 @@
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="cell">
           <!-- <hr />
-          <h1 class="h5 subheader" id="main-content-banner">&bull; Example Project &bull;</h1>
+          <h1 class="h5 subheader" id="main-content-banner">&bull; <?php echo $projectName ?> &bull;</h1>
           <hr /> -->
         </div> <!-- .cell -->
 
         <div class="cell medium-6 large-6">
-          <h2 class="h5">Example Project</h2>
+          <h2 class="h5"><?php echo $projectName ?></h2>
         </div> <!-- .cell -->
         
         <div class="cell medium-6 large-6">
-          <h2 class="h6 subheader float-right">Games, C++</h2>
+          <h2 class="h6 subheader float-right"><?php echo $projectCategory ?></h2>
         </div> <!-- .cell -->
 
         <div class="cell">
-          <p>This is a short project summary.</p>
+          <p><?php echo $projectSummary ?></p>
         </div> <!-- .cell -->
 
         <div class="cell medium-3 large-3">
           <dl>
             <dt>Programming Language</dt>
-            <dd>C++</dd>
+            <dd><?php echo $projectLanguage ?></dd>
             <dt>Technologies</dt>
-            <dd>SFML</dd>
+            <dd><?php echo $projectTechnologies ?></dd>
             <dt>Status</dt>
-            <dd>On hold</dd>
+            <dd><?php echo $projectStatus ?></dd>
             <dt>Github</dt>
-            <dd><a href="#">https://github.com/Example_Project</a></dd>
+            <dd><a href="<?php echo $projectVCSLink ?>"><?php echo $projectVCSLink ?></a></dd>
             <dt>Category</dt>
-            <dd>Games, C++</dd>
+            <dd><?php echo $projectCategory ?></dd>
             <dt>Date Started</dt>
-            <dd>January 31st, 2019</dd>
+            <dd><?php echo $projectStartDate ?></dd>
           </dl>
         </div> <!-- .cell -->
 
@@ -97,7 +105,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php">Projects</a></li>
-              <li><span class="show-for-sr">Current: </span>Example Project</li>
+              <li><span class="show-for-sr">Current: </span><?php echo $projectName ?></li>
             </ul>
           </nav>
         </div> <!-- .cell -->
