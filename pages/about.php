@@ -2,6 +2,7 @@
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
   // Override title and metadata variables here before including header
   $config['page_title'] = "About - Alpeche Pancha - Phixyn";
+  $config['active_page'] = "about";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
