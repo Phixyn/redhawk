@@ -8,6 +8,7 @@ $config = array(
         "site_description" => "Phixyn's personal website",
         "site_keywords" => "Phixyn, is, awesome"
     ),
+    "active_page" => "",
     "urls" => array(
         "root" => $domain,
         "pages" => array(
