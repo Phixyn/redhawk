@@ -16,6 +16,22 @@
 
         <!-- BLOG POST -->
         <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/grimes_cyberpunk.png" alt="Grimes in Cyberpunk 2077" /></a></div>
+        </div> <!-- .cell -->
+
+        <div class="cell large-8 medium-8 small-9 blog-post-summary">
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1 - Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
+          <small class="blog-meta">Posted on December 23, 2019 in <a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a> &nbsp; | &nbsp; Comments: Off</small>
+          <hr />
+
+          <p>Welcome to the first weekly blog post. I thought I'd try to do a mini blog post every week. It's almost like a newsletter mixed with a casual blog post. The idea is to give updates on projects I'm working on, as well as news related to my interests and hobbies. I'll try to keep it short and to the point.</p>
+
+          <p><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php" title="Continue reading">Continue reading &raquo;</a></p>
+        </div> <!-- .cell -->
+        <!-- END OF BLOG POST -->
+
+        <!-- BLOG POST -->
+        <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
           <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/blog_post.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" /></a></div>
         </div> <!-- .cell -->
 
