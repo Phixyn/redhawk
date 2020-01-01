@@ -40,7 +40,9 @@
         <div class="cell">
           <h3 class="h4">Spotify Wrapped</h3>
 
-          <p style="text-align:center;"><img style="width:70%; height:65%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/spotify_wrapped_2019.PNG" alt="My Spotify Wrapped 2019" /></p>
+          <figure style="text-align:center;">
+            <a href="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/spotify_wrapped_2019.PNG" target="_blank"><img class="thumbnail" style="width:70%; height:65%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/spotify_wrapped_2019.PNG" alt="My Spotify Wrapped 2019" /></a>
+          </figure>
 
           <p>Every year, Spotify users are blessed with statistics about the music they listened to throughout the year. This year's Spotify Wrapped also included stats for the 2010s decade, which was a nice treat. My Spotify Wrapped was not too surprising to me. I listen to a wide variety of music, but there's a few genres that I love: symphonic metal, gothic metal and alternative rock.<p>
 
@@ -64,13 +66,18 @@
 
           <p>First Keanu Reeves and then Grimes... this game is truly going to be breathtaking. It's impressive how CD Projekt Red kept both of these announcements from being leaked. Although, I had gotten a strange notification on my Twitter about Grimes liking a particular tweet a few days prior to the announcement. Still, I did not expect her to actually write a song for the game.</p>
 
-          <p style="text-align: center;"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/grimes_cyberpunk_tweet.PNG" alt="Grimes likes a tweet from the Cyberpunk 2077 Twitter account" /></p>
+          <figure style="text-align: center;">
+            <a href="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/grimes_cyberpunk_tweet.PNG" target="_blank"><img class="thumbnail" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/grimes_cyberpunk_tweet.PNG" alt="Grimes likes a tweet from the Cyberpunk 2077 Twitter account" /></a>
+            <figcaption><em>Grimes liked a tweet from the Cyberpunk 2077 Twitter account</em></figcaption>
+          </figure>
         </div> <!-- .cell -->
 
         <div class="cell">
           <h3 class="h4">Sneaky Bacon Enters Alpha Stage</h3>
           
-          <p style="text-align:center;"><img style="width:70%; height:70%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/sneaky_bacon_main_menu.PNG" alt="Sneaky Bacon Main Menu Screen" /></p>
+          <figure style="text-align:center;">
+            <a href="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/sneaky_bacon_main_menu.PNG" target="_blank"><img class="thumbnail" style="width:70%; height:70%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/sneaky_bacon_main_menu.PNG" alt="Sneaky Bacon Main Menu Screen" /></a>
+          </figure>
 
           <p>For my final year group project, we are developing a fun third person stealth/puzzle-like game. It draws some inspiration from games like the Untitled Goose Game. The game is being developed in Unity and I am one of the gameplay programmers. I am working in C# and have been focusing on enemy AI programming and the tutorial level gameplay. More information about the project will be added to this website soon.</p>
 
