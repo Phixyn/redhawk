@@ -49,11 +49,15 @@
 
         <div class="cell">
           <h3 class="h4">Cyberpunk 2077: Grimes and The Sound Of Night City</h3>
+        </div> <!-- .cell -->
           
-          <!-- <div class="responsive-embed widescreen"> --> <!-- TODO investigate issues with responsive-embed not resizing -->
-          <p style="text-align:center;"><iframe width="854" height="480" src="https://www.youtube.com/embed/Q4ZdkEiYvK0" frameborder="0" allowfullscreen></iframe></p>
-          <!-- </div> -->
+        <div class="cell medium-8 large-8 medium-offset-2 large-offset-2">
+          <div class="responsive-embed widescreen">
+            <iframe src="https://www.youtube.com/embed/Q4ZdkEiYvK0" frameborder="0" allowfullscreen></iframe>
+          </div> <!-- .responsive-embed .widescreen -->
+        </div> <!-- .cell -->
 
+        <div class="cell">
           <p>If you've read the section about Spotify Wrapped above, you can guess why this is a pretty big deal to me. To add to that, Cyberpunk 2077 is a game that I've been anticipating and hyping for pretty much since the first teaser trailer came out. Needless to say, Friday 13th December was a pretty good day to be both a Grimes fan and a Cyberpunk 2077 fan.</p>
 
           <p>Grimes performed her new song "4&#0198;M" at The Game Awards and was announced to be one of the artists composing songs for the game's soundtrack. Additionally, she will be voicing the character <a href="https://cyberpunk.fandom.com/wiki/Lizzy_Wizzy" title="Cyberpunk Wiki - Lizzy Wizzy" target="_blank">"Lizzy Wizzy"</a>, a musician residing in Night City.</p>
