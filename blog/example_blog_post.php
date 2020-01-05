@@ -1,7 +1,11 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  $postTitle = "Example Blog Post";
+  $postTag = "IoT";
+  $postTagLink = "#";
+  $postDate = "February 20, 2018";
   // Override title and metadata variables here before including header
-  $config['page_title'] = "Example Blog Post - Blog - Alpeche Pancha";
+  $config['page_title'] = $postTitle . " - Blog - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
@@ -16,8 +20,8 @@
 
         <!-- BLOG POST -->
         <div class="cell">
-          <h2 class="h3 blog-title"><a href="#">Example Blog Post - The IoT and Gaming</a></h2>
-          <small class="blog-meta">Posted on February 20, 2018 in <a href="#">IoT</a> &nbsp; | &nbsp; Comments: Off</small>
+          <h2 class="h3 blog-title"><a href="#"><?php echo $postTitle ?></a></h2>
+          <small class="blog-meta">Posted on <?php echo $postDate ?> in <a href="<?php echo $postTagLink ?>"><?php echo $postTag ?></a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
         </div> <!-- .cell -->
 
@@ -82,7 +86,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
-              <li><span class="show-for-sr">Current: </span>Example Blog Post - The IoT and Gaming</li>
+              <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>
         </div> <!-- .cell -->

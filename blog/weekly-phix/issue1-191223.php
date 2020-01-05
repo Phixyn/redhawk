@@ -1,7 +1,11 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  $postTitle = "Weekly Phix: Spotify Wrapped, Grimes and Sneaky Bacon";
+  $postTag = "Weekly Phix";
+  $postTagLink = $config["urls"]["blog"] . "/weekly-phix/index.php";
+  $postDate = "December 23, 2019";
   // Override title and metadata variables here before including header
-  $config['page_title'] = "Weekly Phix - Spotify Wrapped, Grimes and Sneaky Bacon - Phixyn";
+  $config['page_title'] = $postTitle . " - Blog - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
@@ -16,8 +20,8 @@
 
         <!-- BLOG POST -->
         <div class="cell">
-          <h2 class="h3 blog-title"><a href="#">Weekly Phix #1 - Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
-          <small class="blog-meta">Posted on December 23, 2019 in <a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a> &nbsp; | &nbsp; Comments: Off</small>
+          <h2 class="h3 blog-title"><a href="#"><?php echo $postTitle ?></a></h2>
+          <small class="blog-meta">Posted on <?php echo $postDate ?> in <a href="<?php echo $postTagLink ?>"><?php echo $postTag ?></a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
         </div> <!-- .cell -->
 
@@ -100,7 +104,7 @@
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a></li>
-              <li><span class="show-for-sr">Current: </span>Weekly Phix #1 - Spotify Wrapped, Grimes and Sneaky Bacon</li>
+              <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>
         </div> <!-- .cell -->
