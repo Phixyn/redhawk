@@ -59,7 +59,7 @@
         <div class="cell">
           <div class="media-object">
             <div class="media-object-section">
-              <div class="thumbnail"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/Philips-Hue-Alexa-Bridge-Control-Smarthome.jpg" alt="Blog post image" /></div>
+              <div class="thumbnail"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/Philips-Hue-Alexa-Bridge-Control-Smarthome.jpg" alt="Philips Hue Bridge" /></div>
             </div> <!-- .media-object-section -->
 
             <div class="media-object-section">
@@ -75,7 +75,7 @@
 
           <p>As a gamer, IoT and smart home devices have recently caught my attention as I explored ways to customise my gaming setup for an optimal experience. Recently, Razer and Philips have <a href="https://www2.meethue.com/en-gb/friends-of-hue/razer">teamed up</a> to allow users to link their Razer Chroma peripherals with any Philips Hue product. This provides gamers with a more rich and immersive gaming experience in their room.</p>
 
-          <p>This also sparked my interest as a game developer, as both Razer Chroma and Philips Hue offer rich APIs for developers to use. In the next blog post, I will discuss the usefulness of these APIs and what opportunities it could provide game developers with in terms of enhancing gaming experience by directly interacting with the gamer’s physical space.</p>
+          <p>This also sparked my interest as a game developer, as both Razer Chroma and Philips Hue offer rich APIs for developers to use. In the next blog post, I will discuss the usefulness of these APIs and what opportunities it could provide game developers with in terms of enhancing gaming experience by directly interacting with the gamer's physical space.</p>
         </div> <!-- .cell -->
 
         <div class="cell">
