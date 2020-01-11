@@ -31,6 +31,7 @@
   "fahrenheit": xx
   }
 }</pre>
+</p>
 
 <p>To do this, I needed to update two methods: the get_temperature method in the PhidgetHelper class, and the do_GET method in the HTTP request handler subclass. First, instead of returning a number in get_temperature, I created returned the JSON object mentioned above. Using Python’s JSON module, I was able to convert a Python dictionary to a JSON string using the "dumps()" method. I could have also created a JSON object in the voltageChangeHandler method and stored the JSON object as an instance variable, but this method gets called more often than get_temperature, so it would be more resource intensive to create/update a JSON object every second. By doing it in get_temperature instead, the JSON object is only created when necessary. The reason why I didn’t do all of this in the do_GET is because I want to keep all temperature related code in the PhidgetHelper class, and keep the HTTP server classes only responsible for the server itself.</p>
 

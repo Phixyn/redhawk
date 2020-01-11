@@ -1,9 +1,9 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-  $postTitle = "SmartPhix - Android App and Retrofit";
+  $postTitle = "SmartPhix: Android App and Retrofit";
   $postTag = "SmartPhix";
   $postTagLink = $config["urls"]["blog"] . "/tags/smartphix/index.php";
-  $postDate = "March 30th, 2018";
+  $postDate = "March 30, 2018";
   // Override title and metadata variables here before including header
   $config['page_title'] = $postTitle . " - Blog - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
