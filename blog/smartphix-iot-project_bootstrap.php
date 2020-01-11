@@ -75,11 +75,11 @@ For temperature monitoring, I will be using a Phidget I/O board and temperature 
 
 <h3>Technical limitations</h3>
 <ul>
-<li>The HTTP server and the Android smartphone must be connected to the same network (Wi-Fi required).
-<li>The HTTP server will only support one Phidget sensor at a time for this concept project, but in the future it can be expanded to handle all sensors connected to the Phidget I/O board.
-<li>While the Hue API is free to use and open source, other APIs for third party products are not always made available. This means that the app will only be compatible with Philips Hue products.
-<li>Security: The concept project will use a basic HTTP server, with no HTTPS support. Thus, the API is not secure. There is no authentication, and anyone on the network can make requests to the server.
-<li>The IP addresses of the HTTP server and the Hue Bridge will need to be specified in the app’s code before running the app. There will be no network discovery mechanism for the concept app. <li>In the future, I will need to implement network discovery using, for example, UPnP (for the Hue Bridge) and/or SSDP.
+<li>The HTTP server and the Android smartphone must be connected to the same network (Wi-Fi required).</li>
+<li>The HTTP server will only support one Phidget sensor at a time for this concept project, but in the future it can be expanded to handle all sensors connected to the Phidget I/O board.</li>
+<li>While the Hue API is free to use and open source, other APIs for third party products are not always made available. This means that the app will only be compatible with Philips Hue products.</li>
+<li>Security: The concept project will use a basic HTTP server, with no HTTPS support. Thus, the API is not secure. There is no authentication, and anyone on the network can make requests to the server.</li>
+<li>The IP addresses of the HTTP server and the Hue Bridge will need to be specified in the app’s code before running the app. There will be no network discovery mechanism for the concept app. <li>In the future, I will need to implement network discovery using, for example, UPnP (for the Hue Bridge) and/or SSDP.</li>
 </ul>
 
 <h3>Practical limitations</h3>
