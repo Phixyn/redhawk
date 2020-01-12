@@ -1,8 +1,8 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-  $postTitle = "SmartPhix - The IoT and Gaming";
+  $postTitle = "SmartPhix: The IoT and Gaming";
   $postTag = "SmartPhix";
-  $postTagLink = "#";
+  $postTagLink = $config["urls"]["blog"] . "/tags/smartphix/index.php";
   $postDate = "February 20, 2018";
   // Override title and metadata variables here before including header
   $config['page_title'] = $postTitle . " - Blog - Alpeche Pancha";
@@ -84,6 +84,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
+              <li><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a></li>
               <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>

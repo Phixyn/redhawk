@@ -26,7 +26,7 @@
         </div> <!-- .cell -->
 
         <div class="cell">
-          <p>Last week I was having some issues integrating my Phidget API helper class with a simple HTTP server in Python. I couldn't store an instance of my <code>PhidgetHeper</code> class in a way that the request handler class could access it and use its helper methods to return the current sensor temperature. However, I did not give up so easily. After digging through more documentation and reading the Python docs for the <code>http.server</code> module, I started understanding more about how I should structure my server code. Additionally, I found a way to pass context onto a <code>HTTPServer</code> instance in Python. By context, I mean member variables, additional helper methods, etc. This is exactly what I was having difficulty doing last week, as I simply could not find a way to keep a persistent instance of my <code>PhidgetHelper</code> class anywhere within the server code.</p>
+          <p>Last week I was having some issues integrating my Phidget API helper class with a simple HTTP server in Python. I couldn't store an instance of my <code>PhidgetHelper</code> class in a way that the request handler class could access it and use its helper methods to return the current sensor temperature. However, I did not give up so easily. After digging through more documentation and reading the Python docs for the <code>http.server</code> module, I started understanding more about how I should structure my server code. Additionally, I found a way to pass context onto a <code>HTTPServer</code> instance in Python. By context, I mean member variables, additional helper methods, etc. This is exactly what I was having difficulty doing last week, as I simply could not find a way to keep a persistent instance of my <code>PhidgetHelper</code> class anywhere within the server code.</p>
 
           <p>In order solve this, I had to create a subclass of <code>HTTPServer</code>, which I appropriately named <code>SmartphixHTTPServer</code>. I then created and stored an instance of my <code>PhidgetHelper</code> class in a member variable. The request handler classes were then able to access this member variable by referencing the server object (i.e. <code>self.server.member_var</code>), which is an instance variable of <code>BaseHTTPRequestHandler</code>. This variable seems to be instantiated when our HTTP request handler <b>sub-class (not object, the class reference itself)</b> is passed as an argument of the <code>HTTPServer</code> class' constructor method.</p>
 
@@ -61,6 +61,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
+              <li><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a></li>
               <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>

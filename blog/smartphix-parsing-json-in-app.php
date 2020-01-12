@@ -26,7 +26,7 @@
         </div> <!-- .cell -->
 
         <div class="cell">
-          <p>This past week I was faced with the challenge of using JSON data in my Android app. Retrofit libraries offer what is known as converters. Converters are classes used for converting Java types to their HTTP representation and parsing HTTP entities back into Java types. For example, a HTTP representation of JSON, which is what my HTTP server sends to the app, should be converted to a POJO (Plain Old Java Object) before being used in the app. This is why I chose to use Retrofit instead of alternative libraries such as OkHTTP. Retrofit's converters make it very easy to parse JSON HTTP responses into POJOs.</p>
+          <p>This past week I was faced with the challenge of using JSON data in my Android app. Retrofit libraries offer what is known as converters. Converters are classes used for converting Java types to their HTTP representation and parsing HTTP entities back into Java types. For example, a HTTP representation of JSON, which is what my HTTP server sends to the app, should be converted to a POJO (Plain Old Java Object) before being used in the app. This is why I chose to use Retrofit instead of alternative libraries such as <code>OkHTTP</code>. Retrofit's converters make it very easy to parse JSON HTTP responses into POJOs.</p>
 
           <p>To parse plain text data from my server, I used the Scalar converter, which simply takes the text and converts it to a String object. A Gson converter is needed for JSON data. I can specify the type of converter to use when creating my Retrofit object in the <code>MainActivity</code> class. The first step was to replace the Scalar converter with Gson.</p>
 
@@ -43,6 +43,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
+              <li><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a></li>
               <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>

@@ -1,6 +1,6 @@
 <?php
   require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-  $postTitle = "SmartPhix: A simple IoT project";
+  $postTitle = "SmartPhix: A Simple IoT Project";
   $postTag = "SmartPhix";
   $postTagLink = $config["urls"]["blog"] . "/tags/smartphix/index.php";
   $postDate = "March 6, 2018";
@@ -118,6 +118,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
+              <li><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a></li>
               <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>
