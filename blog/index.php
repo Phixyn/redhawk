@@ -1,53 +1,67 @@
-<?php 
-	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-	$config['page_title'] = "Blog - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+<?php
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "Blog - Alpeche Pancha - Phixyn";
+  $config['active_page'] = "blog";
+  require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
-		<div class="banner"> Blog </div>
+    <!-- MAIN CONTENT -->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell">
+          <hr />
+          <h1 class="h5 subheader" id="main-content-banner">&bull; Blog &bull;</h1>
+          <hr />
+        </div> <!-- .cell -->
 
-        <!-- Main content -->
-        <div class="container" id="main-content">
+        <!-- BLOG POST -->
+        <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/weekly-phix/grimes_cyberpunk.png" alt="Grimes in Cyberpunk 2077" /></a></div>
+        </div> <!-- .cell -->
 
-			<div class="row blog-post">
-				<div class="blog-header">
-					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/welcome-to-redhawk-20171111.php" title="Welcome to the website">Welcome To The Website</a></div>
-					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
-				</div>	<!-- .blog-header -->
+        <div class="cell large-8 medium-8 small-9 blog-post-summary">
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1: Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
+          <small class="blog-meta">Posted on December 23, 2019 in <a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a> &nbsp; | &nbsp; Comments: Off</small>
+          <hr />
 
-				<p>Welcome to my website! This is the first iteration of my website, after a complete refactor and some re-design. It is very much a work in progress. I aim to release a new iteration at least every two weeks, but this may vary depending on how busy I am with coursework and my full-time job.</p>
+          <p>Welcome to the first weekly blog post. I thought I'd try to do a mini blog post every week. It's almost like a newsletter mixed with a casual blog post. The idea is to give updates on projects I'm working on, as well as news related to my interests and hobbies. I'll try to keep it short and to the point.</p>
 
-				<p><a href="<?php echo $config['urls']['blog']; ?>/welcome-to-redhawk-20171111.php" title="Continue reading">Continue reading &raquo;</a></p>
-            </div> <!-- /.row /.blog-post -->
+          <p><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php" title="Continue reading">Continue reading &raquo;</a></p>
+        </div> <!-- .cell -->
+        <!-- END OF BLOG POST -->
 
-			<div class="row blog-post">
-				<div class="blog-header">
-					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/v020-release-notes-20171111.php" title="v0.2.0 release notes">v0.2.0 Release Notes</a></div>
-					<div class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
-				</div>	<!-- .blog-header -->
+        <!-- BLOG POST -->
+        <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" /></a></div>
+        </div> <!-- .cell -->
 
-                <p><b>New features:</b></p>
-                <ul>
-                    <li>The old website content, style and layout were migrated to new template-based engine (released in v0.1.0)</li>
-                    <li>Re-designed sections such as the top navigation bar</li>
-                    <li>Integrated Bootstrap in new layout</li>
-                    <li>Added a "carousel" section to the homepage</li>
-                </ul>
+        <div class="cell large-8 medium-8 small-9 blog-post-summary">
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php">SmartPhix: The IoT and Gaming</a></h2>
+          <small class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</small>
+          <hr />
 
-				<p><a href="<?php echo $config['urls']['blog']; ?>/v020-release-notes-20171111.php" title="Continue reading">Continue reading &raquo;</a></p>
-            </div> <!-- /.row /.blog-post -->
+          <p>Over the last two decades, technology has grown at an unprecedented pace. Many emerging technologies deserve our attention, including new Artificial Intelligence (AI) and machine learning algorithms, cryptocurrency, Internet of Things (IoT) and Virtual and Augmented Reality. When we take a look at game development, AI, VR and AR seem to be taking the spotlight, rightfully so. However, I believe that there is also place for IoT in game development, which deserves to be explored further.</p>
 
-            <div class="row blog-post">
-				<div class="blog-header">
-					<div class="blog-title"><a href="<?php echo $config['urls']['blog']; ?>/new-years-resolutions-20141225.php" title="On New Years' resolutions">On New Years' Resolutions</a></div>
-					<div class="blog-meta">Posted on December 25, 2014 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</div>
-				</div>	<!-- .blog-header -->
+          <p><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php" title="Continue reading">Continue reading &raquo;</a></p>
+        </div> <!-- .cell -->
+        <!-- END OF BLOG POST -->
 
-				<p>A new year is quickly approaching and with this, people are starting to jot down their plans and goals for the year ahead. New years' resolutions are a great way to motivate yourself and get hyped. However, they might not always work and each year, you might end up with a few goals and plans left unattended, which can make you feel rather disappointed in yourself.</p>
+        <!-- BLOG POST -->
+        <!--
+        <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php"><img src="<?php echo $config['paths']['images']['root']; ?>/colorPulse_V4.jpg" alt="Blog post image" /></a></div>
+        </div> .cell
 
-				<p><a href="<?php echo $config['urls']['blog']; ?>/new-years-resolutions-20141225.php" title="Continue reading">Continue reading &raquo;</a></p>
-            </div> <!-- /.row /.blog-post -->
-
-        </div> <!-- /.container #main-content -->
+        <div class="cell large-8 medium-8 small-9 blog-post-summary">
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php">Example Blog Post</a></h2>
+          <small class="blog-meta">Posted on November 11, 2017 in <a href="#">Uncategorized</a> &nbsp; | &nbsp; Comments: Off</small>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt fermentum risus, id tincidunt orci porta eget. Fusce consectetur iaculis porta. Fusce suscipit gravida malesuada. In semper efficitur massa, et cursus odio porttitor non.</p>
+          <p><a href="<?php echo $config['urls']['blog']; ?>/example_blog_post.php" title="Continue reading">Continue reading &raquo;</a></p>
+        </div> .cell -->
+        <!-- END OF BLOG POST -->
+      </div> <!-- .grid-x -->
+    </div> <!-- .grid-container -->
 
 <?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

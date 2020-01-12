@@ -1,40 +1,56 @@
-<?php 
-	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-	$config['page_title'] = "About Me - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+<?php
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "About - Alpeche Pancha - Phixyn";
+  $config['active_page'] = "about";
+  require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
-		<div class="banner"> About </div>
+    <!-- MAIN CONTENT -->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell">
+          <hr />
+          <h1 class="h5 subheader" id="main-content-banner">&bull; About &bull;</h1>
+          <hr />
+        </div> <!-- .cell -->
 
-		<!-- Main content -->
-        <div class="container" id="main-content">
-			<h1 class="main-content-main-title"><span style="color: #BBBBBB;">My name is</span> Alpeche <span style="color: #BBBBBB;">and I am a</span> Test Engineer <span style="color: #BBBBBB;">at</span> Adastral Park.</h1>
-            <div class="row" id="content-intro">
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-10 col-xl-10">
-					<h1> What I do </h1>
+        <div class="cell">
+          <h2 class="h5" style="text-align: center;">My name is <strong>Alpeche</strong> and I am a <strong>Games Programming Student</strong> at <strong>UOS.</strong></h2>
+        </div> <!-- .cell -->
 
-					<p> I am a Software Test Engineer for a small software development company based at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a>, Suffolk. I am studying part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree at the University of Suffolk. During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence. </p>
+        <div class="cell">
+          <div class="callout">
+            <div class="media-object">
+              <div class="media-object-section">
+                <h2 class="h4">What I do</h2>
 
-					<p> Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
-					If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
+                <p>I am a Software Test Engineer for a small software development company based at <a href="http://atadastral.co.uk/about/" title="Adastral Park">Adastral Park</a>, Suffolk. I am studying part-time for my <a href ="https://www.uos.ac.uk/courses/ug/bsc-hons-computer-games-programming" title="Computer Games Programming at UOS">BSc Computer Games Programming</a> degree at the <a href="https://www.uos.ac.uk/" title="University of Suffolk">University of Suffolk</a>. During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence.</p>
 
-					<p style="text-align: center; font-style:italic;"> <a href="#">My work</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Request CV</a> &nbsp;<span style="color: #A62139">//</span>&nbsp; <a href="#">Contact me</a> </p>
-                </div>
+                <p>Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.<br />
+                If you wish, you can drop a follow on my <a href="https://www.twitter.com/Phixyn" title="Twitter - Alpeche Pancha (@Phixyn)">Twitter.</a></p>
+      
+                <p style="text-align: center; font-style:italic;"><a href="<?php echo $config['urls']['pages']['root']; ?>/projects.php">Portfolio</a> &nbsp;//&nbsp; <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">Download CV</a> &nbsp;//&nbsp; <a href="<?php echo $config['urls']['pages']['root']; ?>/contact.php">Contact me</a></p>
+              </div> <!-- .media-object-section -->
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2">
-					<img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" class="img-thumbnail" />
-				</div>
-            </div> <!-- /.row /#content-intro -->
+              <div class="media-object-section">
+                <div class="thumbnail"><img src="<?php echo $config['paths']['images']['root']; ?>/me3.png" alt="Avatar" /></div>
+              </div> <!-- .media-object-section -->
+            </div> <!-- .media-object -->
+          </div> <!-- .callout -->
+        </div> <!-- .cell -->
 
-			<div class="row">
-				<h1> My projects </h1>
+        <div class="cell">
+          <h2 class="h4">My projects</h2>
+          <hr />
 
-				<p> Project "Redhawk" is this website. In 2014, I released its first version, but didn't continue maintaining it regularly due to other workload. In 2017, I finally picked up the project again and decided to rewrite it. The previous version had a template based engine written in JavaScript, and some CSS to deal with different sized screens. This new version has a template based engine written in PHP, based on Wordpress but much more lightweight, and uses the Bootstrap framework for its layout and responsiveness across multiple devices. </p>
+          <p> I am currently working on my final year group project at UOS, which is a third person puzzle game developed in Unity. More info to come soon.</p>
 
-				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
+  				<p> I am also working on a C++ game engine built using SFML. I've submitted a first version of this engine for an University assignment and was graded a first. Currently, a lot more work is required to make it good! The repository can be <a href="https://github.com/Phixyn/PhinyxEngine" title="PhinyxEngine - Phixyn's Github">found here.</a> </p>
 
-				<p> You can find out more about my experience, skills and qualities by <a href="#">requesting a CV.</a> Alternatively, feel free to <a href="#">contact me!</a></p>
-			</div> <!-- /.row -->
-		</div> <!-- /.container /#main-content -->
+          <p> You can find out more about my experience, skills and qualities by <a href="<?php echo $config['paths']['static']; ?>/Alpeche_Pancha_CV.pdf" title="Download CV">downloading my CV.</a> Alternatively, feel free to <a href="<?php echo $config['urls']['pages']['root']; ?>/contact.php">contact me!</a></p>
+        </div> <!-- .cell -->
+      </div> <!-- .grid-x -->
+    </div> <!-- .grid-container -->
 
 <?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>

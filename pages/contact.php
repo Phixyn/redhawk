@@ -1,61 +1,70 @@
-<?php 
-	require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
-	$config['page_title'] = "Contact - Alpeche Pancha - Phixyn";
-    require_once($config["paths"]["includes"]["templates"] . "/header.php");
+<?php
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/phix.php");
+  // Override title and metadata variables here before including header
+  $config['page_title'] = "Contact - Alpeche Pancha - Phixyn";
+  $config['active_page'] = "contact";
+  require_once($config["paths"]["includes"]["templates"] . "/header.php");
 ?>
 
-		<div class="banner"> Contact </div>
+    <!-- MAIN CONTENT -->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell">
+          <hr />
+          <h1 class="h5 subheader" id="main-content-banner">&bull; Contact &bull;</h1>
+          <hr />
+        </div> <!-- .cell -->
 
-		<!-- Main content -->
-        <div class="container" id="main-content">
-            <div class="row">
-                <div class="col-sm-8 col-md-6" id="contact-form">
-					<form name="contactForm" method="post" action="#" >
-						<fieldset>
-							<ul>
-								<li>
-									<label for="contact-name">Name</label>
-									<input type="text" name="cName" id="contact-name" required="required" disabled="disabled" />
-								</li>
-								<li>
-									<label for="contact-email">Email</label>
-									<input type="text" name="cEmail" id="contact-email" required="required" disabled="disabled" />
-								</li>
-								<li>
-									<label for="contact-website">Website</label>
-									<input type="text" name="cWebsite" id="contact-website" disabled="disabled" />
-								</li>
-								<li class="contact-msg">
-									<label for="contact-message">Message</label>
-									<textarea name="cMessage" id="contact-message" maxlength="500" required="required" placeholder="Describe your query..." disabled="disabled">The contact form is not yet implemented. To contact me, please send an email to the address on the right-hand side.
+        <!-- Contact form
+        <div class="cell medium-6 large-6">
+          <form>
+            <div class="input-group">
+              <span class="input-group-label" style="min-width: 20%;">Name</span>
+              <input class="input-group-field" type="text" placeholder="Name" />
+            </div> .input-group
 
-Alternatively, use the social media links on the right-hand side to get in touch.
-									</textarea>
-								</li>
-								<li>
-									<input type="submit" name="submitContact" id="submit-contact" value="Send" disabled="disabled" />
-								</li>
-								<input type="hidden" name="contactSubmitted" id="contact-submitted" value="true" disabled="disabled" />
-							</ul>
-						</fieldset>
-					</form>
-                </div> <!-- /.col-* /#contact-form -->
+            <div class="input-group">
+              <span class="input-group-label" style="min-width: 20%;">Email</span>
+              <input class="input-group-field" type="email" placeholder="Email" />
+            </div> .input-group
 
-				<div class="col-sm-4 col-md-6" id="contact-details">
-					<ul id="social-media-icons">
-						<li><a href="https://www.facebook.com/phixyn" title="Facebook"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" /></a></li>
-						<li><a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
-						<li><a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
-						<li><a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" /></a></li>
-						<li><a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" /></a></li>
-					</ul>
+            <div class="input-group">
+              <span class="input-group-label" style="min-width: 20%;">Website</span>
+              <input class="input-group-field" type="text" placeholder="Website (Optional)" />
+            </div> .input-group
 
-					<p id="contact-details-header"> Alpeche Pancha <br />
-					phixyn@gmail.com </p>
-					<p> Ipswich, Suffolk <br />
-					England, UK </p>
-				</div> <!-- /.col-* /#contact-details -->
-            </div> <!-- /.row -->
-		</div>	<!-- /.container /#main-content -->
+            <div class="input-group">
+              <span class="input-group-label" style="min-width: 20%;">Message</span>
+              <textarea class="input-group-field" placeholder="Message"></textarea>
+            </div> .input-group
+
+            <button type="button" class="button float-right">Submit</button>
+          </form>
+        </div> .cell -->
+
+        <!-- <div class="cell medium-5 large-5 medium-offset-1 large-offset-1" id="contact-details"> --> <!-- TODO uncomment and comment out div below when form is implemented -->
+        <div class="cell" id="contact-details">
+          <h2 class="h5 subheader">
+            Alpeche Pancha <br />
+            phixyn@gmail.com
+          </h2>
+          <p></p>
+          <p>
+            Ipswich, Suffolk <br />
+            England, UK
+          </p>
+          <hr />
+          <div class="button-group" id="social-media-icons">
+            <p>
+              <a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" alt="Twitter" /></a>
+              <a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" alt="LinkedIn" /></a>
+              <a href="https://www.facebook.com/phixyn" title="Facebook Profile"><img src="<?php echo $config['paths']['images']['social']; ?>/facebook_dark.png" alt="Facebook profile" /></a>
+              <!-- <a href="https://www.twitter.com/Phixyn" title="Twitter"><img src="<?php echo $config['paths']['images']['social']; ?>/twitter02_dark.png" alt="Twitter" /></a>
+              <a href="https://uk.linkedin.com/in/alpechepancha" title="LinkedIn"><img src="<?php echo $config['paths']['images']['social']; ?>/in_dark.png" alt="LinkedIn" /></a> -->
+            </p>
+          </div> <!-- .button-group -->
+        </div> <!-- .cell #contact-details -->
+      </div> <!-- .grid-x -->
+    </div> <!-- .grid-container -->
 
 <?php require_once($config["paths"]["includes"]["templates"] . "/footer.php"); ?>
