@@ -21,7 +21,7 @@
         </div> <!-- .cell -->
 
         <div class="cell large-8 medium-8 small-9 blog-post-summary">
-          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1 - Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1: Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
           <small class="blog-meta">Posted on December 23, 2019 in <a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
 
@@ -33,17 +33,17 @@
 
         <!-- BLOG POST -->
         <div class="cell large-4 medium-4 small-3 blog-post-thumbnail">
-          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/blog_post.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" /></a></div>
+          <div class="thumbnail"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php"><img src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" /></a></div>
         </div> <!-- .cell -->
 
         <div class="cell large-8 medium-8 small-9 blog-post-summary">
-          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/blog_post.php">SmartPhix - The IoT and Gaming</a></h2>
-          <small class="blog-meta">Posted on February 20, 2018 in <a href="#">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</small>
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php">SmartPhix: The IoT and Gaming</a></h2>
+          <small class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
 
           <p>Over the last two decades, technology has grown at an unprecedented pace. Many emerging technologies deserve our attention, including new Artificial Intelligence (AI) and machine learning algorithms, cryptocurrency, Internet of Things (IoT) and Virtual and Augmented Reality. When we take a look at game development, AI, VR and AR seem to be taking the spotlight, rightfully so. However, I believe that there is also place for IoT in game development, which deserves to be explored further.</p>
 
-          <p><a href="<?php echo $config['urls']['blog']; ?>/blog_post.php" title="Continue reading">Continue reading &raquo;</a></p>
+          <p><a href="<?php echo $config['urls']['blog']; ?>/smartphix-iot-and-gaming.php" title="Continue reading">Continue reading &raquo;</a></p>
         </div> <!-- .cell -->
         <!-- END OF BLOG POST -->
 

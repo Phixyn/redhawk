@@ -20,7 +20,7 @@
         </div> <!-- .cell -->
 
         <div class="cell large-8 medium-8 small-9 blog-post-summary">
-          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1 - Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
+          <h2 class="h4 blog-title"><a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/issue1-191223.php">Weekly Phix #1: Spotify Wrapped, Grimes and Sneaky Bacon</a></h2>
           <small class="blog-meta">Posted on December 23, 2019 in <a href="<?php echo $config['urls']['blog']; ?>/weekly-phix/index.php">Weekly Phix</a> &nbsp; | &nbsp; Comments: Off</small>
           <hr />
 
