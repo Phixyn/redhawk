@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - The IoT and Gaming</div>
-					<div class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on February 20, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
                 <a href="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" target="_blank"><img src="<?php echo $config['urls']['root']; ?>/static/blog/image-uploads/communication-1927706_640.jpg" alt="Internet of Things" style="width: 40%;height:50%;" /></a>
@@ -42,7 +42,7 @@
 
 <p>This also sparked my interest as a game developer, as both Razer Chroma and Philips Hue offer rich APIs for developers to use. In the next blog post, I will discuss the usefulness of these APIs and what opportunities it could provide game developers with in terms of enhancing gaming experience by directly interacting with the gamer’s physical space.</p>
 				
-				<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
+				<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->

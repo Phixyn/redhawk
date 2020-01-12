@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - HTTP Server Updates</div>
-					<div class="blog-meta">Posted on March 23rd, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 23rd, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 <p>Last week I was having some issues integrating my Phidget API helper class with a simple HTTP server in Python. I couldn't store an instance of my PhidgetHeper class in a way that the request handler class could access it and use its helper methods to return the current sensor temperature. However, I did not give up so easily. After digging through more documentation and reading the Python docs for the http.server module, I started understanding more about how I should structure my server code. Additionally, I found a way to pass context onto a HTTPServer instance in Python. By context, I mean member variables, additional helper methods, etc. This is exactly what I was having difficulty doing last week, as I simply could not find a way to keep a persistent instance of my PhidgetHelper class anywhere within the server code.</p>
@@ -39,7 +39,7 @@
 
 <p>With this, the server side is now complete, and I can move on to the Android app implementation, which will be the subject of the next blog post.</p>
 
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->

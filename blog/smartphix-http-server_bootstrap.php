@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - Phidget API and HTTP Server</div>
-					<div class="blog-meta">Posted on March 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 <p>For the last couple of weeks, I have been experimenting with the Python Phidget API for my IoT project. I also started looking at ways to implement the backend API server for the project, mainly learning how to write a HTTP server in Python. As with all of my newer projects, I am using Python 3 for this, as more systems are making the move to this version, with the biggest exception being legacy systems.</p>
@@ -32,7 +32,7 @@
 
 <p>For now, the approach of using getVoltage() instead of event-driven/callbacks seems feasible enough to get the server into a ready state for the Android app. Once I have a basic Android app that can display the temperature using the server's API, I can revisit the server and look at the best way to structure it based on best practices, so I will take this approach for now.</p>
 
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->

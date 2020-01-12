@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - Parsing JSON data in the app</div>
-					<div class="blog-meta">Posted on April 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on April 13th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 <p>This past week I was faced with the challenge of using JSON data in my Android app. Retrofit libraries offer what is known as converters. Converters are classes used for converting Java types to their HTTP representation and parsing HTTP entities back into Java types. For example, a HTTP representation of JSON, which is what my HTTP server sends to the app, should be converted to a POJO (Plain Old Java Object) before being used in the app. This is why I chose to use Retrofit instead of alternative libraries such as OkHTTP. Retrofit’s converters make it very easy to parse JSON HTTP responses into POJOs.</p>
@@ -24,7 +24,7 @@
 
 <p>This was done by making a data model for the “state” JSON object returned by calling /api/(api key)/lights/1/state. By sending data in the request JSON, I could change the color of the light. To do so, I had to model the data that I wanted to send. This was done in a HueLightState class inside the models package. After that, like the Smartphix client class, all I had to do was to make a simple HueAPIClient class and use that in MainActivity. I built a separate Retrofit and Call object in MainActivity for the Hue and called that inside the callback for the temperature request, so that I could change the light color based on the temperature value. I also had to add a button to allow the user to refresh the temperature, as I as not able to do that dynamically in a set interval.</p>
 
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->

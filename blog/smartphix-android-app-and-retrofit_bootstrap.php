@@ -11,7 +11,7 @@
             <div class="row blog-post">
 				<div class="blog-header">
 					<div class="blog-title">SmartPhix - Android App and Retrofit</div>
-					<div class="blog-meta">Posted on March 30th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
+					<div class="blog-meta">Posted on March 30th, 2018 in <a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php">SmartPhix</a> &nbsp; | &nbsp; Comments: Off</div>
 				</div>	<!-- .blog-header -->
 
 <p>With the Smartphix HTTP server complete, it was time to start the Android app. For the past week, I made an Android app with a simple UI and set up Retrofit to be used for the API clients. However, all of the data displayed in the UI is placeholder data for now, until I start using Retrofit to get the data. For this week, I just wanted to set up a project and UI.</p>
@@ -24,7 +24,7 @@
 
 <p>I found it hard to position and align elements neatly. So instead of having all widgets inside the RelativeLayout, I decided to group them using LinearLayout. I added two LinearLayout widgets inside the RelativeLayout, and then moved the time and date widgets to one LinearLayout, and the temperature text to another LinearLayout. I decided to leave the connection status text in the RelativeLayout, since it was already perfectly positioned. Using LinearLayouts made it easier to make widgets appear consistent in different screen sizes and also made it easier to align them using the android:layout_gravity="center_horizontal" property. In the future I would like to explore more layout options, particularly the ConstraintLayout, which seems to be more widely used. However, the default RelativeLayout will do for this concept app. Next week, I aim to have some of these TextView widgets show real data.</p>
 
-<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php" title="Back to blog">&laquo; Back to blog</a></p>
+<p><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index_bootstrap.php" title="Back to blog">&laquo; Back to blog</a></p>
 
             </div> <!-- /.row /.blog-post -->
         </div> <!-- /.container #main-content -->
