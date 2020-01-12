@@ -1,7 +1,7 @@
 /* -----------------------------------
 ZURB Foundation Phixed Dark Theme
 
-Version: 0.1.0
+Version: 0.2.0
 Author:  Phixyn
 
 TODO:
@@ -16,6 +16,7 @@ TODO:
 :root {
   --background-main-color: #121212;
   --background-dark-color: #000000;
+  --background-light-color: rgba(60, 60, 60, 0.8);
   --background-dark-transparent-color: rgba(0, 0, 0, 0.5);
   /* TODO: Improve this color. Maybe darker or more transparent? */
   --background-sub-section-color: rgba(25, 25, 25, 0.8);
@@ -23,6 +24,7 @@ TODO:
   /* --border-main-color: #3d3d3d; */
   /* --border-main-color: #cacaca; */
   --border-main-color: rgba(68, 68, 68, 0.25);
+  --border-light-color: rgb(108, 108, 108);
   --text-main-color: #d9d9d9;
   --text-dark-color: #777777;
   --link-main-color: #db5a7f;
@@ -66,6 +68,20 @@ a:hover {
 hr {
   border-bottom: 1px solid var(--separator-main-color);
 }
+
+code {
+  border: 1px solid var(--border-light-color);
+  background-color: var(--background-light-color);
+  color: var(--text-main-color);
+}
+
+/* TODO:
+ * This could have the same colors as a callout or w/e we use for the About me rectangle
+pre {
+  background-color: #202020;
+  border: 1px solid #393939;
+}
+*/
 
 /* -----------------------------------
     TOP BAR
