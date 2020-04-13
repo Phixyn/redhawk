@@ -56,6 +56,13 @@ body,
   color: var(--text-main-color);
 }
 
+h3,
+h4,
+.h3,
+.h4 {
+  padding: 0.9rem 0;
+}
+
 a,
 .breadcrumbs a {
   color: var(--link-main-color);
