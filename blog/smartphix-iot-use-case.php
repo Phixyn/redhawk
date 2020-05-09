@@ -14,7 +14,7 @@
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="cell">
           <hr />
-          <h1 class="h5 subheader" id="main-content-banner">&bull; Blog &bull;</h1>
+          <h1 class="h5 subheader" id="main-content-banner">&bull; SmartPhix &ndash; Blog &bull;</h1>
           <hr />
         </div> <!-- .cell -->
 
@@ -52,7 +52,7 @@
             <ul class="breadcrumbs">
               <li><a href="<?php echo $config['urls']['root']; ?>/index.php">Home</a></li>
               <li><a href="<?php echo $config['urls']['blog']; ?>/index.php">Blog</a></li>
-              <li><a href="<?php echo $config['urls']['blog']; ?>/tags/smartphix/index.php">SmartPhix</a></li>
+              <li><a href="<?php echo $postTagLink ?>"><?php echo $postTag ?></a></li>
               <li><span class="show-for-sr">Current: </span><?php echo $postTitle ?></li>
             </ul>
           </nav>

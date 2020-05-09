@@ -10,7 +10,7 @@
       <div class="grid-x grid-padding-x grid-padding-y">
         <div class="cell">
           <hr />
-          <h1 class="h5 subheader" id="main-content-banner">&bull; Weekly Phix &bull;</h1>
+          <h1 class="h5 subheader" id="main-content-banner">&bull; Weekly Phix &ndash; Blog &bull;</h1>
           <hr />
         </div> <!-- .cell -->
 

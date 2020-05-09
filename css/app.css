@@ -1,7 +1,7 @@
 /* -----------------------------------
 ZURB Foundation Phixed Dark Theme
 
-Version: 0.2.0
+Version: 0.2.1
 Author:  Phixyn
 
 TODO:
@@ -54,6 +54,13 @@ body {
 body,
 .breadcrumbs li {
   color: var(--text-main-color);
+}
+
+h3,
+h4,
+.h3,
+.h4 {
+  padding: 0.9rem 0;
 }
 
 a,
