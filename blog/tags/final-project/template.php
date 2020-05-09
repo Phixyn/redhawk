@@ -3,7 +3,7 @@
   $postTitle = "Final Project Introduction";
   $postTag = "UoS Final Project";
   $postTagLink = $config["urls"]["blog"] . "/tags/final-project/index.php";
-  $postDate = "December 23, 9999";
+  $postDate = "March 23, 2020";
   // Override title and metadata variables here before including header
   $config['page_title'] = $postTitle . " - Blog - Alpeche Pancha";
   require_once($config["paths"]["includes"]["templates"] . "/header.php");
@@ -27,7 +27,7 @@
 
         <div class="cell blog-post-image">
           <figure>
-            <img class="thumbnail" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/communication-1927706_640.jpg" alt="Blog post image" />
+            <img class="thumbnail" style="width:70%; height:70%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/uos-final-project/piqsels-banner-oznhq.jpg" alt="Blog post header image" />
             <figcaption><em>The Internet of Things: Everything is connected.</em></figcaption>
           </figure>
         </div> <!-- .cell .blog-post-image -->

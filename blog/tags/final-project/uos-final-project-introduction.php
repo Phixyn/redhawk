@@ -28,7 +28,6 @@
         <div class="cell blog-post-image">
           <figure>
             <img class="thumbnail" style="width:70%; height:70%;" src="<?php echo $config['paths']['static']; ?>/blog/image-uploads/uos-final-project/final-project-intro-banner.jpg" alt="Blog post header image" />
-            <!-- <figcaption><em>The Internet of Things: Everything is connected.</em></figcaption> -->
           </figure>
         </div> <!-- .cell .blog-post-image -->
 
@@ -85,7 +84,7 @@
             <li>Giving NPC actions that will have context from the world around them and events that happen.</li>
           </ul>
 
-          <h4 class="h5">Existing Research And Challenges</h4>
+          <h4 class="h5">Existing Research and Challenges</h4>
 
           <p>This project's topic takes inspiration from previous work mentioned in my project proposal's references and reading list. Some of these resources have been referenced throughout this post, and more will surely be mentioned in future blog posts. Currently, Machine Learning is used to create intelligent agents that learn to play and win existing games. One example of this is the research into how techniques such as Reinforcement Learning can be used to create agents that learn to play and win games like chess (Emigh et al., 2016).</p>
 
