@@ -253,7 +253,7 @@ li.is-submenu-item > a:hover {
   color: var(--text-main-color);
 }
 
-/* TODO: Find out how much this change affects */
+/* 'placeholder=' HTML attribute */
 ::placeholder {
   color: var(--menu-link-main-color);
 }
