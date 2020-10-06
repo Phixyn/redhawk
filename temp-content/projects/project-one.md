@@ -2,18 +2,14 @@
 title: Project One
 ---
 
-# &bull; Student &#9702; Software &amp; Game Developer &bull;
+# &bull; Project One &bull;
 
-## Hello! I am Phixyn
+## Temporary Test Project
 
-My name is Alpeche Pancha. I work full-time as a [Software Test Engineer](#) and study part-time for my [BSc Computer Games Programming](#) degree. I am based in Suffolk, work at [Adastral Park](#) and study at the [University of Suffolk](#). Currently, I am on my final year at University.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus id cumque maiores amet deserunt soluta voluptatem, facere molestiae ut, provident eum nobis, corrupti nemo. Minima laborum provident ipsam aspernatur!
 
-In my little spare time, I like to work on my personal projects, such as this website. I also play video games (of course) and play the bass guitar. On this website you can find out more about my hobbies and [projects](#).
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nisi vitae minus. Vero, culpa numquam nesciunt iusto expedita saepe. Iusto harum voluptatem facere consectetur ex distinctio sequi doloribus, tenetur ut nesciunt architecto natus corrupti est accusantium tempore quisquam exercitationem eius ea odio at aliquam provident cumque reprehenderit? Reprehenderit, culpa numquam!
 
-If you wish, you can drop a follow on my [Twitter](#).
+Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam.
 
-## My projects
-
-These are just some of my game projects. You can view the rest in the [projects page](#).
-
-_TODO projects here somehow._
+[Back to projects](/projects)
