@@ -2,9 +2,25 @@
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Redhawk',
-  plugins: []
-}
+  siteName: "Redhawk",
+  plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "CustomPage",
+        baseDir: "./temp-content",
+        path: "**/*.md",
+        remark: {
+          // Remark options
+        }
+      },
+    },
+  ],
+  transformers: {
+    remark: {
+      // Global remark options
+    }
+  },
+};
