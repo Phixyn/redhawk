@@ -1,11 +1,11 @@
 ---
-title: Project One
-banner: Project One
+title: Project Two
+banner: Project Two
 excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus id cumque maiores amet deserunt soluta voluptatem, facere molestiae ut, provident eum nobis, corrupti nemo.
-image-path: http://phixyn.com/img/mc_1.PNG
+image-path: http://phixyn.com/img/gameplay3.png
 ---
 
-## Test Project One
+## Test Project Two
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus id cumque maiores amet deserunt soluta voluptatem, facere molestiae ut, provident eum nobis, corrupti nemo. Minima laborum provident ipsam aspernatur!
 
