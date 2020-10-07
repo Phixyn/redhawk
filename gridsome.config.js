@@ -17,6 +17,17 @@ module.exports = {
         }
       },
     },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "Project",
+        baseDir: "./temp-content/projects",
+        path: "**/*.md",
+        remark: {
+          // Remark options
+        }
+      },
+    },
   ],
   transformers: {
     remark: {
