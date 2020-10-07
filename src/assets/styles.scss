@@ -44,6 +44,23 @@ $navbar-dropdown-item-hover-background-color: $scheme-invert;
 // $navbar-box-shadow-size: 0 -2px 0 0;
 $navbar-box-shadow-color: #a62139;
 
+// Other Bulma global variables
+// Needed to make containers smaller on desktop
+// See: https://bulma.io/documentation/layout/container/#overview
+// Not sure if I want to keep these or not. Maybe remove only fullhd.
+// $widescreen-enabled: false;
+$fullhd-enabled: false;
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+// Elements
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5625rem;
+  padding: 0.9rem 0;
+}
