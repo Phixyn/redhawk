@@ -18,7 +18,7 @@
 
 <page-query>
 query {
-  customPage (path: "/") {
+  customPage (path: "/temp-content/pages/") {
     title
     banner
     content
