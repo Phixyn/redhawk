@@ -10,8 +10,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "CustomPage",
-        baseDir: "./temp-content",
-        path: "**/*.md",
+        path: "./temp-content/pages/*.md",
         remark: {
           // Remark options
         }
@@ -21,8 +20,7 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         typeName: "Project",
-        baseDir: "./temp-content/projects",
-        path: "**/*.md",
+        path: "./temp-content/projects/*.md",
         remark: {
           // Remark options
         }
