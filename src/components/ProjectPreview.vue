@@ -1,7 +1,9 @@
 <template>
-  <div class="container">
+  <div class="columns">
     <div v-bind:key="projectEdge.node.id" v-for="projectEdge in projects.edges">
-      <ProjectCard v-bind:project="projectEdge.node" />
+      <div class="column">
+        <ProjectCard v-bind:project="projectEdge.node" />
+      </div>
     </div>
   </div>
 </template>
