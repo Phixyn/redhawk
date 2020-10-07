@@ -1,8 +1,6 @@
 <template>
-  <div class="container">
-    <!-- <h1 class="content-banner" v-html="banner"></h1> -->
-    <h1 class="content-banner mb-5">&bull; <span v-html="banner"></span> &bull;</h1>
-  </div>
+  <!-- <h1 class="content-banner" v-html="banner"></h1> -->
+  <h1 class="content-banner mb-5">&bull; <span v-html="banner"></span> &bull;</h1>
 </template>
 
 <script>
