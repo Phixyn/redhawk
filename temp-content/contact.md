@@ -1,8 +1,7 @@
 ---
 title: Contact
+banner: Contact
 ---
-
-# &bull; Contact &bull;
 
 ## Alpeche Pancha
 ## phixyn@gmail.com

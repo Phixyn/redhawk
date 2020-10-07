@@ -1,8 +1,7 @@
 ---
 title: About
+banner: About
 ---
-
-# &bull; About &bull;
 
 ## My name is Alpeche and I am a Games Programming Student at UOS.
 

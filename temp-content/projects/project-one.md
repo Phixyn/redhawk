@@ -1,8 +1,7 @@
 ---
 title: Project One
+banner: Project One
 ---
-
-# &bull; Project One &bull;
 
 ## Temporary Test Project
 

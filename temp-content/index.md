@@ -1,8 +1,7 @@
 ---
 title: Home
+banner: Student &#9702; Software &amp; Game Developer
 ---
-
-# &bull; Student &#9702; Software &amp; Game Developer &bull;
 
 ## Hello! I am Phixyn
 

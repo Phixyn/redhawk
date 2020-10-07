@@ -1,9 +1,8 @@
 ---
 title: Projects
+banner: Projects
 egg: yes
 ---
-
-# &bull; Projects &bull;
 
 ## Portfolio
 
