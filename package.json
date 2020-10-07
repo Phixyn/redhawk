@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "buefy": "^0.9.3",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
