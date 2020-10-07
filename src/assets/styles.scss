@@ -1,0 +1,49 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$body-background-color: #121212;
+$background: #121212;
+$text: #d9d9d9;
+$text-light: #9d9d9d;
+$text-strong: #777777;
+$primary: #8c67ef;
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert),
+  "twitter": ($twitter, $twitter-invert)
+);
+
+// Links -- TODO
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// $navbar-dropdown-background-color: $scheme-invert;
+// TODO reduce transparency
+$navbar-dropdown-background-color: rgba(0, 0, 0, 0.5);
+// $navbar-divider-background-color: $background !default
+
+$navbar-dropdown-item-hover-color: #ffffff;
+$navbar-dropdown-item-hover-background-color: $scheme-invert;
+// $navbar-dropdown-item-active-color: $link !default;
+// $navbar-dropdown-item-active-background-color: $background !default;
+
+// $navbar-box-shadow-size: 0 -2px 0 0;
+$navbar-box-shadow-color: #a62139;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
