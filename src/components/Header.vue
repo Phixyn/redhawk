@@ -37,3 +37,9 @@
     </template>
   </b-navbar>
 </template>
+
+<script>
+export default {
+  name: "Header",
+};
+</script>
