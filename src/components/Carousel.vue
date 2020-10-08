@@ -21,10 +21,10 @@
     </b-carousel-item>
     <template slot="indicators" slot-scope="props">
       <figure class="al image">
-        <!-- TODO alt property -->
         <img
           :src="carousels[props.i].image"
           :title="carousels[props.i].title"
+          :alt="carousels[props.i].title"
         />
       </figure>
     </template>
@@ -32,14 +32,12 @@
 </template>
 
 <script>
-// TODO use props instead of data
-
 export default {
   name: "Carousel",
   props: {
     indicator: {
       type: Boolean,
-      default: true
+      default: true,
     },
     indicatorBackground: {
       type: Boolean,
@@ -71,8 +69,8 @@ export default {
     },
     carousels: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
 };
 </script>
