@@ -18,7 +18,7 @@ $phix-separator-main-color: #424242;
   border-width: 1px;
   border-color: $phix-separator-main-color;
   border-style: solid none;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   text-align: center;
 }
 </style>
