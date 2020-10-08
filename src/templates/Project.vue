@@ -44,7 +44,7 @@
           </div>
 
           <div class="column is-8 is-offset-1">
-            <Carousel/>
+            <Carousel :carousels="carousels" />
           </div>
         </div>
       </div>
@@ -78,6 +78,17 @@ import Carousel from "@/components/Carousel.vue";
 export default {
   components: {
     Carousel,
+  },
+  data() {
+    return {
+      carousels: [],
+    };
+  },
+  created() {
+    // Fetch preview images (make method for this?)
+    this.carousels = this.$page.project.preview_images.map((val, index) => {
+      return { title: `Preview image ${index}`, image: val };
+    });
   },
   metaInfo() {
     return {
