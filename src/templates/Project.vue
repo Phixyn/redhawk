@@ -49,6 +49,20 @@
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns" v-if="$page.project.has_video">
+          <hr/>
+          <div class="column is-10 is-offset-2">
+            <p class="block">Here's a quick demo video.</p>
+            <figure class="image is-16by9">
+              <iframe class="has-ratio" :src="$page.project.video_link" frameborder="0" allowfullscreen></iframe>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
