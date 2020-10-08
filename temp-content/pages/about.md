@@ -1,18 +1,12 @@
 ---
 title: About
 banner: About
+hero-text: My name is <strong>Alpeche</strong> and I am a <strong>Games Programming Student</strong> at <strong>UOS</strong>.
+about-profile-pic: http://phixyn.com/img/me3.png
+bio-header: What I do
+bio: <p class="block">I am a Software Test Engineer for a small software development company based at <a href="#">Adastral Park</a>, Suffolk. I am studying part-time for my <a href="#">BSc Computer Games Programming</a> degree at the <a href="#">University of Suffolk</a>. During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence.</p><p class="block">Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada. If you wish, you can drop a follow on my <a href="#">Twitter</a>.</p>
+social-links: <p class="block"><a href="#">Portfolio</a>  //  <a href="#">Download CV</a>  //  <a href="#">Contact me</a></p>
 ---
-
-## My name is Alpeche and I am a Games Programming Student at UOS.
-
-## What I do
-
-I am a Software Test Engineer for a small software development company based at [Adastral Park](#), Suffolk. I am studying part-time for my [BSc Computer Games Programming](#) degree at the [University of Suffolk](#). During my little spare time, I like to work on my game development projects, as well as this website. My other interests in computing include operating systems, networking and artificial intelligence.
-
-Some of the hobbies I enjoy are gaming, playing bass guitar, going to concerts and travelling. One day, I want to move to Canada.
-If you wish, you can drop a follow on my [Twitter](#).
-
-[Portfolio](#)  //  [Download CV](#)  //  [Contact me](#)
 
 ## My projects
 
