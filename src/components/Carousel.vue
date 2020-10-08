@@ -36,23 +36,43 @@
 
 export default {
   name: "Carousel",
-  data() {
-    return {
-      indicator: true,
-      indicatorBackground: true,
-      indicatorInside: false,
-      indicatorMode: "click",
-      indicatorPosition: "is-bottom",
-      indicatorStyle: "is-dots",
-      interval: 5000,
-      pauseHover: false,
-      carousels: [
-        { title: "Slide 1", image: "http://phixyn.com/img/mc_1.PNG" },
-        { title: "Slide 2", image: "http://phixyn.com/img/mc_2.PNG" },
-        { title: "Slide 3", image: "http://phixyn.com/img/mc_3.PNG" },
-        { title: "Slide 4", image: "http://phixyn.com/img/mc_game_over.PNG" },
-      ],
-    };
+  props: {
+    indicator: {
+      type: Boolean,
+      default: true
+    },
+    indicatorBackground: {
+      type: Boolean,
+      default: true,
+    },
+    indicatorInside: {
+      type: Boolean,
+      default: false,
+    },
+    indicatorMode: {
+      type: String,
+      default: "click",
+    },
+    indicatorPosition: {
+      type: String,
+      default: "is-bottom",
+    },
+    indicatorStyle: {
+      type: String,
+      default: "is-dots",
+    },
+    interval: {
+      type: Number,
+      default: 5000,
+    },
+    pauseHover: {
+      type: Boolean,
+      default: false,
+    },
+    carousels: {
+      type: Array,
+      required: true
+    }
   },
 };
 </script>
