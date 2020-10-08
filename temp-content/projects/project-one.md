@@ -21,5 +21,5 @@ preview-images:
   - http://phixyn.com/img/mc_game_over.PNG
 image-path: http://phixyn.com/img/mc_1.PNG
 has-video: true
-video-link: https://youtu.be/otWon8BLhx8
+video-link: https://www.youtube.com/embed/otWon8BLhx8
 ---
