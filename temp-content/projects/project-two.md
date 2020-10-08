@@ -1,16 +1,23 @@
 ---
-title: Project Two
-banner: Project Two
-excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus id cumque maiores amet deserunt soluta voluptatem, facere molestiae ut, provident eum nobis, corrupti nemo.
-image-path: http://phixyn.com/img/gameplay3.png
+title: PhinyxEngine
+banner: PhinyxEngine
+excerpt: 2D platformer game engine written in standard C++ 11.
+summary: This is a simple 2D game engine. Developers are able to make levels based on a simple text file format, where they define the layout of the map and what sprites to use. It is written using the standard libraries in C++ 11 and the <a href="#">SFML Library</a>.
+status: In development
+categories:
+  - Game Engine
+  - C++
+main-technology: C++
+programming-language: C++ 11
+technologies:
+  - Standard libraries
+  - SFML
+github: https://github.com/Phixyn/PhinyxEngine
+date-started: 29 Apr 2017
+preview-images:
+  - http://phixyn.com/img/pe_1.PNG
+  - http://phixyn.com/img/pe_2.PNG
+  - http://phixyn.com/img/pe_3.PNG
+image-path: http://phixyn.com/img/pe_3.PNG
+has-video: false
 ---
-
-## Test Project Two
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus id cumque maiores amet deserunt soluta voluptatem, facere molestiae ut, provident eum nobis, corrupti nemo. Minima laborum provident ipsam aspernatur!
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nisi vitae minus. Vero, culpa numquam nesciunt iusto expedita saepe. Iusto harum voluptatem facere consectetur ex distinctio sequi doloribus, tenetur ut nesciunt architecto natus corrupti est accusantium tempore quisquam exercitationem eius ea odio at aliquam provident cumque reprehenderit? Reprehenderit, culpa numquam!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aliquam.
-
-[Back to projects](/projects)
