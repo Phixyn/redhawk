@@ -24,7 +24,7 @@ query {
     content
   }
 
-  projects: allProject {
+  projects: allProject (limit: 3) {
     edges {
       node {
         id
