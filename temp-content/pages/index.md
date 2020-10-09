@@ -14,5 +14,3 @@ If you wish, you can drop a follow on my [Twitter](#).
 ## My projects
 
 These are just some of my game projects. You can view the rest in the [projects page](#).
-
-_TODO projects here somehow._
