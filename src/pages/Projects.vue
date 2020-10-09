@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <ContentBanner v-bind:banner="$page.customPage.banner"/>
-        <ProjectPreview v-bind:projects="$page.projects"/>
+        <ProjectShowcase v-bind:projects="$page.projects"/>
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -38,12 +38,12 @@ query {
 
 <script>
 import ContentBanner from "@/components/ContentBanner.vue";
-import ProjectPreview from "@/components/ProjectPreview.vue";
+import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
   components: {
     ContentBanner,
-    ProjectPreview,
+    ProjectShowcase,
   },
   metaInfo() {
     return {

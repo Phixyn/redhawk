@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO rename this component to ProjectShowcase -->
   <!-- TODO not sure if I like is-mobile here...
     prefer stacked on mobile maybe -->
   <div class="columns is-mobile is-multiline">
@@ -20,7 +19,7 @@ export default {
   components: {
     ProjectCard,
   },
-  name: "ProjectPreview",
+  name: "ProjectShowcase",
   props: ["projects"],
 };
 </script>
