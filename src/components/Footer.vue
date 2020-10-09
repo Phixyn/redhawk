@@ -1,9 +1,9 @@
 <template>
   <footer class="footer">
     <div class="content has-text-right">
-      <!-- TODO do this programmatically -->
       <p class="copyright-msg">
-        &copy; 2012 - 2020 Alpeche Pancha. All rights reserved. <br />
+        &copy; {{ fromYear }} - {{ currentYear }} Alpeche Pancha. All rights
+        reserved. <br />
         v0.5.0
       </p>
     </div> <!-- .content .has-text-right -->
@@ -13,6 +13,16 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      fromYear: 2012,
+    };
+  },
+  computed: {
+    currentYear() {
+      return new Date().getFullYear();
+    },
+  },
 };
 </script>
 
