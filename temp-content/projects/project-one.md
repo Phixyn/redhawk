@@ -8,7 +8,7 @@ categories:
   - Games
   - Unreal Engine 4
 main-technology: Unreal Engine 4
-programming-language: None (UE4 Blueprint used)
+programming-language: UE4 Blueprint
 technologies:
   - Unreal Engine 4
   - Blueprint

@@ -21,9 +21,14 @@ query {
       node {
         id
         path
-        content
         excerpt
         title
+        status
+        categories
+        main_technology
+        programming_language
+        technologies
+        github
         image_path
       }
     }

@@ -30,10 +30,14 @@ query {
       node {
         id
         path
-        content
         excerpt
         title
-        banner
+        status
+        categories
+        main_technology
+        programming_language
+        technologies
+        github
         image_path
       }
     }
