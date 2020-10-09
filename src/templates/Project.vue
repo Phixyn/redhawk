@@ -13,10 +13,10 @@
 
           <!-- Right side -->
           <div class="level-right">
-            <!-- TODO: use for loop? but have to handle the comma -->
+            <!-- TODO consider making these labels/tags under the
+              title instead. -->
             <h2 class="subtitle is-6 level-item">
-              {{ $page.project.categories[0] }},
-              {{ $page.project.categories[1] }}
+                {{ $page.project.categories.join(", ") }}
             </h2> <!-- .level-item -->
           </div> <!-- .level-right -->
         </div> <!-- .level -->
@@ -30,7 +30,7 @@
             <h3 class="has-text-weight-bold">Programming Language</h3>
             <p>{{ $page.project.programming_language }}</p>
             <h3 class="has-text-weight-bold">Technologies</h3>
-            <p>{{ $page.project.technologies }}</p>
+            <p>{{ $page.project.technologies.join(", ") }}</p>
             <h3 class="has-text-weight-bold">Status</h3>
             <p>{{ $page.project.status }}</p>
             <h3 class="has-text-weight-bold">GitHub</h3>
@@ -40,7 +40,7 @@
               }}</a>
             </p>
             <h3 class="has-text-weight-bold">Category</h3>
-            <p>{{ $page.project.categories }}</p>
+            <p>{{ $page.project.categories.join(", ") }}</p>
             <h3 class="has-text-weight-bold">Date Started</h3>
             <p>{{ $page.project.date_started }}</p>
           </div> <!-- .column -->
