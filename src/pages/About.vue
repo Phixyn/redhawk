@@ -4,8 +4,7 @@
       <div class="container">
         <ContentBanner v-bind:banner="$page.about.banner"/>
 
-        <!-- TODO should be a h2 cause it comes after h1, see titles component in Bulma -->
-        <h3 class="block has-text-centered" v-html="$page.about.hero_text"></h3>
+        <h2 class="block has-text-centered subtitle is-5" v-html="$page.about.hero_text"></h2>
 
         <article class="message is-dark">
           <div class="message-body">
@@ -13,7 +12,7 @@
               <img v-bind:src="$page.about.about_profile_pic">
             </figure> <!-- .image -->
 
-            <h2> {{ $page.about.bio_header }} </h2>
+            <h2 class="title is-4"> {{ $page.about.bio_header }} </h2>
             <div class="content" v-html="$page.about.bio"></div>
             <div class="content has-text-centered" v-html="$page.about.social_links"></div>
           </div> <!-- .message-body -->

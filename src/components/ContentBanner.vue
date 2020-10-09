@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="content-banner mb-5">
+    <h1 class="content-banner mb-5 py-2 is-size-4">
       &bull; <span v-html="banner"></span> &bull;
     </h1>
   </header>
@@ -21,7 +21,6 @@ $phix-separator-main-color: #424242;
   border-width: 1px;
   border-color: $phix-separator-main-color;
   border-style: solid none;
-  padding: 0.7rem 0; /* TODO: use px/py classes instead */
   text-align: center;
 }
 </style>

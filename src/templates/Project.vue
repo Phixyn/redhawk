@@ -7,19 +7,17 @@
           <!-- Left side -->
           <div class="level-left">
             <div class="level-item">
-              <!-- TODO substitute with h1 once we reset its style -->
-              <p class="subtitle is-5">{{ $page.project.title }}</p>
+              <h1 class="title is-5">{{ $page.project.title }}</h1>
             </div> <!-- .level-item -->
           </div> <!-- .level-left -->
 
           <!-- Right side -->
           <div class="level-right">
             <!-- TODO: use for loop? but have to handle the comma -->
-            <!-- TODO substitute with h2 once we reset its style -->
-            <p class="title is-6 level-item">
+            <h2 class="subtitle is-6 level-item">
               {{ $page.project.categories[0] }},
               {{ $page.project.categories[1] }}
-            </p> <!-- .level-item -->
+            </h2> <!-- .level-item -->
           </div> <!-- .level-right -->
         </div> <!-- .level -->
 
