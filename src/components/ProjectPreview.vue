@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO rename this component to ProjectShowcase -->
   <!-- TODO not sure if I like is-mobile here...
     prefer stacked on mobile maybe -->
   <div class="columns is-mobile is-multiline">
@@ -8,8 +9,8 @@
       v-for="projectEdge in projects.edges"
     >
       <ProjectCard v-bind:project="projectEdge.node" />
-    </div>
-  </div>
+    </div> <!-- .column -->
+  </div> <!-- .columns -->
 </template>
 
 <script>

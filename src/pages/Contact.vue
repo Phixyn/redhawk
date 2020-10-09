@@ -3,6 +3,7 @@
     <section class="section">
       <div class="container">
         <ContentBanner :banner="$page.contact.banner" />
+
         <article class="media px-4 py-4" id="contact-details">
           <div class="media-content">
             <div class="content">
@@ -11,13 +12,15 @@
                 ><br />
                 <span class="title is-5">{{ $page.contact.email }}</span>
               </p>
-            </div>
+            </div> <!-- .content -->
+
             <div class="content">
               <p>
                 {{ $page.contact.town }}<br />
                 {{ $page.contact.country }}
               </p>
-            </div>
+            </div> <!-- .content -->
+
             <div class="content has-text-centered">
               <hr />
               <figure
@@ -25,14 +28,14 @@
                 :key="smIcon.name"
                 v-for="smIcon in $page.contact.social_media_icons"
               >
-                <a :href="smIcon.sm_url"
-                  ><img :src="smIcon.icon_path" :title="smIcon.name"
-                /></a>
-              </figure>
-            </div>
-          </div>
-        </article>
-      </div>
+                <a :href="smIcon.sm_url">
+                  <img :src="smIcon.icon_path" :title="smIcon.name"/>
+                </a>
+              </figure> <!-- .image -->
+            </div> <!-- .content -->
+          </div> <!-- .media-content -->
+        </article> <!-- .media -->
+      </div> <!-- .container -->
     </section>
   </Layout>
 </template>

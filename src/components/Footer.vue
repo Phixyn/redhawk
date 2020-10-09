@@ -1,12 +1,12 @@
 <template>
   <footer class="footer">
     <div class="content has-text-right">
-      <!-- TODO do it programmatically -->
+      <!-- TODO do this programmatically -->
       <p class="copyright-msg">
         &copy; 2012 - 2020 Alpeche Pancha. All rights reserved. <br />
         v0.5.0
       </p>
-    </div>
+    </div> <!-- .content .has-text-right -->
   </footer>
 </template>
 

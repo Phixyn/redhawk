@@ -2,14 +2,16 @@
   <Layout>
     <section class="section">
       <div class="container">
+        <!-- Project header -->
         <div class="level">
           <!-- Left side -->
           <div class="level-left">
             <div class="level-item">
               <!-- TODO substitute with h1 once we reset its style -->
               <p class="subtitle is-5">{{ $page.project.title }}</p>
-            </div>
-          </div>
+            </div> <!-- .level-item -->
+          </div> <!-- .level-left -->
+
           <!-- Right side -->
           <div class="level-right">
             <!-- TODO: use for loop? but have to handle the comma -->
@@ -17,13 +19,15 @@
             <p class="title is-6 level-item">
               {{ $page.project.categories[0] }},
               {{ $page.project.categories[1] }}
-            </p>
-          </div>
-        </div>
+            </p> <!-- .level-item -->
+          </div> <!-- .level-right -->
+        </div> <!-- .level -->
 
+        <!-- Project summary -->
         <p class="block" v-html="$page.project.summary"></p>
 
         <div class="columns is-mobile">
+          <!-- Project details -->
           <div class="column is-3">
             <h3 class="has-text-weight-bold">Programming Language</h3>
             <p>{{ $page.project.programming_language }}</p>
@@ -41,27 +45,30 @@
             <p>{{ $page.project.categories }}</p>
             <h3 class="has-text-weight-bold">Date Started</h3>
             <p>{{ $page.project.date_started }}</p>
-          </div>
+          </div> <!-- .column -->
 
+          <!-- Project carousel (preview images/videos) -->
           <div class="column is-8 is-offset-1">
             <Carousel :carousels="carousels" />
-          </div>
-        </div>
-      </div>
+          </div> <!-- .column -->
+        </div> <!-- .columns -->
+      </div> <!-- .container -->
     </section>
 
+    <!-- Project demo video (if it has one) -->
     <section class="section">
       <div class="container">
         <div class="columns" v-if="$page.project.has_video">
           <hr/>
           <div class="column is-10 is-offset-2">
             <p class="block">Here's a quick demo video.</p>
+
             <figure class="image is-16by9">
               <iframe class="has-ratio" :src="$page.project.video_link" frameborder="0" allowfullscreen></iframe>
-            </figure>
-          </div>
-        </div>
-      </div>
+            </figure> <!-- .image -->
+          </div> <!-- .column -->
+        </div> <!-- .columns -->
+      </div> <!-- .container -->
     </section>
   </Layout>
 </template>

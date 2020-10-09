@@ -3,14 +3,8 @@
     <section class="section">
       <div class="container">
         <ContentBanner v-bind:banner="$page.customPage.banner"/>
-        <div class="content" v-html="$page.customPage.content"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
         <ProjectPreview v-bind:projects="$page.projects"/>
-      </div>
+      </div> <!-- .container -->
     </section>
   </Layout>
 </template>

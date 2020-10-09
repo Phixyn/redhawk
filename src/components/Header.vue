@@ -1,5 +1,6 @@
 <template>
   <b-navbar class="mb-5" type="is-black" shadow>
+    <!-- Logo/site name -->
     <template slot="brand">
       <b-navbar-item tag="g-link" :to="{ path: '/' }">
         <img
@@ -7,8 +8,9 @@
           alt="Lightweight UI components for Vue.js based on Bulma"
         />
       </b-navbar-item>
-    </template>
+    </template> <!-- /brand -->
 
+    <!-- Navigation links -->
     <template slot="end">
       <!--
         tag - Set tag type to <g-link> to make sure Gridsome routing works
@@ -17,6 +19,9 @@
       <b-navbar-item tag="g-link" :to="{ path: '/' }"> Home </b-navbar-item>
       <b-navbar-item tag="g-link" :to="{ path: '/projects/' }">
         Projects
+      </b-navbar-item>
+      <b-navbar-item tag="g-link" :to="{ path: '/blog/' }">
+        Blog
       </b-navbar-item>
       <b-navbar-item tag="g-link" :to="{ path: '/about/' }">
         About
@@ -31,10 +36,11 @@
         collapsible - Make dropdown collapsible on mobile/small screens
       -->
       <b-navbar-dropdown label="Social Media" hoverable right collapsible>
-        <b-navbar-item href="#"> About </b-navbar-item>
-        <b-navbar-item href="#"> Contact </b-navbar-item>
+        <b-navbar-item href="#"> GitHub </b-navbar-item>
+        <b-navbar-item href="#"> Twitter </b-navbar-item>
+        <b-navbar-item href="#"> LinkedIn </b-navbar-item>
       </b-navbar-dropdown>
-    </template>
+    </template> <!-- /end -->
   </b-navbar>
 </template>
 

@@ -1,4 +1,5 @@
 <template>
+  <!-- Normal indicators, no "gallery" -->
   <!-- <b-carousel
     :indicator="indicator"
     :indicator-background="indicatorBackground"
@@ -8,6 +9,8 @@
     :indicator-style="indicatorStyle"
     :pause-hover="pauseHover"
   > -->
+
+  <!-- Gallery-type carousel (TODO maybe make this a separate component) -->
   <b-carousel
     indicator-custom
     :indicator-inside="indicatorInside"
@@ -17,7 +20,7 @@
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
       <figure class="image is-5by3">
         <img :src="carousel.image" />
-      </figure>
+      </figure> <!-- .image .is-5by3 -->
     </b-carousel-item>
     <template slot="indicators" slot-scope="props">
       <figure class="al image">
@@ -26,7 +29,7 @@
           :title="carousels[props.i].title"
           :alt="carousels[props.i].title"
         />
-      </figure>
+      </figure> <!-- .al .image -->
     </template>
   </b-carousel>
 </template>

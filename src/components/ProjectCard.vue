@@ -4,12 +4,14 @@
       <p class="card-header-title">
         {{ project.title }}
       </p>
-    </header>
+    </header> <!-- .card-header -->
+
     <div class="card-image">
       <figure class="image is-3by2">
         <img :src="project.image_path" alt="Placeholder image" />
       </figure>
-    </div>
+    </div> <!-- .card-image -->
+
     <div class="card-content">
       <div class="content">
         <!-- TODO add status field to projects
@@ -21,12 +23,12 @@
         <div class="block">
           <a href="#">GitHub</a> &bull; <a href="#">#css </a>
           <a href="#">#responsive</a>
-        </div>
+        </div> <!-- .block -->
 
         <button class="button is-dark">View Details</button>
-      </div>
-    </div>
-  </div>
+      </div> <!-- .content -->
+    </div> <!-- .card-content -->
+  </div> <!-- .card -->
 </template>
 
 <script>

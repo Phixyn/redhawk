@@ -1,17 +1,18 @@
 <template>
   <Layout>
+    <!-- Intro -->
     <section class="section">
       <div class="container">
-        <!-- TODO maybe put banner in its own section+container -->
         <ContentBanner v-bind:banner="$page.customPage.banner"/>
         <div class="content" v-html="$page.customPage.content"></div>
-      </div>
+      </div> <!-- .container -->
     </section>
 
+    <!-- Projects -->
     <section class="section">
       <div class="container">
         <ProjectPreview v-bind:projects="$page.projects"/>
-      </div>
+      </div> <!-- .container -->
     </section>
   </Layout>
 </template>
