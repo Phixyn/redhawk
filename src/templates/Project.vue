@@ -16,7 +16,7 @@
             <!-- TODO consider making these labels/tags under the
               title instead. -->
             <h2 class="subtitle is-6 level-item">
-                {{ $page.project.categories.join(", ") }}
+              {{ $page.project.categories.join(", ") }}
             </h2> <!-- .level-item -->
           </div> <!-- .level-right -->
         </div> <!-- .level -->
@@ -33,11 +33,13 @@
             <p>{{ $page.project.technologies.join(", ") }}</p>
             <h3 class="has-text-weight-bold">Status</h3>
             <p>{{ $page.project.status }}</p>
-            <h3 class="has-text-weight-bold">GitHub</h3>
+            <h3 class="has-text-weight-bold" v-if="$page.project.github">
+              GitHub
+            </h3>
             <p>
-              <a v-bind:href="$page.project.github">{{
-                $page.project.github
-              }}</a>
+              <a v-bind:href="$page.project.github">
+                {{$page.project.github}}
+              </a>
             </p>
             <h3 class="has-text-weight-bold">Category</h3>
             <p>{{ $page.project.categories.join(", ") }}</p>
@@ -57,12 +59,17 @@
     <section class="section">
       <div class="container">
         <div class="columns" v-if="$page.project.has_video">
-          <hr/>
+          <hr />
           <div class="column is-10 is-offset-2">
             <p class="block">Here's a quick demo video.</p>
 
             <figure class="image is-16by9">
-              <iframe class="has-ratio" :src="$page.project.video_link" frameborder="0" allowfullscreen></iframe>
+              <iframe
+                class="has-ratio"
+                :src="$page.project.video_link"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             </figure> <!-- .image -->
           </div> <!-- .column -->
         </div> <!-- .columns -->

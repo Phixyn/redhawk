@@ -15,13 +15,15 @@
     <div class="card-content">
       <div class="content">
         <span class="block tag" :class="tags[project.status]">
-          {{project.status}}
+          {{ project.status }}
         </span> <!-- .tag -->
 
         <p class="block">{{ project.excerpt }}</p>
 
         <div class="block">
-          <a :href="project.github">GitHub</a> &bull;
+          <span v-if="project.github">
+            <a :href="project.github">GitHub</a> &bull;
+          </span>
           <a href="#">#{{ project.programming_language }} </a>
           <a href="#" :key="tech" v-for="tech in project.technologies">
             #{{ tech }}
