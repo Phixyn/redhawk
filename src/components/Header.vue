@@ -3,6 +3,7 @@
     <!-- Logo/site name -->
     <template slot="brand">
       <b-navbar-item tag="g-link" :to="{ path: '/' }">
+        <!-- <p class="title is-4 px-5 py-0 my-0 is-uppercase"> P h i x y n </p> -->
         <img
           src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"

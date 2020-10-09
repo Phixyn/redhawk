@@ -16,6 +16,7 @@ query CustomPage ($path: String!) {
 <script>
 export default {
   // Has to be a function because of `this` I think
+  // `this` points to the vm instance
   metaInfo() {
     return {
       title: this.$page.customPage.title
