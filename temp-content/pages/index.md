@@ -1,8 +1,7 @@
 ---
 title: Home
+banner: Student &#9702; Software &amp; Game Developer
 ---
-
-# &bull; Student &#9702; Software &amp; Game Developer &bull;
 
 ## Hello! I am Phixyn
 
@@ -15,5 +14,3 @@ If you wish, you can drop a follow on my [Twitter](#).
 ## My projects
 
 These are just some of my game projects. You can view the rest in the [projects page](#).
-
-_TODO projects here somehow._
