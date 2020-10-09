@@ -4,7 +4,7 @@
       <div class="container">
         <ContentBanner :banner="$page.contact.banner" />
 
-        <article class="media px-4 py-4" id="contact-details">
+        <article class="contact-details media px-4 py-4">
           <div class="media-content">
             <div class="content">
               <p>
@@ -34,7 +34,7 @@
               </figure> <!-- .image -->
             </div> <!-- .content -->
           </div> <!-- .media-content -->
-        </article> <!-- .media -->
+        </article> <!-- .media .contact-details -->
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -75,8 +75,7 @@ export default {
 
 <style lang="scss">
 $phix-button-main-color: #333333;
-
-#contact-details {
+.contact-details {
   border: 1px dashed $phix-button-main-color;
 }
 </style>
