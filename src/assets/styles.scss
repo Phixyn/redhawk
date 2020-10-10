@@ -1,15 +1,61 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-// Set your colors
-$body-background-color: #121212;
-$background: #121212;
+// Custom colors
+$custom-colors: (
+  // "text-dark-color": #777777
+  "phix-background-main-color": #121212,
+  "phix-background-dark-color": #000000,
+  "phix-background-lighter-color": rgba(40, 40, 40, 0.8),
+  "phix-background-light-color": rgb(32, 32, 32),
+  "phix-background-dark-transparent-color": rgba(0, 0, 0, 0.5),
+  // TODO: Improve this color. Maybe darker or more transparent?
+  "phix-background-sub-section-color": rgba(25, 25, 25, 0.8),
+  // $phix-background-sub-section-color: #e6e6e6;
+  // $phix-border-main-color: #3d3d3d;
+  // $phix-border-main-color: #cacaca;
+  "phix-border-main-color": rgba(68, 68, 68, 0.25),
+  "phix-border-lighter-color": rgb(78, 78, 78),
+  "phix-border-light-color": rgb(57, 57, 57),
+  "phix-text-main-color": #d9d9d9,
+  "phix-text-dark-color": #777777, // #777777
+  "phix-link-main-color": #db5a7f,
+  "phix-link-hover-color": #d993a7,
+  "phix-menu-link-main-color": #9d9d9d,
+  "phix-menu-link-hover-color": #ffffff,
+  "phix-separator-main-color": #424242,
+  "phix-separator-dark-color": #252525,
+  "phix-separator-accent-color": #a62139,
+  // Shadow can be lighter/darker than accent, if desired
+  "phix-shadow-main-color": #a62139,
+  // Carousel indicators
+  "phix-button-main-color": #333333,
+  "phix-button-hover-color": #666666
+);
+
+// Overrided Bulma colors
+// TODO replace with scheme-main/scheme-invert
+//$scheme-main: $black
+//$scheme-invert: $white
+// etc.
+$scheme-main: $black;
+$scheme-main: $black;
+$scheme-main-bis: $black-bis;
+$scheme-main-ter: $black-ter;
+$scheme-invert: $white;
+$scheme-invert-bis: $white-bis;
+$scheme-invert-ter: $white-ter;
+
+// $background: $black-ter;
+
+// $body-background-color: #121212;
+// $background: #121212;
 $text: #d9d9d9;
 $text-light: #9d9d9d;
 $text-strong: #777777;
 $primary: #8c67ef;
 $primary-invert: findColorInvert($primary);
-$twitter: #4099FF;
+$twitter: #4099ff;
 $twitter-invert: findColorInvert($twitter);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
@@ -31,6 +77,7 @@ $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
+// Navbar -- TODO: Move colors to variables
 // $navbar-dropdown-background-color: $scheme-invert;
 // TODO reduce transparency
 $navbar-dropdown-background-color: rgba(0, 0, 0, 0.5);
@@ -40,9 +87,13 @@ $navbar-dropdown-item-hover-color: #ffffff;
 $navbar-dropdown-item-hover-background-color: $scheme-invert;
 // $navbar-dropdown-item-active-color: $link !default;
 // $navbar-dropdown-item-active-background-color: $background !default;
-
 // $navbar-box-shadow-size: 0 -2px 0 0;
 $navbar-box-shadow-color: #a62139;
+
+// Footer
+$footer-background-color: $black;
+$footer-color: map-get($custom-colors, "text-dark-color");
+$footer-padding: 3rem 6rem 4rem;
 
 // Other Bulma global variables
 // Needed to make containers smaller on desktop
