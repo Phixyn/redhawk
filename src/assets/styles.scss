@@ -1,36 +1,35 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
-// Custom colors
+// Custom colors (rename to phixed-colors)?
 $custom-colors: (
-  // "text-dark-color": #777777
-  "phix-background-main-color": #121212,
-  "phix-background-dark-color": #000000,
-  "phix-background-lighter-color": rgba(40, 40, 40, 0.8),
-  "phix-background-light-color": rgb(32, 32, 32),
-  "phix-background-dark-transparent-color": rgba(0, 0, 0, 0.5),
+  "phix-background-main-color": hsl(0, 0%, 7%),
+  "phix-background-dark-color": hsl(0, 0%, 0%),
+  "phix-background-lighter-color": hsla(0, 0%, 16%, 0.8),
+  "phix-background-light-color": hsl(0, 0%, 13%),
+  "phix-background-dark-transparent-color": hsla(0, 0%, 0%, 0.5),
   // TODO: Improve this color. Maybe darker or more transparent?
-  "phix-background-sub-section-color": rgba(25, 25, 25, 0.8),
-  // $phix-background-sub-section-color: #e6e6e6;
-  // $phix-border-main-color: #3d3d3d;
-  // $phix-border-main-color: #cacaca;
-  "phix-border-main-color": rgba(68, 68, 68, 0.25),
-  "phix-border-lighter-color": rgb(78, 78, 78),
-  "phix-border-light-color": rgb(57, 57, 57),
-  "phix-text-main-color": #d9d9d9,
-  "phix-text-dark-color": #777777, // #777777
-  "phix-link-main-color": #db5a7f,
-  "phix-link-hover-color": #d993a7,
-  "phix-menu-link-main-color": #9d9d9d,
-  "phix-menu-link-hover-color": #ffffff,
-  "phix-separator-main-color": #424242,
-  "phix-separator-dark-color": #252525,
-  "phix-separator-accent-color": #a62139,
+  "phix-background-sub-section-color": hsla(0, 0%, 10%, 0.8),
+  // "phix-background-sub-section-color": hsl(0, 0%, 90%),
+  // "phix-border-main-color": hsl(0, 0%, 24%),
+  // "phix-border-main-color": hsl(0, 0%, 79%),
+  "phix-border-main-color": hsla(0, 0%, 27%, 0.25),
+  "phix-border-lighter-color": hsl(0, 0%, 31%),
+  "phix-border-light-color": hsl(0, 0%, 22%),
+  "phix-text-main-color": hsl(0, 0%, 85%),
+  "phix-text-dark-color": hsl(0, 0%, 47%), // #777777
+  "phix-link-main-color": hsl(343, 64%, 61%),
+  "phix-link-hover-color": hsl(343, 48%, 71%),
+  "phix-menu-link-main-color": hsl(0, 0%, 62%),
+  "phix-menu-link-hover-color": hsl(0, 0%, 100%),
+  "phix-separator-main-color": hsl(0, 0%, 26%),
+  "phix-separator-dark-color": hsl(0, 0%, 15%),
+  "phix-separator-accent-color": hsl(349, 67%, 39%),
   // Shadow can be lighter/darker than accent, if desired
-  "phix-shadow-main-color": #a62139,
+  "phix-shadow-main-color": hsl(349, 67%, 39%),
   // Carousel indicators
-  "phix-button-main-color": #333333,
-  "phix-button-hover-color": #666666
+  "phix-button-main-color": hsl(0, 0%, 20%),
+  "phix-button-hover-color": hsl(0, 0%, 40%)
 );
 
 // Overrided Bulma colors
@@ -48,14 +47,14 @@ $scheme-invert-ter: $white-ter;
 
 // $background: $black-ter;
 
-// $body-background-color: #121212;
-// $background: #121212;
-$text: #d9d9d9;
-$text-light: #9d9d9d;
-$text-strong: #777777;
-$primary: #8c67ef;
+// $body-background-color: hsl(0, 0%, 7%);
+// $background: hsl(0, 0%, 7%);
+$text: hsl(0, 0%, 85%);
+$text-light: hsl(0, 0%, 62%);
+$text-strong: hsl(0, 0%, 47%);
+$primary: hsl(256, 81%, 67%);
 $primary-invert: findColorInvert($primary);
-$twitter: #4099ff;
+$twitter: hsl(212, 100%, 63%);
 $twitter-invert: findColorInvert($twitter);
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
@@ -80,15 +79,15 @@ $link-focus-border: $primary;
 // Navbar -- TODO: Move colors to variables
 // $navbar-dropdown-background-color: $scheme-invert;
 // TODO reduce transparency
-$navbar-dropdown-background-color: rgba(0, 0, 0, 0.5);
+$navbar-dropdown-background-color: hsla(0, 0%, 0%, 0.5);
 // $navbar-divider-background-color: $background !default
 
-$navbar-dropdown-item-hover-color: #ffffff;
-$navbar-dropdown-item-hover-background-color: $scheme-invert;
-// $navbar-dropdown-item-active-color: $link !default;
-// $navbar-dropdown-item-active-background-color: $background !default;
+// $navbar-dropdown-item-hover-color: hsl(0, 0%, 100%);
+// $navbar-dropdown-item-hover-background-color: $scheme-invert;
+// $navbar-dropdown-item-active-color: $link;
+// $navbar-dropdown-item-active-background-color: $background;
 // $navbar-box-shadow-size: 0 -2px 0 0;
-$navbar-box-shadow-color: #a62139;
+$navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 
 // Footer
 $footer-background-color: $black;
