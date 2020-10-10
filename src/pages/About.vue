@@ -6,7 +6,7 @@
 
         <h2 class="block has-text-centered subtitle is-5" v-html="$page.about.hero_text"></h2>
 
-        <article class="message is-dark">
+        <article class="message">
           <div class="message-body">
             <figure class="image is-128x128 is-pulled-right ml-4">
               <img v-bind:src="$page.about.about_profile_pic">

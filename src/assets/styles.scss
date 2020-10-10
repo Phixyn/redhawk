@@ -1,7 +1,13 @@
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
+$primary: hsl(256, 81%, 67%);
+$primary-invert: findColorInvert($primary);
+
 // Custom colors (rename to phixed-colors)?
+$twitter: hsl(212, 100%, 63%);
+$twitter-invert: findColorInvert($twitter);
+
 $custom-colors: (
   "phix-background-main-color": hsl(0, 0%, 7%),
   "phix-background-dark-color": hsl(0, 0%, 0%),
@@ -29,7 +35,9 @@ $custom-colors: (
   "phix-shadow-main-color": hsl(349, 67%, 39%),
   // Carousel indicators
   "phix-button-main-color": hsl(0, 0%, 20%),
-  "phix-button-hover-color": hsl(0, 0%, 40%)
+  "phix-button-hover-color": hsl(0, 0%, 40%),
+  "twitter": $twitter,
+  "twitter-invert": $twitter-invert
 );
 
 // Overrided Bulma colors
@@ -37,7 +45,9 @@ $custom-colors: (
 //$scheme-main: $black
 //$scheme-invert: $white
 // etc.
-$scheme-main: $black;
+
+// General colors
+
 $scheme-main: $black;
 $scheme-main-bis: $black-bis;
 $scheme-main-ter: $black-ter;
@@ -45,36 +55,53 @@ $scheme-invert: $white;
 $scheme-invert-bis: $white-bis;
 $scheme-invert-ter: $white-ter;
 
-// $background: $black-ter;
-
-// $body-background-color: hsl(0, 0%, 7%);
+// $background: $primary;
+$background: $black-ter;
 // $background: hsl(0, 0%, 7%);
+
+// Text colors
+
 $text: hsl(0, 0%, 85%);
 $text-light: hsl(0, 0%, 62%);
 $text-strong: hsl(0, 0%, 47%);
-$primary: hsl(256, 81%, 67%);
-$primary-invert: findColorInvert($primary);
-$twitter: hsl(212, 100%, 63%);
-$twitter-invert: findColorInvert($twitter);
+
+// Link colors -- TODO: Add hover, active, etc.
+
+$link: $primary;
+$link-focus-border: $primary;
+
+// $link              : $blue;
+// $link-invert       : findColorInvert($link);
+// $link-light        : findLightColor($link);
+// $link-dark         : findDarkColor($link);
+// $link-visited      : $purple;
+
+// $link-hover        : $grey-darker;
+// $link-hover-border : $grey-light;
+
+// $link-focus        : $grey-darker;
+// $link-focus-border : $blue;
+
+// $link-active       : $grey-darker;
+// $link-active-border: $grey-dark;
+
+// $body-background-color: hsl(0, 0%, 7%);
+
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
-$colors: (
-  "white": ($white, $black),
-  "black": ($black, $white),
-  "light": ($light, $light-invert),
-  "dark": ($dark, $dark-invert),
-  "primary": ($primary, $primary-invert),
-  "info": ($info, $info-invert),
-  "success": ($success, $success-invert),
-  "warning": ($warning, $warning-invert),
-  "danger": ($danger, $danger-invert),
-  "twitter": ($twitter, $twitter-invert)
-);
-
-// Links -- TODO
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
+// Not sure if needed
+// $colors: (
+//   "white": ($white, $black),
+//   "black": ($black, $white),
+//   "light": ($light, $light-invert),
+//   "dark": ($dark, $dark-invert),
+//   "primary": ($primary, $primary-invert),
+//   "info": ($info, $info-invert),
+//   "success": ($success, $success-invert),
+//   "warning": ($warning, $warning-invert),
+//   "danger": ($danger, $danger-invert),
+//   "twitter": ($twitter, $twitter-invert)
+// );
 
 // Navbar -- TODO: Move colors to variables
 // $navbar-dropdown-background-color: $scheme-invert;
@@ -90,7 +117,7 @@ $navbar-dropdown-background-color: hsla(0, 0%, 0%, 0.5);
 $navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 
 // Footer
-$footer-background-color: $black;
+$footer-background-color: $scheme-main;
 $footer-color: map-get($custom-colors, "text-dark-color");
 $footer-padding: 3rem 6rem 4rem;
 
