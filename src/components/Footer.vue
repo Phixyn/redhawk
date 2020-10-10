@@ -27,11 +27,8 @@ export default {
 </script>
 
 <style lang="scss">
-// TODO: See if we can move this somewhere global
-$phix-separator-dark-color: #252525;
-
 .copyright-msg {
-  border-top: 1px solid $phix-separator-dark-color;
+  border-top: 1px solid map-get($custom-colors, "phix-separator-dark-color");
   padding-top: 0.85rem;
   font-size: 0.8em;
   text-align: right;

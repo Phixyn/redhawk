@@ -74,8 +74,7 @@ export default {
 </script>
 
 <style lang="scss">
-$phix-button-main-color: #333333;
 .contact-details {
-  border: 1px dashed $phix-button-main-color;
+  border: 1px dashed map-get($custom-colors, "phix-button-main-color");
 }
 </style>
