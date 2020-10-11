@@ -81,25 +81,28 @@ $text: hsl(0, 0%, 85%); // TODO too light, see no-bs-looper
 $text-light: hsl(0, 0%, 62%);
 $text-strong: hsl(0, 0%, 47%);
 
-// Link colors -- TODO: Add hover, active, etc.
+// Link colors
 
-$link: $primary;
-$link-focus-border: $primary;
+$link: map-get($custom-colors, "phix-link-main-color");
+// $link-invert: findColorInvert($link);
+$link-light: map-get($custom-colors, "phix-link-hover-color");
+// $link-dark: findDarkColor($link);
+$link-visited: map-get($custom-colors, "phix-link-main-color");
 
-// $link              : $blue;
-// $link-invert       : findColorInvert($link);
-// $link-light        : findLightColor($link);
-// $link-dark         : findDarkColor($link);
-// $link-visited      : $purple;
+$link-hover: map-get($custom-colors, "phix-link-hover-color");
+$link-hover-border: map-get($custom-colors, "phix-link-hover-color");
 
-// $link-hover        : $grey-darker;
-// $link-hover-border : $grey-light;
+$link-focus: map-get($custom-colors, "phix-link-hover-color");
+$link-focus-border: map-get($custom-colors, "phix-link-main-color");
 
-// $link-focus        : $grey-darker;
-// $link-focus-border : $blue;
+$link-active: map-get($custom-colors, "phix-link-hover-color");
+$link-active-border: map-get($custom-colors, "phix-link-main-color");
 
-// $link-active       : $grey-darker;
-// $link-active-border: $grey-dark;
+// Only show outline on :focus for accessibility, not when mouse click is held
+// on a link.
+a:active {
+  outline: none;
+}
 
 // Override $colors map (not sure if needed)
 
@@ -123,6 +126,7 @@ $link-focus-border: $primary;
 
 $body-background-color: $black-bis;
 $body-overflow-x: scroll; // Debug
+$body-overflow-y: auto;
 
 $hr-background-color: map-get($custom-colors, "phix-separator-main-color");
 $hr-height: 1px;
