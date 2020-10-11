@@ -72,7 +72,7 @@ $background: $black-bis; // hsl(0, 0%, 7%);
 
 // Text colors
 
-$text: hsl(0, 0%, 85%);
+$text: hsl(0, 0%, 85%); // TODO too light, see no-bs-looper
 $text-light: hsl(0, 0%, 62%);
 $text-strong: hsl(0, 0%, 47%);
 
@@ -116,6 +116,9 @@ $link-focus-border: $primary;
 
 $body-background-color: $black-bis;
 
+$hr-background-color: map-get($custom-colors, "phix-separator-main-color");
+$hr-height: 1px;
+
 // Navbar -- TODO: Move colors to variables
 // (~bulma/sass/components/navbar.sass)
 
@@ -135,8 +138,15 @@ $navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 // (~bulma/sass/layout/footer.sass)
 
 $footer-background-color: $scheme-main;
-$footer-color: map-get($custom-colors, "text-dark-color");
+$footer-color: map-get($custom-colors, "phix-text-dark-color");
 $footer-padding: 3rem 6rem 4rem;
+
+$footer-box-shadow-size: 0 -2px 0 0;
+$footer-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
+
+.footer {
+  box-shadow: $footer-box-shadow-size $footer-box-shadow-color;
+}
 
 // Import Bulma and Buefy styles
 

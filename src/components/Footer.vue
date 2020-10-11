@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-right">
+    <div class="content">
       <p class="copyright-msg">
         &copy; {{ fromYear }} - {{ currentYear }} Alpeche Pancha. All rights
         reserved. <br />
@@ -30,7 +30,7 @@ export default {
 .copyright-msg {
   border-top: 1px solid map-get($custom-colors, "phix-separator-dark-color");
   padding-top: 0.85rem;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: right;
 }
 </style>
