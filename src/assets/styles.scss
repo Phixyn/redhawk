@@ -190,7 +190,30 @@ $footer-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
   box-shadow: $footer-box-shadow-size $footer-box-shadow-color;
 }
 
+// End of Bulma overrides
+
 // Import Bulma and Buefy styles
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+// Scrollbars -- TODO
+
+// Emerging W3C standard (currently Firefox only)
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: #494949 #363636;
+// }
+
+// // Works on Chrome/Edge/Safari
+// *::-webkit-scrollbar {
+//   width: 0.75rem;
+// }
+// *::-webkit-scrollbar-track {
+//   background: #363636;
+// }
+// *::-webkit-scrollbar-thumb {
+//   background-color: #494949;
+//   border-radius: 20px;
+//   border: 3px solid #363636;
+// }
