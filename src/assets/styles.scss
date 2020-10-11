@@ -156,6 +156,7 @@ $content-heading-weight: $weight-normal;
 // (~bulma/sass/elements/title.sass)
 
 $title-color: map-get($custom-colors, "phix-text-main-color");
+$subtitle-color: hsl(0, 0%, 54%);
 
 // Bulma: Layout
 
