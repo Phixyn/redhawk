@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1 class="content-banner mb-5 py-2 is-size-4 has-text-centered">
+    <h1 class="content-banner subtitle mb-5 py-3 is-size-4 has-text-centered">
       &bull; <span v-html="banner"></span> &bull;
     </h1>
   </header>
