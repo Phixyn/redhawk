@@ -7,7 +7,9 @@
 $twitter: hsl(212, 100%, 63%);
 $twitter-invert: findColorInvert($twitter);
 
-// Override Bulma initial variables
+// Bulma: Utilities
+
+// Initial variables
 // (~bulma/sass/utilities/initial-variables.sass)
 
 // Responsiveness
@@ -18,7 +20,7 @@ $twitter-invert: findColorInvert($twitter);
 // $widescreen-enabled: false;
 $fullhd-enabled: false;
 
-// Override Bulma derived variables
+// Derived variables
 // (~bulma/sass/utilities/derived-variables.scss)
 
 // Lists and maps
@@ -55,7 +57,9 @@ $custom-colors: (
   "twitter-invert": $twitter-invert
 );
 
-$primary: hsl(256, 81%, 67%);
+// TODO use variable
+// $primary: hsl(256, 81%, 67%);
+$primary: hsl(343, 64%, 61%);
 
 // General colors
 
@@ -72,6 +76,7 @@ $background: $black-bis; // hsl(0, 0%, 7%);
 
 // Text colors
 
+// TODO use variables
 $text: hsl(0, 0%, 85%); // TODO too light, see no-bs-looper
 $text-light: hsl(0, 0%, 62%);
 $text-strong: hsl(0, 0%, 47%);
@@ -111,19 +116,24 @@ $link-focus-border: $primary;
 //   "twitter": ($twitter, $twitter-invert)
 // );
 
-// Override Bulma generic variables
+// Bulma: Base
+
+// Generic variables
 // (~bulma/sass/base/generic.sass)
 
 $body-background-color: $black-bis;
+$body-overflow-x: scroll; // Debug
 
 $hr-background-color: map-get($custom-colors, "phix-separator-main-color");
 $hr-height: 1px;
+
+// Bulma: Components
 
 // Navbar -- TODO: Move colors to variables
 // (~bulma/sass/components/navbar.sass)
 
 // $navbar-dropdown-background-color: $scheme-invert;
-// TODO reduce transparency
+// TODO reduce transparency (?) and use variable
 $navbar-dropdown-background-color: hsla(0, 0%, 0%, 0.5);
 $navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 
@@ -133,6 +143,21 @@ $navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 // $navbar-dropdown-item-active-background-color: $background;
 
 // $navbar-divider-background-color: $background
+
+// Bulma: Elements
+
+// Content
+// (~bulma/sass/elements/content.sass)
+
+$content-heading-color: map-get($custom-colors, "phix-text-main-color");
+$content-heading-weight: $weight-normal;
+
+// Title
+// (~bulma/sass/elements/title.sass)
+
+$title-color: map-get($custom-colors, "phix-text-main-color");
+
+// Bulma: Layout
 
 // Footer
 // (~bulma/sass/layout/footer.sass)
