@@ -30,6 +30,7 @@ $custom-colors: (
   "phix-background-dark-color": hsl(0, 0%, 0%),
   "phix-background-lighter-color": hsla(0, 0%, 16%, 0.8),
   "phix-background-light-color": hsl(0, 0%, 13%),
+  // TODO reduce transparency (for navbar dropdown bg ?)
   "phix-background-dark-transparent-color": hsla(0, 0%, 0%, 0.5),
   // TODO: Improve this color. Maybe darker or more transparent?
   "phix-background-sub-section-color": hsla(0, 0%, 10%, 0.8),
@@ -39,8 +40,10 @@ $custom-colors: (
   "phix-border-main-color": hsla(0, 0%, 27%, 0.25),
   "phix-border-lighter-color": hsl(0, 0%, 31%),
   "phix-border-light-color": hsl(0, 0%, 22%),
+  // TODO too light, see no-bs-looper
   "phix-text-main-color": hsl(0, 0%, 85%),
   "phix-text-dark-color": hsl(0, 0%, 47%), // #777777
+  "phix-sub-text-color": hsl(0, 0%, 54%),
   "phix-link-main-color": hsl(343, 64%, 61%),
   "phix-link-hover-color": hsl(343, 48%, 71%),
   "phix-menu-link-main-color": hsl(0, 0%, 62%),
@@ -57,9 +60,8 @@ $custom-colors: (
   "twitter-invert": $twitter-invert
 );
 
-// TODO use variable
 // $primary: hsl(256, 81%, 67%);
-$primary: hsl(343, 64%, 61%);
+$primary: map-get($custom-colors, "phix-link-main-color");
 
 // General colors
 
@@ -76,10 +78,9 @@ $background: $black-bis; // hsl(0, 0%, 7%);
 
 // Text colors
 
-// TODO use variables
-$text: hsl(0, 0%, 85%); // TODO too light, see no-bs-looper
-$text-light: hsl(0, 0%, 62%);
-$text-strong: hsl(0, 0%, 85%);
+$text: map-get($custom-colors, "phix-text-main-color");
+$text-light: map-get($custom-colors, "phix-menu-link-main-color");
+$text-strong: map-get($custom-colors, "phix-text-main-color");
 
 // Link colors
 
@@ -145,20 +146,16 @@ $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
   border: 1px solid map-get($custom-colors, "phix-separator-dark-color");
 }
 
-// Navbar -- TODO: Move colors to variables
+// Navbar
 // (~bulma/sass/components/navbar.sass)
 
-// $navbar-dropdown-background-color: $scheme-invert;
-// TODO reduce transparency (?) and use variable
-$navbar-dropdown-background-color: hsla(0, 0%, 0%, 0.5);
 $navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
 
-// $navbar-dropdown-item-hover-color: hsl(0, 0%, 100%);
-// $navbar-dropdown-item-hover-background-color: $scheme-invert;
+$navbar-dropdown-background-color: map-get($custom-colors, "phix-background-dark-transparent-color");
+
+// $navbar-dropdown-item-hover-color: $scheme-invert;
 // $navbar-dropdown-item-active-color: $link;
 // $navbar-dropdown-item-active-background-color: $background;
-
-// $navbar-divider-background-color: $background
 
 // Bulma: Elements
 
@@ -172,7 +169,7 @@ $content-heading-weight: $weight-normal;
 // (~bulma/sass/elements/title.sass)
 
 $title-color: map-get($custom-colors, "phix-text-main-color");
-$subtitle-color: hsl(0, 0%, 54%); // TODO variable
+$subtitle-color: map-get($custom-colors, "phix-sub-text-color");
 
 // Bulma: Layout
 
