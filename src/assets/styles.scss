@@ -2,11 +2,6 @@
 
 @import "~bulma/sass/utilities/_all";
 
-// Custom colors ???
-
-$twitter: hsl(212, 100%, 63%);
-$twitter-invert: findColorInvert($twitter);
-
 // Bulma: Utilities
 
 // Initial variables
@@ -25,43 +20,52 @@ $fullhd-enabled: false;
 
 // Lists and maps
 
+// Phixed Dark theme colors
 $custom-colors: (
-  "phix-background-main-color": hsl(0, 0%, 7%),
-  "phix-background-dark-color": hsl(0, 0%, 0%),
-  "phix-background-lighter-color": hsla(0, 0%, 16%, 0.8),
-  "phix-background-light-color": hsl(0, 0%, 13%),
-  // TODO reduce transparency (for navbar dropdown bg ?)
-  "phix-background-dark-transparent-color": hsla(0, 0%, 0%, 0.5),
+  "primary-background-color": hsl(0, 0%, 7%), // u
+  "secondary-background-color": hsl(0, 0%, 13%),
+  "accent-background-color": hsl(0, 0%, 0%),
+  // TODO: reduce transparency (for navbar dropdown bg?)
+  "accent-background-color-transparent": hsla(0, 0%, 0%, 0.5),
+
   // TODO: Improve this color. Maybe darker or more transparent?
-  "phix-background-sub-section-color": hsla(0, 0%, 10%, 0.8),
-  // "phix-background-sub-section-color": hsl(0, 0%, 90%),
-  // "phix-border-main-color": hsl(0, 0%, 24%),
-  // "phix-border-main-color": hsl(0, 0%, 79%),
-  "phix-border-main-color": hsla(0, 0%, 27%, 0.25),
-  "phix-border-lighter-color": hsl(0, 0%, 31%),
-  "phix-border-light-color": hsl(0, 0%, 22%),
-  // TODO too light, see no-bs-looper
-  "phix-text-main-color": hsl(0, 0%, 85%),
-  "phix-text-dark-color": hsl(0, 0%, 47%), // #777777
-  "phix-sub-text-color": hsl(0, 0%, 54%),
-  "phix-link-main-color": hsl(343, 64%, 61%),
-  "phix-link-hover-color": hsl(343, 48%, 71%),
-  "phix-menu-link-main-color": hsl(0, 0%, 62%),
-  "phix-menu-link-hover-color": hsl(0, 0%, 100%),
-  "phix-separator-main-color": hsl(0, 0%, 26%),
-  "phix-separator-dark-color": hsl(0, 0%, 15%),
-  "phix-separator-accent-color": hsl(349, 67%, 39%),
+  "primary-container-color": hsla(0, 0%, 10%, 0.8), // u
+  "secondary-container-color": hsl(0, 0%, 14%), // u
+  "accent-container-color": hsl(0, 0%, 17%), // u
+  // Also good, but couldn't decide between them
+  // "accent-container-color": hsl(0, 0%, 18%),
+
+  "primary-border-color": hsla(0, 0%, 27%, 0.25), // u
+  // "primary-border-color": hsl(0, 0%, 24%),
+  "secondary-border-color": hsl(0, 0%, 20%),
+  "accent-border-color": hsl(0, 0%, 36%), // u
+  // Also good?
+  // "accent-border-color": hsl(0, 0%, 31%),
+  "primary-separator-color": hsl(0, 0%, 26%),
+  "secondary-separator-color": hsl(0, 0%, 15%),
+
+  // Accent colors that make the theme "pop"
   // Shadow can be lighter/darker than accent, if desired
-  "phix-shadow-main-color": hsl(349, 67%, 39%),
-  // Carousel indicators
-  "phix-button-main-color": hsl(0, 0%, 20%),
-  "phix-button-hover-color": hsl(0, 0%, 40%),
-  "twitter": $twitter,
-  "twitter-invert": $twitter-invert
+  "primary-accent-color": hsl(349, 67%, 39%),
+  // Mainly used as shadow and can be lighter/darker than primary accent.
+  "secondary-accent-color": hsl(349, 67%, 39%), // u
+
+  // Text colors
+  // TODO: too light, see no-bs-looper
+  "primary-text-color": hsl(0, 0%, 85%),
+  "secondary-text-color": hsl(0, 0%, 47%), // #777777
+  "text-color-ter": hsl(0, 0%, 54%),
+  "primary-link-color": hsl(343, 64%, 61%),
+  "secondary-link-color": hsl(343, 48%, 71%),
+  "primary-menu-link-color": hsl(0, 0%, 62%),
+  "secondary-menu-link-color": hsl(0, 0%, 92%), // u
+
+  // Misc colors
+  "twitter": hsl(212, 100%, 63%) // u
 );
 
 // $primary: hsl(256, 81%, 67%);
-$primary: map-get($custom-colors, "phix-link-main-color");
+$primary: map-get($custom-colors, "primary-link-color");
 
 // General colors
 
@@ -72,53 +76,37 @@ $scheme-invert: $white;
 $scheme-invert-bis: $white-bis;
 $scheme-invert-ter: $white-ter;
 
-// $background: $primary;
 // $background: $black-ter; // I think I prefer this
 $background: $black-bis; // hsl(0, 0%, 7%);
 
 // Text colors
 
-$text: map-get($custom-colors, "phix-text-main-color");
-$text-light: map-get($custom-colors, "phix-menu-link-main-color");
-$text-strong: map-get($custom-colors, "phix-text-main-color");
+$text: map-get($custom-colors, "primary-text-color");
+$text-light: map-get($custom-colors, "primary-menu-link-color");
+$text-strong: map-get($custom-colors, "primary-text-color");
 
 // Link colors
 
-$link: map-get($custom-colors, "phix-link-main-color");
+$link: map-get($custom-colors, "primary-link-color");
 // $link-invert: findColorInvert($link);
-$link-light: map-get($custom-colors, "phix-link-hover-color");
+$link-light: map-get($custom-colors, "secondary-link-color");
 // $link-dark: findDarkColor($link);
-$link-visited: map-get($custom-colors, "phix-link-main-color");
+$link-visited: map-get($custom-colors, "primary-link-color");
 
-$link-hover: map-get($custom-colors, "phix-link-hover-color");
-$link-hover-border: map-get($custom-colors, "phix-link-hover-color");
+$link-hover: map-get($custom-colors, "secondary-link-color");
+$link-hover-border: map-get($custom-colors, "secondary-link-color");
 
-$link-focus: map-get($custom-colors, "phix-link-hover-color");
-$link-focus-border: map-get($custom-colors, "phix-link-main-color");
+$link-focus: map-get($custom-colors, "secondary-link-color");
+$link-focus-border: map-get($custom-colors, "primary-link-color");
 
-$link-active: map-get($custom-colors, "phix-link-hover-color");
-$link-active-border: map-get($custom-colors, "phix-link-main-color");
+$link-active: map-get($custom-colors, "secondary-link-color");
+$link-active-border: map-get($custom-colors, "primary-link-color");
 
 // Only show outline on :focus for accessibility, not when mouse click is held
 // on a link.
 a:active {
   outline: none;
 }
-
-// Override $colors map (not sure if needed)
-
-// $colors: (
-//   "white": ($white, $black),
-//   "black": ($black, $white),
-//   "light": ($light, $light-invert),
-//   "dark": ($dark, $dark-invert),
-//   "primary": ($primary, $primary-invert),
-//   "info": ($info, $info-invert),
-//   "success": ($success, $success-invert),
-//   "warning": ($warning, $warning-invert),
-//   "danger": ($danger, $danger-invert),
-//   "twitter": ($twitter, $twitter-invert)
-// );
 
 // Bulma: Base
 
@@ -129,7 +117,7 @@ $body-background-color: $black-bis;
 $body-overflow-x: scroll; // Debug
 $body-overflow-y: auto;
 
-$hr-background-color: map-get($custom-colors, "phix-separator-main-color");
+$hr-background-color: map-get($custom-colors, "primary-separator-color");
 $hr-height: 1px;
 
 // Bulma: Components
@@ -137,21 +125,21 @@ $hr-height: 1px;
 // Card
 // (~bulma/sass/components/card.sass)
 
-$card-shadow: 0 0em 0em 0.0625rem map-get($custom-colors, "phix-background-light-color"), 0 0 0 0.0625rem map-get($custom-colors, "phix-background-light-color");
+$card-shadow: 0 0em 0em 0.0625rem map-get($custom-colors, "secondary-background-color"), 0 0 0 0.0625rem map-get($custom-colors, "secondary-background-color");
 
 $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 // $card-header-shadow: none;
 
 .card-image {
-  border: 1px solid map-get($custom-colors, "phix-separator-dark-color");
+  border: 1px solid map-get($custom-colors, "secondary-separator-color");
 }
 
 // Navbar
 // (~bulma/sass/components/navbar.sass)
 
-$navbar-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
+$navbar-box-shadow-color: map-get($custom-colors, "primary-accent-color");
 
-$navbar-dropdown-background-color: map-get($custom-colors, "phix-background-dark-transparent-color");
+$navbar-dropdown-background-color: map-get($custom-colors, "accent-background-color-transparent");
 
 // $navbar-dropdown-item-hover-color: $scheme-invert;
 // $navbar-dropdown-item-active-color: $link;
@@ -162,14 +150,14 @@ $navbar-dropdown-background-color: map-get($custom-colors, "phix-background-dark
 // Content
 // (~bulma/sass/elements/content.sass)
 
-$content-heading-color: map-get($custom-colors, "phix-text-main-color");
+$content-heading-color: map-get($custom-colors, "primary-text-color");
 $content-heading-weight: $weight-normal;
 
 // Title
 // (~bulma/sass/elements/title.sass)
 
-$title-color: map-get($custom-colors, "phix-text-main-color");
-$subtitle-color: map-get($custom-colors, "phix-sub-text-color");
+$title-color: map-get($custom-colors, "primary-text-color");
+$subtitle-color: map-get($custom-colors, "text-color-ter");
 
 // Bulma: Layout
 
@@ -177,11 +165,11 @@ $subtitle-color: map-get($custom-colors, "phix-sub-text-color");
 // (~bulma/sass/layout/footer.sass)
 
 $footer-background-color: $scheme-main;
-$footer-color: map-get($custom-colors, "phix-text-dark-color");
+$footer-color: map-get($custom-colors, "secondary-text-color");
 $footer-padding: 3rem 6rem 4rem;
 
 $footer-box-shadow-size: 0 -2px 0 0;
-$footer-box-shadow-color: map-get($custom-colors, "phix-shadow-main-color");
+$footer-box-shadow-color: map-get($custom-colors, "primary-accent-color");
 
 .footer {
   box-shadow: $footer-box-shadow-size $footer-box-shadow-color;

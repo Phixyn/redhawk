@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 .copyright-msg {
-  border-top: 1px solid map-get($custom-colors, "phix-separator-dark-color");
+  border-top: 1px solid map-get($custom-colors, "secondary-separator-color");
   padding-top: 0.85rem;
   font-size: 0.8rem;
   text-align: right;
