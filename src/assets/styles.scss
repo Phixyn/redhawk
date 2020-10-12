@@ -25,7 +25,7 @@ $custom-colors: (
   "primary-background-color": hsl(0, 0%, 7%), // u
   "secondary-background-color": hsl(0, 0%, 13%),
   "accent-background-color": hsl(0, 0%, 0%),
-  // TODO: reduce transparency (for navbar dropdown bg?)
+  // TODO: Reduce transparency (for navbar dropdown bg?)
   "accent-background-color-transparent": hsla(0, 0%, 0%, 0.5),
 
   // TODO: Improve this color. Maybe darker or more transparent?
@@ -45,15 +45,14 @@ $custom-colors: (
   "secondary-separator-color": hsl(0, 0%, 15%),
 
   // Accent colors that make the theme "pop"
-  // Shadow can be lighter/darker than accent, if desired
   "primary-accent-color": hsl(349, 67%, 39%),
-  // Mainly used as shadow and can be lighter/darker than primary accent.
+  // Mainly used as shadow and can be lighter/darker than primary accent
   "secondary-accent-color": hsl(349, 67%, 39%), // u
 
   // Text colors
-  // TODO: too light, see no-bs-looper
-  "primary-text-color": hsl(0, 0%, 85%),
-  "secondary-text-color": hsl(0, 0%, 47%), // #777777
+  // "primary-text-color": hsl(0, 0%, 85%), // too light?
+  "primary-text-color": hsl(0, 0%, 69%), // might be too dark
+  "secondary-text-color": hsl(0, 0%, 47%),
   "text-color-ter": hsl(0, 0%, 54%),
   "primary-link-color": hsl(343, 64%, 61%),
   "secondary-link-color": hsl(343, 48%, 71%),
