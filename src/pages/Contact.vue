@@ -8,9 +8,9 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <span class="title is-5">{{ $page.contact.name }}</span
+                <span class="subtitle is-5">{{ $page.contact.name }}</span
                 ><br />
-                <span class="title is-5">{{ $page.contact.email }}</span>
+                <span class="subtitle is-5">{{ $page.contact.email }}</span>
               </p>
             </div> <!-- .content -->
 
@@ -24,7 +24,7 @@
             <div class="content has-text-centered">
               <hr />
               <figure
-                class="is-inline-flex image is-32x32 mx-3 my-0"
+                class="sm-icon is-inline-flex image is-32x32 mx-3 my-0"
                 :key="smIcon.name"
                 v-for="smIcon in $page.contact.social_media_icons"
               >
@@ -74,8 +74,14 @@ export default {
 </script>
 
 <style lang="scss">
-$phix-button-main-color: #333333;
 .contact-details {
-  border: 1px dashed $phix-button-main-color;
+  border: 1px dashed map-get($custom-colors, "border-bis");
+}
+
+.sm-icon a img {
+  opacity: 0.85;
+}
+.sm-icon a:hover img {
+  opacity: 1;
 }
 </style>

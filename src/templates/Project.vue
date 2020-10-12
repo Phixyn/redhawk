@@ -52,14 +52,10 @@
             <Carousel :carousels="carousels" />
           </div> <!-- .column -->
         </div> <!-- .columns -->
-      </div> <!-- .container -->
-    </section>
 
-    <!-- Project demo video (if it has one) -->
-    <section class="section">
-      <div class="container">
+        <!-- Project demo video (if it has one) -->
+        <hr v-if="$page.project.has_video" />
         <div class="columns" v-if="$page.project.has_video">
-          <hr />
           <div class="column is-10 is-offset-2">
             <p class="block">Here's a quick demo video.</p>
 
@@ -73,6 +69,16 @@
             </figure> <!-- .image -->
           </div> <!-- .column -->
         </div> <!-- .columns -->
+
+        <!-- Breadcrumbs -->
+        <hr class="mb-4" />
+        <nav class="breadcrumb is-small is-uppercase" aria-label="breadcrumbs">
+          <ul>
+            <li><g-link to="/">Home</g-link></li>
+            <li><g-link to="/projects/">Projects</g-link></li>
+            <li class="is-active"><a href="#" aria-current="page">{{ $page.project.title }}</a></li>
+          </ul>
+        </nav> <!-- .breadcrumb -->
       </div> <!-- .container -->
     </section>
   </Layout>

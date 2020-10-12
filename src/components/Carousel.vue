@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .is-active .al img {
   filter: grayscale(0%);
 }
