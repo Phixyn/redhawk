@@ -75,7 +75,7 @@ export default {
 
 <style lang="scss">
 .contact-details {
-  border: 1px dashed map-get($custom-colors, "secondary-border-color");
+  border: 1px dashed map-get($custom-colors, "border-bis");
 }
 
 .sm-icon a img {

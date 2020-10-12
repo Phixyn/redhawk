@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 .content-banner {
   border-width: 1px;
-  border-color: map-get($custom-colors, "primary-separator-color");
+  border-color: map-get($custom-colors, "separator-primary");
   border-style: solid none;
   text-align: center;
 }

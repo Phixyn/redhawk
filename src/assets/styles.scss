@@ -22,49 +22,44 @@ $fullhd-enabled: false;
 
 // Phixed Dark theme colors
 $custom-colors: (
-  "primary-background-color": hsl(0, 0%, 7%), // u
-  "secondary-background-color": hsl(0, 0%, 13%),
-  "accent-background-color": hsl(0, 0%, 0%),
-  // TODO: Reduce transparency (for navbar dropdown bg?)
-  "accent-background-color-transparent": hsla(0, 0%, 0%, 0.5),
-
+  // Backgrounds and containers
+  "background-primary": hsl(0, 0%, 7%),
+  "background-bis": hsl(0, 0%, 13%),
+  "background-ter": hsl(0, 0%, 0%),
+  "background-ter-transparent": hsla(0, 0%, 0%, 0.5),
   // TODO: Improve this color. Maybe darker or more transparent?
-  "primary-container-color": hsla(0, 0%, 10%, 0.8), // u
-  "secondary-container-color": hsl(0, 0%, 14%), // u
-  "accent-container-color": hsl(0, 0%, 17%), // u
+  "container-primary": hsla(0, 0%, 10%, 0.8),
+  "container-bis": hsl(0, 0%, 14%),
+  "container-ter": hsl(0, 0%, 17%),
   // Also good, but couldn't decide between them
-  // "accent-container-color": hsl(0, 0%, 18%),
-
-  "primary-border-color": hsla(0, 0%, 27%, 0.25), // u
-  // "primary-border-color": hsl(0, 0%, 24%),
-  "secondary-border-color": hsl(0, 0%, 20%),
-  "accent-border-color": hsl(0, 0%, 36%), // u
+  // "container-ter": hsl(0, 0%, 18%),
+  // Borders and separators
+  "border-primary": hsla(0, 0%, 27%, 0.25),
+  // "border-primary": hsl(0, 0%, 24%),
+  "border-bis": hsl(0, 0%, 20%),
+  "border-ter": hsl(0, 0%, 36%),
   // Also good?
-  // "accent-border-color": hsl(0, 0%, 31%),
-  "primary-separator-color": hsl(0, 0%, 26%),
-  "secondary-separator-color": hsl(0, 0%, 15%),
-
-  // Accent colors that make the theme "pop"
-  "primary-accent-color": hsl(349, 67%, 39%),
-  // Mainly used as shadow and can be lighter/darker than primary accent
-  "secondary-accent-color": hsl(349, 67%, 39%), // u
-
+  // "border-ter": hsl(0, 0%, 31%),
+  "separator-primary": hsl(0, 0%, 26%),
+  "separator-bis": hsl(0, 0%, 15%),
+  // Accent colors
+  "accent-primary": hsl(349, 67%, 39%),
+  // Mainly used as shadow and can be lighter/darker than primary
+  "accent-bis": hsl(349, 67%, 30%),
   // Text colors
-  // "primary-text-color": hsl(0, 0%, 85%), // too light?
-  "primary-text-color": hsl(0, 0%, 69%), // might be too dark
-  "secondary-text-color": hsl(0, 0%, 47%),
-  "text-color-ter": hsl(0, 0%, 54%),
-  "primary-link-color": hsl(343, 64%, 61%),
-  "secondary-link-color": hsl(343, 48%, 71%),
-  "primary-menu-link-color": hsl(0, 0%, 62%),
-  "secondary-menu-link-color": hsl(0, 0%, 92%), // u
-
+  // "text-primary": hsl(0, 0%, 85%), // too light?
+  "text-primary": hsl(0, 0%, 69%), // TODO: Might be too dark
+  "text-bis": hsl(0, 0%, 47%),
+  "text-ter": hsl(0, 0%, 54%),
+  "link-primary": hsl(343, 64%, 61%),
+  "link-bis": hsl(343, 48%, 71%),
+  "menu-link-primary": hsl(0, 0%, 62%),
+  "menu-link-bis": hsl(0, 0%, 92%),
   // Misc colors
-  "twitter": hsl(212, 100%, 63%) // u
+  "twitter": hsl(212, 100%, 63%)
 );
 
-// $primary: hsl(256, 81%, 67%);
-$primary: map-get($custom-colors, "primary-link-color");
+$primary: map-get($custom-colors, "link-primary");
 
 // General colors
 
@@ -75,31 +70,30 @@ $scheme-invert: $white;
 $scheme-invert-bis: $white-bis;
 $scheme-invert-ter: $white-ter;
 
-// $background: $black-ter; // I think I prefer this
-$background: $black-bis; // hsl(0, 0%, 7%);
+$background: $black-bis; // same as background-primary
 
 // Text colors
 
-$text: map-get($custom-colors, "primary-text-color");
-$text-light: map-get($custom-colors, "primary-menu-link-color");
-$text-strong: map-get($custom-colors, "primary-text-color");
+$text: map-get($custom-colors, "text-primary");
+$text-light: map-get($custom-colors, "menu-link-primary");
+$text-strong: map-get($custom-colors, "text-primary");
 
 // Link colors
 
-$link: map-get($custom-colors, "primary-link-color");
+$link: map-get($custom-colors, "link-primary");
 // $link-invert: findColorInvert($link);
-$link-light: map-get($custom-colors, "secondary-link-color");
+$link-light: map-get($custom-colors, "link-bis");
 // $link-dark: findDarkColor($link);
-$link-visited: map-get($custom-colors, "primary-link-color");
+$link-visited: map-get($custom-colors, "link-primary");
 
-$link-hover: map-get($custom-colors, "secondary-link-color");
-$link-hover-border: map-get($custom-colors, "secondary-link-color");
+$link-hover: map-get($custom-colors, "link-bis");
+$link-hover-border: map-get($custom-colors, "link-bis");
 
-$link-focus: map-get($custom-colors, "secondary-link-color");
-$link-focus-border: map-get($custom-colors, "primary-link-color");
+$link-focus: map-get($custom-colors, "link-bis");
+$link-focus-border: map-get($custom-colors, "link-primary");
 
-$link-active: map-get($custom-colors, "secondary-link-color");
-$link-active-border: map-get($custom-colors, "primary-link-color");
+$link-active: map-get($custom-colors, "link-bis");
+$link-active-border: map-get($custom-colors, "link-primary");
 
 // Only show outline on :focus for accessibility, not when mouse click is held
 // on a link.
@@ -113,10 +107,11 @@ a:active {
 // (~bulma/sass/base/generic.sass)
 
 $body-background-color: $black-bis;
-$body-overflow-x: scroll; // Debug
+// $body-overflow-x: scroll; // debug
+$body-overflow-x: auto;
 $body-overflow-y: auto;
 
-$hr-background-color: map-get($custom-colors, "primary-separator-color");
+$hr-background-color: map-get($custom-colors, "separator-primary");
 $hr-height: 1px;
 
 // Bulma: Components
@@ -124,21 +119,21 @@ $hr-height: 1px;
 // Card
 // (~bulma/sass/components/card.sass)
 
-$card-shadow: 0 0em 0em 0.0625rem map-get($custom-colors, "secondary-background-color"), 0 0 0 0.0625rem map-get($custom-colors, "secondary-background-color");
+$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"), 0 0 0 0.0625rem map-get($custom-colors, "background-bis");
 
 $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 // $card-header-shadow: none;
 
 .card-image {
-  border: 1px solid map-get($custom-colors, "secondary-separator-color");
+  border: 1px solid map-get($custom-colors, "separator-bis");
 }
 
 // Navbar
 // (~bulma/sass/components/navbar.sass)
 
-$navbar-box-shadow-color: map-get($custom-colors, "primary-accent-color");
+$navbar-box-shadow-color: map-get($custom-colors, "accent-primary");
 
-$navbar-dropdown-background-color: map-get($custom-colors, "accent-background-color-transparent");
+$navbar-dropdown-background-color: map-get($custom-colors, "background-ter-transparent");
 
 // $navbar-dropdown-item-hover-color: $scheme-invert;
 // $navbar-dropdown-item-active-color: $link;
@@ -149,14 +144,14 @@ $navbar-dropdown-background-color: map-get($custom-colors, "accent-background-co
 // Content
 // (~bulma/sass/elements/content.sass)
 
-$content-heading-color: map-get($custom-colors, "primary-text-color");
+$content-heading-color: map-get($custom-colors, "text-primary");
 $content-heading-weight: $weight-normal;
 
 // Title
 // (~bulma/sass/elements/title.sass)
 
-$title-color: map-get($custom-colors, "primary-text-color");
-$subtitle-color: map-get($custom-colors, "text-color-ter");
+$title-color: map-get($custom-colors, "text-primary");
+$subtitle-color: map-get($custom-colors, "text-ter");
 
 // Bulma: Layout
 
@@ -164,11 +159,11 @@ $subtitle-color: map-get($custom-colors, "text-color-ter");
 // (~bulma/sass/layout/footer.sass)
 
 $footer-background-color: $scheme-main;
-$footer-color: map-get($custom-colors, "secondary-text-color");
+$footer-color: map-get($custom-colors, "text-bis");
 $footer-padding: 3rem 6rem 4rem;
 
-$footer-box-shadow-size: 0 -2px 0 0;
-$footer-box-shadow-color: map-get($custom-colors, "primary-accent-color");
+$footer-box-shadow-size: 0 -0.125rem 0 0;
+$footer-box-shadow-color: map-get($custom-colors, "accent-primary");
 
 .footer {
   box-shadow: $footer-box-shadow-size $footer-box-shadow-color;
