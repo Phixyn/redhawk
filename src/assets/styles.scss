@@ -1,0 +1,198 @@
+// Import Bulma's core
+
+@import "~bulma/sass/utilities/_all";
+
+// Bulma: Utilities
+
+// Initial variables
+// (~bulma/sass/utilities/initial-variables.sass)
+
+// Responsiveness
+
+// Needed to make containers smaller on desktop
+// See: https://bulma.io/documentation/layout/container/#overview
+// Not sure if I want to keep these or not. Maybe remove only fullhd.
+// $widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Derived variables
+// (~bulma/sass/utilities/derived-variables.scss)
+
+// Lists and maps
+
+// Phixed Dark theme colors
+$custom-colors: (
+  // Backgrounds and containers
+  "background-primary": hsl(0, 0%, 7%),
+  "background-bis": hsl(0, 0%, 13%),
+  "background-ter": hsl(0, 0%, 0%),
+  "background-ter-transparent": hsla(0, 0%, 0%, 0.5),
+  // TODO: Improve this color. Maybe darker or more transparent?
+  "container-primary": hsla(0, 0%, 10%, 0.8),
+  "container-bis": hsl(0, 0%, 14%),
+  "container-ter": hsl(0, 0%, 17%),
+  // Also good, but couldn't decide between them
+  // "container-ter": hsl(0, 0%, 18%),
+  // Borders and separators
+  "border-primary": hsla(0, 0%, 27%, 0.25),
+  // "border-primary": hsl(0, 0%, 24%),
+  "border-bis": hsl(0, 0%, 20%),
+  "border-ter": hsl(0, 0%, 36%),
+  // Also good?
+  // "border-ter": hsl(0, 0%, 31%),
+  "separator-primary": hsl(0, 0%, 26%),
+  "separator-bis": hsl(0, 0%, 15%),
+  // Accent colors
+  "accent-primary": hsl(349, 67%, 39%),
+  // Mainly used as shadow and can be lighter/darker than primary
+  "accent-bis": hsl(349, 67%, 30%),
+  // Text colors
+  // "text-primary": hsl(0, 0%, 85%), // too light?
+  "text-primary": hsl(0, 0%, 69%), // TODO: Might be too dark
+  "text-bis": hsl(0, 0%, 47%),
+  "text-ter": hsl(0, 0%, 54%),
+  "link-primary": hsl(343, 64%, 61%),
+  "link-bis": hsl(343, 48%, 71%),
+  "menu-link-primary": hsl(0, 0%, 62%),
+  "menu-link-bis": hsl(0, 0%, 92%),
+  // Misc colors
+  "twitter": hsl(212, 100%, 63%)
+);
+
+$primary: map-get($custom-colors, "link-primary");
+
+// General colors
+
+$scheme-main: $black;
+$scheme-main-bis: $black-bis;
+$scheme-main-ter: $black-ter;
+$scheme-invert: $white;
+$scheme-invert-bis: $white-bis;
+$scheme-invert-ter: $white-ter;
+
+$background: $black-bis; // same as background-primary
+
+// Text colors
+
+$text: map-get($custom-colors, "text-primary");
+$text-light: map-get($custom-colors, "menu-link-primary");
+$text-strong: map-get($custom-colors, "text-primary");
+
+// Link colors
+
+$link: map-get($custom-colors, "link-primary");
+// $link-invert: findColorInvert($link);
+$link-light: map-get($custom-colors, "link-bis");
+// $link-dark: findDarkColor($link);
+$link-visited: map-get($custom-colors, "link-primary");
+
+$link-hover: map-get($custom-colors, "link-bis");
+$link-hover-border: map-get($custom-colors, "link-bis");
+
+$link-focus: map-get($custom-colors, "link-bis");
+$link-focus-border: map-get($custom-colors, "link-primary");
+
+$link-active: map-get($custom-colors, "link-bis");
+$link-active-border: map-get($custom-colors, "link-primary");
+
+// Only show outline on :focus for accessibility, not when mouse click is held
+// on a link.
+a:active {
+  outline: none;
+}
+
+// Bulma: Base
+
+// Generic variables
+// (~bulma/sass/base/generic.sass)
+
+$body-background-color: $black-bis;
+// $body-overflow-x: scroll; // debug
+$body-overflow-x: auto;
+$body-overflow-y: auto;
+
+$hr-background-color: map-get($custom-colors, "separator-primary");
+$hr-height: 1px;
+
+// Bulma: Components
+
+// Card
+// (~bulma/sass/components/card.sass)
+
+$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"), 0 0 0 0.0625rem map-get($custom-colors, "background-bis");
+
+$card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
+// $card-header-shadow: none;
+
+.card-image {
+  border: 1px solid map-get($custom-colors, "separator-bis");
+}
+
+// Navbar
+// (~bulma/sass/components/navbar.sass)
+
+$navbar-box-shadow-color: map-get($custom-colors, "accent-primary");
+
+$navbar-dropdown-background-color: map-get($custom-colors, "background-ter-transparent");
+
+// $navbar-dropdown-item-hover-color: $scheme-invert;
+// $navbar-dropdown-item-active-color: $link;
+// $navbar-dropdown-item-active-background-color: $background;
+
+// Bulma: Elements
+
+// Content
+// (~bulma/sass/elements/content.sass)
+
+$content-heading-color: map-get($custom-colors, "text-primary");
+$content-heading-weight: $weight-normal;
+
+// Title
+// (~bulma/sass/elements/title.sass)
+
+$title-color: map-get($custom-colors, "text-primary");
+$subtitle-color: map-get($custom-colors, "text-ter");
+
+// Bulma: Layout
+
+// Footer
+// (~bulma/sass/layout/footer.sass)
+
+$footer-background-color: $scheme-main;
+$footer-color: map-get($custom-colors, "text-bis");
+$footer-padding: 3rem 6rem 4rem;
+
+$footer-box-shadow-size: 0 -0.125rem 0 0;
+$footer-box-shadow-color: map-get($custom-colors, "accent-primary");
+
+.footer {
+  box-shadow: $footer-box-shadow-size $footer-box-shadow-color;
+}
+
+// End of Bulma overrides
+
+// Import Bulma and Buefy styles
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+// Scrollbars -- TODO
+
+// Emerging W3C standard (currently Firefox only)
+// * {
+//   scrollbar-width: thin;
+//   scrollbar-color: #494949 #363636;
+// }
+
+// // Works on Chrome/Edge/Safari
+// *::-webkit-scrollbar {
+//   width: 0.75rem;
+// }
+// *::-webkit-scrollbar-track {
+//   background: #363636;
+// }
+// *::-webkit-scrollbar-thumb {
+//   background-color: #494949;
+//   border-radius: 20px;
+//   border: 3px solid #363636;
+// }

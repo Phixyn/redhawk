@@ -1,0 +1,88 @@
+<template>
+  <!-- Normal indicators, no "gallery" -->
+  <!-- <b-carousel
+    :indicator="indicator"
+    :indicator-background="indicatorBackground"
+    :indicator-inside="indicatorInside"
+    :indicator-mode="indicatorMode"
+    :indicator-position="indicatorPosition"
+    :indicator-style="indicatorStyle"
+    :pause-hover="pauseHover"
+  > -->
+
+  <!-- Gallery-type carousel (TODO maybe make this a separate component) -->
+  <b-carousel
+    indicator-custom
+    :indicator-inside="indicatorInside"
+    :interval="interval"
+    :pause-hover="pauseHover"
+  >
+    <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+      <figure class="image is-5by3">
+        <img :src="carousel.image" />
+      </figure> <!-- .image .is-5by3 -->
+    </b-carousel-item>
+    <template slot="indicators" slot-scope="props">
+      <figure class="al image">
+        <img
+          :src="carousels[props.i].image"
+          :title="carousels[props.i].title"
+          :alt="carousels[props.i].title"
+        />
+      </figure> <!-- .al .image -->
+    </template>
+  </b-carousel>
+</template>
+
+<script>
+export default {
+  name: "Carousel",
+  props: {
+    indicator: {
+      type: Boolean,
+      default: true,
+    },
+    indicatorBackground: {
+      type: Boolean,
+      default: true,
+    },
+    indicatorInside: {
+      type: Boolean,
+      default: false,
+    },
+    indicatorMode: {
+      type: String,
+      default: "click",
+    },
+    indicatorPosition: {
+      type: String,
+      default: "is-bottom",
+    },
+    indicatorStyle: {
+      type: String,
+      default: "is-dots",
+    },
+    interval: {
+      type: Number,
+      default: 5000,
+    },
+    pauseHover: {
+      type: Boolean,
+      default: false,
+    },
+    carousels: {
+      type: Array,
+      required: true,
+    },
+  },
+};
+</script>
+
+<style lang="scss">
+.is-active .al img {
+  filter: grayscale(0%);
+}
+.al img {
+  filter: grayscale(100%);
+}
+</style>
