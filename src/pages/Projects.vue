@@ -2,8 +2,8 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <ContentBanner v-bind:banner="$page.customPage.banner"/>
-        <ProjectShowcase v-bind:projects="$page.projects"/>
+        <ContentBanner v-bind:banner="$page.strapi.portfolio.banner" />
+        <ProjectShowcase v-bind:projects="$page.strapi.projects" />
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -11,25 +11,44 @@
 
 <page-query>
 query {
-  customPage (path: "/temp-content/pages/projects") {
-    title
-    banner
-  }
+  strapi {
+    portfolio {
+      title
+      banner
+    }
 
-  projects: allProject {
-    edges {
-      node {
+    projects {
+      id
+      name
+      description
+      summary
+      status
+      main_technology
+      programming_language
+      repository_url
+      date_started
+      has_demo_video
+      demo_video_url
+      slug
+      cover_image {
         id
-        path
-        excerpt
-        title
-        status
-        categories
-        main_technology
-        programming_language
-        technologies
-        github
-        image_path
+        url
+        alt
+      }
+      preview_media {
+        id
+        url
+        alt
+      }
+      project_categories {
+        id
+        name
+        description
+      }
+      project_technologies {
+        id
+        name
+        description
       }
     }
   }
@@ -47,7 +66,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.customPage.title,
+      title: this.$page.strapi.portfolio.title,
     };
   },
 };
