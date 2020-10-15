@@ -3,15 +3,18 @@
     <!-- Intro -->
     <section class="section">
       <div class="container">
-        <ContentBanner v-bind:banner="$page.customPage.banner"/>
-        <div class="content" v-html="$page.customPage.content"></div>
-      </div> <!-- .container -->
-    </section>
+        <ContentBanner v-bind:banner="$page.strapi.homepage.banner"/>
 
-    <!-- Projects -->
-    <section class="section">
-      <div class="container">
-        <ProjectShowcase v-bind:projects="$page.projects"/>
+        <div class="content">
+          <h2>{{ $page.strapi.homepage.biography.header }}</h2>
+          <span v-html="$page.strapi.homepage.biography.content"></span>
+
+          <!-- TODO move to CMS at some point -->
+          <h2>My projects</h2>
+          <p>These are just some of my game projects. You can view the rest in the <a href="#">projects page</a>.</p>
+        </div>
+
+        <ProjectShowcase v-bind:projects="$page.strapi.projects"/>
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -19,26 +22,54 @@
 
 <page-query>
 query {
-  customPage (path: "/temp-content/pages/") {
-    title
-    banner
-    content
-  }
-
-  projects: allProject (limit: 3) {
-    edges {
-      node {
-        id
-        path
+  strapi {
+    homepage {
+      title
+      banner
+      biography {
+        header
         excerpt
-        title
-        status
-        categories
-        main_technology
-        programming_language
-        technologies
-        github
-        image_path
+        content
+        profile_picture {
+          url
+          alt
+          caption
+        }
+      }
+    }
+
+    projects (limit: 3) {
+      id
+      name
+      description
+      summary
+      status
+      main_technology
+      programming_language
+      repository_url
+      date_started
+      has_demo_video
+      demo_video_url
+      slug
+      cover_image {
+        id
+        url
+        alt
+      }
+      preview_media {
+        id
+        url
+        alt
+      }
+      project_categories {
+        id
+        name
+        description
+      }
+      project_technologies {
+        id
+        name
+        description
       }
     }
   }
@@ -56,7 +87,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.customPage.title,
+      title: this.$page.strapi.homepage.title,
     };
   },
 };
