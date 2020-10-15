@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/source-graphql": "^0.1.0",
     "@gridsome/transformer-remark": "^0.6.3",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2",
