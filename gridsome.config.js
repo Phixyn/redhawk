@@ -39,37 +39,12 @@ module.exports = {
   },
   plugins: [
     {
-      use: "@gridsome/source-filesystem",
-      options: {
-        typeName: "CustomPage",
-        path: "./temp-content/pages/*.md",
-        remark: {
-          // Remark options
-        },
-      },
-    },
-    // {
-    //   use: "@gridsome/source-filesystem",
-    //   options: {
-    //     typeName: "Project",
-    //     path: "./temp-content/projects/*.md",
-    //     remark: {
-    //       // Remark options
-    //     },
-    //   },
-    // },
-    {
-      use: '@gridsome/source-graphql',
+      use: "@gridsome/source-graphql",
       options: {
         url: (process.env.STRAPI_URL || "http://localhost:1337") + "/graphql",
-        fieldName: 'strapi',
-        typeName: 'strapiTypes'
-      }
+        fieldName: "strapi",
+        typeName: "strapiTypes",
+      },
     },
   ],
-  transformers: {
-    remark: {
-      // Global remark options
-    },
-  },
 };
