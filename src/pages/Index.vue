@@ -3,7 +3,7 @@
     <!-- Intro -->
     <section class="section">
       <div class="container">
-        <ContentBanner v-bind:banner="$page.strapi.homepage.banner"/>
+        <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
 
         <div class="content">
           <h2>{{ $page.strapi.homepage.biography.header }}</h2>
@@ -11,10 +11,13 @@
 
           <!-- TODO move to CMS at some point -->
           <h2>My projects</h2>
-          <p>These are just some of my game projects. You can view the rest in the <a href="#">projects page</a>.</p>
+          <p>
+            These are just some of my game projects. You can view the rest in
+            the <a href="#">projects page</a>.
+          </p>
         </div>
 
-        <ProjectShowcase v-bind:projects="$page.strapi.projects"/>
+        <ProjectShowcase v-bind:projects="$page.strapi.projects" />
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -83,7 +86,7 @@ import ProjectShowcase from "@/components/ProjectShowcase.vue";
 export default {
   components: {
     ContentBanner,
-    ProjectShowcase
+    ProjectShowcase,
   },
   metaInfo() {
     return {
