@@ -16,7 +16,11 @@
             <!-- TODO consider making these labels/tags under the
               title instead. -->
             <h2 class="subtitle is-6 level-item">
-              {{ $page.strapi.projects[0].project_categories.join(", ") }}
+              {{
+                $page.strapi.projects[0].project_categories
+                  .map((category) => category.name)
+                  .join(", ")
+              }}
             </h2> <!-- .level-item -->
           </div> <!-- .level-right -->
         </div> <!-- .level -->
@@ -31,10 +35,16 @@
             <p>{{ $page.strapi.projects[0].programming_language }}</p>
             <h3 class="has-text-weight-bold">Technologies</h3>
             <p>
-              {{ $page.strapi.projects[0].project_technologies.join(", ") }}
+              {{
+                $page.strapi.projects[0].project_technologies
+                  .map((technology) => technology.name)
+                  .join(", ")
+              }}
             </p>
             <h3 class="has-text-weight-bold">Status</h3>
-            <p>{{ $page.strapi.projects[0].status }}</p>
+            <p class="is-capitalized">
+              {{ $page.strapi.projects[0].status.split("_").join(" ") }}
+            </p>
             <h3
               class="has-text-weight-bold"
               v-if="$page.strapi.projects[0].repository_url"
@@ -47,7 +57,13 @@
               </a>
             </p>
             <h3 class="has-text-weight-bold">Category</h3>
-            <p>{{ $page.strapi.projects[0].project_categories.join(", ") }}</p>
+            <p>
+              {{
+                $page.strapi.projects[0].project_categories
+                  .map((category) => category.name)
+                  .join(", ")
+              }}
+            </p>
             <h3 class="has-text-weight-bold">Date Started</h3>
             <p>{{ $page.strapi.projects[0].date_started }}</p>
           </div> <!-- .column -->
@@ -147,7 +163,7 @@ export default {
     };
   },
   created() {
-    // Fetch preview images (make method for this?)
+    // Fetch preview images (TODO make method for this?)
     this.carousels = this.$page.strapi.projects[0].preview_media.map(
       (val, index) => {
         return { title: `Preview image ${index + 1}`, image: val.url };
@@ -156,7 +172,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.strapi.projects[0].title,
+      title: this.$page.strapi.projects[0].name,
     };
   },
 };
