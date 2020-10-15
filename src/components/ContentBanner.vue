@@ -1,8 +1,9 @@
 <template>
   <header>
-    <h1 class="content-banner subtitle mb-5 py-3 is-size-4">
-      &bull; <span v-html="banner"></span> &bull;
-    </h1>
+    <h1
+      class="content-banner subtitle mb-5 py-3 is-size-4"
+      v-html="banner"
+    ></h1>
   </header>
 </template>
 

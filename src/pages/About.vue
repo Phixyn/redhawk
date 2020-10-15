@@ -2,35 +2,42 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <ContentBanner v-bind:banner="$page.about.banner" />
+        <ContentBanner v-bind:banner="$page.strapi.about.banner" />
 
         <h2
           class="block has-text-centered is-size-5"
-          v-html="$page.about.hero_text"
+          v-html="$page.strapi.about.hero_text"
         ></h2>
 
         <div class="card">
           <div class="card-content">
             <div class="media">
               <div class="media-content">
-                <h2 class="title is-4">{{ $page.about.bio_header }}</h2>
-                <div class="content" v-html="$page.about.bio"></div>
+                <h2 class="title is-4">
+                  {{ $page.strapi.about.biography.header }}
+                </h2>
                 <div
-                  class="content has-text-centered"
-                  v-html="$page.about.social_links"
+                  class="content"
+                  v-html="$page.strapi.about.biography.content"
                 ></div>
               </div> <!-- .media-content -->
 
               <div class="media-right">
                 <figure class="image is-128x128 ml-4">
-                  <img v-bind:src="$page.about.about_profile_pic" />
+                  <img
+                    :src="$page.strapi.about.biography.profile_picture.url"
+                    :alt="$page.strapi.about.biography.profile_picture.alt"
+                  />
                 </figure> <!-- .image -->
               </div> <!-- .media-right -->
             </div> <!-- .media -->
           </div> <!-- .card-content -->
         </div> <!-- .card -->
 
-        <div class="content mt-6" v-html="$page.about.content"></div>
+        <div
+          class="content mt-6"
+          v-html="$page.strapi.about.projects_summary"
+        ></div>
       </div> <!-- .container -->
     </section>
   </Layout>
@@ -38,15 +45,22 @@
 
 <page-query>
 query {
-  about: customPage (path: "/temp-content/pages/about") {
-    title
-    banner
-    hero_text
-    bio_header
-    about_profile_pic
-    bio
-    social_links
-    content
+  strapi {
+    about {
+      title
+      banner
+      hero_text
+      biography {
+        header
+        excerpt
+        content
+        profile_picture {
+          url
+          alt
+        }
+      }
+      projects_summary
+    }
   }
 }
 </page-query>
@@ -60,7 +74,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.about.title,
+      title: this.$page.strapi.about.title,
     };
   },
 };

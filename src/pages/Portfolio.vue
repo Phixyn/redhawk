@@ -1,22 +1,8 @@
 <template>
   <Layout>
-    <!-- Intro -->
     <section class="section">
       <div class="container">
-        <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
-
-        <div class="content">
-          <h2>{{ $page.strapi.homepage.biography.header }}</h2>
-          <span v-html="$page.strapi.homepage.biography.content"></span>
-
-          <!-- TODO move to CMS at some point -->
-          <h2>My projects</h2>
-          <p>
-            These are just some of my game projects. You can view the rest in
-            the <a href="#">projects page</a>.
-          </p>
-        </div>
-
+        <ContentBanner v-bind:banner="$page.strapi.portfolio.banner" />
         <ProjectShowcase v-bind:projects="$page.strapi.projects" />
       </div> <!-- .container -->
     </section>
@@ -26,22 +12,12 @@
 <page-query>
 query {
   strapi {
-    homepage {
+    portfolio {
       title
       banner
-      biography {
-        header
-        excerpt
-        content
-        profile_picture {
-          url
-          alt
-          caption
-        }
-      }
     }
 
-    projects (limit: 3) {
+    projects {
       id
       name
       description
@@ -90,7 +66,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.strapi.homepage.title,
+      title: this.$page.strapi.portfolio.title,
     };
   },
 };

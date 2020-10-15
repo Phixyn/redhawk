@@ -4,7 +4,7 @@
       <p class="copyright-msg">
         &copy; {{ fromYear }} - {{ currentYear }} Alpeche Pancha. All rights
         reserved. <br />
-        v0.5.0
+        {{ version }}
       </p>
     </div> <!-- .content -->
   </footer>
@@ -15,6 +15,7 @@ export default {
   name: "Footer",
   data() {
     return {
+      version: "v0.5.0",
       fromYear: 2012,
     };
   },
