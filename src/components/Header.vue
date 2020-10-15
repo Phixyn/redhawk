@@ -19,8 +19,8 @@
       -->
       <!-- TODO Use 'active' property and a class to style active items -->
       <b-navbar-item tag="g-link" :to="{ path: '/' }"> Home </b-navbar-item>
-      <b-navbar-item tag="g-link" :to="{ path: '/projects/' }">
-        Projects
+      <b-navbar-item tag="g-link" :to="{ path: '/portfolio/' }">
+        Portfolio
       </b-navbar-item>
       <b-navbar-item tag="g-link" :to="{ path: '/blog/' }">
         Blog
