@@ -51,7 +51,7 @@
             >
               GitHub
             </h3>
-            <p>
+            <p v-if="$page.strapi.projects[0].repository_url">
               <a v-bind:href="$page.strapi.projects[0].repository_url">
                 {{ $page.strapi.projects[0].repository_url }}
               </a>
