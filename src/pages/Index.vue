@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- Intro -->
-    <section class="section">
+    <section id="push-footer" class="section">
       <div class="container">
         <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
 
