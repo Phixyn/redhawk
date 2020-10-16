@@ -67,7 +67,7 @@ query {
       }
     }
 
-    projects (limit: 3) {
+    projects (sort: "date_started:DESC", limit: 3) {
       id
       name
       description
