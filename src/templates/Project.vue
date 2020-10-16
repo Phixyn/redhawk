@@ -28,7 +28,7 @@
         <!-- Project summary -->
         <div class="content" v-html="$page.strapi.projects[0].summary"></div>
 
-        <div class="columns is-mobile">
+        <div class="columns">
           <!-- Project details -->
           <div class="column is-3">
             <h3 class="has-text-weight-bold">Programming Language</h3>
