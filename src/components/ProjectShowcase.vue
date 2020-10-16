@@ -1,7 +1,5 @@
 <template>
-  <!-- TODO not sure if I like is-mobile here...
-    prefer stacked on mobile maybe -->
-  <div class="columns is-mobile is-multiline">
+  <div class="columns is-multiline">
     <div class="column is-4" :key="project.id" v-for="project in projects">
       <ProjectCard v-bind:project="project" />
     </div> <!-- .column -->
