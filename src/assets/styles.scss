@@ -146,6 +146,13 @@ $navbar-dropdown-background-color: map-get($custom-colors, "background-ter-trans
 
 // Bulma: Elements
 
+// Button
+// (~bulma/sass/elements/button.sass)
+
+.button {
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out;
+}
+
 // Content
 // (~bulma/sass/elements/content.sass)
 
