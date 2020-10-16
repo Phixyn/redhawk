@@ -11,8 +11,17 @@
 
         <div class="card">
           <div class="card-content">
-            <div class="media">
-              <div class="media-content">
+            <div class="columns">
+              <div class="column is-narrow is-pulled-right">
+                <figure class="image is-128x128">
+                  <img
+                    :src="$page.strapi.about.biography.profile_picture.url"
+                    :alt="$page.strapi.about.biography.profile_picture.alt"
+                  />
+                </figure> <!-- .image -->
+              </div> <!-- .column -->
+
+              <div class="column">
                 <h2 class="title is-4">
                   {{ $page.strapi.about.biography.header }}
                 </h2>
@@ -20,17 +29,8 @@
                   class="content"
                   v-html="$page.strapi.about.biography.content"
                 ></div>
-              </div> <!-- .media-content -->
-
-              <div class="media-right">
-                <figure class="image is-128x128 ml-4">
-                  <img
-                    :src="$page.strapi.about.biography.profile_picture.url"
-                    :alt="$page.strapi.about.biography.profile_picture.alt"
-                  />
-                </figure> <!-- .image -->
-              </div> <!-- .media-right -->
-            </div> <!-- .media -->
+              </div> <!-- .column -->
+            </div> <!-- .columns -->
           </div> <!-- .card-content -->
         </div> <!-- .card -->
 
