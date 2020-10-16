@@ -1,5 +1,6 @@
 <template>
-  <!-- Normal indicators, no "gallery" -->
+  <!-- Normal indicators, no "gallery"
+    TODO #105: Maybe make this a separate component -->
   <!-- <b-carousel
     :indicator="indicator"
     :indicator-background="indicatorBackground"
@@ -10,7 +11,7 @@
     :pause-hover="pauseHover"
   > -->
 
-  <!-- Gallery-type carousel (TODO maybe make this a separate component) -->
+  <!-- Custom indicators (gallery-like carousel) -->
   <b-carousel
     indicator-custom
     :indicator-inside="indicatorInside"

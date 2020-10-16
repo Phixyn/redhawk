@@ -17,7 +17,7 @@
         tag - Set tag type to <g-link> to make sure Gridsome routing works
         to - part of <g-link> tag, like href but for routing
       -->
-      <!-- TODO Use 'active' property and a class to style active items -->
+      <!-- TODO #73: Use 'active' property and a class to style active items -->
       <b-navbar-item tag="g-link" :to="{ path: '/' }"> Home </b-navbar-item>
       <b-navbar-item tag="g-link" :to="{ path: '/portfolio/' }">
         Portfolio

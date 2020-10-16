@@ -5,7 +5,7 @@
       <div class="container">
         <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
 
-        <!-- TODO: BiographyCard component -->
+        <!-- TODO #106: BiographyCard component -->
         <div class="card">
           <div class="card-content">
             <div class="columns">
@@ -32,7 +32,7 @@
         </div> <!-- .card -->
 
         <div class="content mt-5">
-          <!-- TODO move to CMS at some point -->
+          <!-- TODO #107: Move to CMS at some point -->
           <h2>My projects</h2>
 
           <p>

@@ -27,7 +27,7 @@ $custom-colors: (
   "background-bis": hsl(0, 0%, 13%),
   "background-ter": hsl(0, 0%, 0%),
   "background-ter-transparent": hsla(0, 0%, 0%, 0.5),
-  // TODO: Improve this color. Maybe darker or more transparent?
+  // TODO #104: Improve this color. Maybe darker or more transparent?
   "container-primary": hsla(0, 0%, 10%, 0.8),
   "container-bis": hsl(0, 0%, 14%),
   "container-ter": hsl(0, 0%, 17%),
@@ -194,7 +194,7 @@ $footer-box-shadow-color: map-get($custom-colors, "accent-primary");
 
 // End of sticky bottom footer implementation
 
-// Scrollbars -- TODO
+// Scrollbars -- TODO #76: Dark scrollbars
 
 // Emerging W3C standard (currently Firefox only)
 // * {

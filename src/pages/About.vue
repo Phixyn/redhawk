@@ -9,7 +9,7 @@
           v-html="$page.strapi.about.hero_text"
         ></h2>
 
-        <!-- TODO: BiographyCard component -->
+        <!-- TODO #106: BiographyCard component -->
         <div class="card">
           <div class="card-content">
             <div class="columns">

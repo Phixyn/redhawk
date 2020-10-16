@@ -13,7 +13,7 @@
 
           <!-- Right side -->
           <div class="level-right">
-            <!-- TODO consider making these labels/tags under the
+            <!-- TODO #101: Consider making these labels/tags under the
               title instead. -->
             <h2 class="subtitle is-6 level-item">
               {{
@@ -163,7 +163,7 @@ export default {
     };
   },
   created() {
-    // Fetch preview images (TODO make method for this?)
+    // Fetch preview images (TODO #108: make separate method for this?)
     this.carousels = this.$page.strapi.projects[0].preview_media.map(
       (val, index) => {
         return { title: `Preview image ${index + 1}`, image: val.url };
