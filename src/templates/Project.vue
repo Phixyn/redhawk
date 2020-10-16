@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="section">
+    <section id="push-footer" class="section">
       <div class="container">
         <!-- Project header -->
         <div class="level">

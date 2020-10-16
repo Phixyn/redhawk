@@ -176,6 +176,24 @@ $footer-box-shadow-color: map-get($custom-colors, "accent-primary");
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
+// Sticky bottom footer implementation. Pushes footer to bottom of page even
+// if the page doesn't have enough content to fill the viewport height.
+// Note: #app is injected in the layout.
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Note: This MUST be a direct child of an #app element. Most often, it will
+// be the element wrapping the main section of the website, such as the
+// element between the header and the footer.
+#push-footer {
+  flex-grow: 1;
+}
+
+// End of sticky bottom footer implementation
+
 // Scrollbars -- TODO
 
 // Emerging W3C standard (currently Firefox only)
