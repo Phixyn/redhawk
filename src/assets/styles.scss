@@ -47,8 +47,8 @@ $custom-colors: (
   // Mainly used as shadow and can be lighter/darker than primary
   "accent-bis": hsl(349, 67%, 30%),
   // Text colors
-  // "text-primary": hsl(0, 0%, 85%), // too light?
-  "text-primary": hsl(0, 0%, 69%), // TODO: Might be too dark
+  "text-primary": hsl(0, 0%, 80%), // still too light?
+  // "text-primary": hsl(0, 0%, 77%), // can't decide lol
   "text-bis": hsl(0, 0%, 47%),
   "text-ter": hsl(0, 0%, 54%),
   "link-primary": hsl(343, 64%, 61%),
