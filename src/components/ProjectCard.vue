@@ -24,14 +24,14 @@
           <span v-if="project.repository_url">
             <a :href="project.repository_url">GitHub</a> &bull;
           </span>
-          <a href="#">#{{ project.programming_language }} </a>
-          <a
-            href="#"
-            :key="tech.id"
-            v-for="tech in project.project_technologies"
-          >
-            #{{ tech.name }}
-          </a>
+          <span>{{ project.programming_language }} &bull; </span>
+          <span>
+            {{
+              project.project_technologies
+                .map((technology) => technology.name)
+                .join(", ")
+            }}
+          </span>
         </div> <!-- .block -->
 
         <!-- Can't make tag="g-link" work without warning, and this
