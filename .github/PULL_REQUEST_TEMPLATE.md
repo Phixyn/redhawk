@@ -1,23 +1,31 @@
-# Changes
-_List the changes made_
+# Pull Request
 
-* Changes go here
+## Description
 
-# Type of changes
-_Tick all that apply_
+> Give a short and brief description of the pull request. Add a screenshot if appropriate.
 
-- [ ] New feature: new feature for the user
-- [ ] Fix: bug fix for the user
-- [ ] Documentation: updates and new additions to the documentation
-- [ ] Style: code style, formatting, idendation, fixing new lines, etc; no code changes
-- [ ] Refactor: refactoring code, including renaming
-- [ ] Testing: adding or updating unit tests; no code changes
-- [ ] Chore: updating dependencies, project setup tasks, build related tasks (e.g. updating grunt/other build tasks) etc; no code changes
-- [ ] Breaking change: a fix or new feature that will cause existing functionality to not work as expected was made
 
-# Merging checklist
-_Before you merge..._
 
-- [ ] Code documentation up-to-date
-- [ ] Project documentation up-to-date
+## Changes
+
+> List the changes made.
+
+- Changes go here
+
+## Breaking Change?
+
+> Will these changes cause existing functionality to not work as expected? Will contributors be able to run the project after these changes are merged, without needing to take any additional steps?
+
+- [ ] Tick if this is a breaking change and **describe why** below
+
+## Merging Checklist
+
+> Lastly, before merging we need to make sure that these are done.
+
 - [ ] Project builds and runs
+- [ ] All changes were tested
+- [ ] All tests are up-to-date
+- [ ] All tests pass
+- [ ] Code style follows the [JavaScript](https://google.github.io/styleguide/jsguide.html) and [Vue.js](https://v3.vuejs.org/style-guide/) style guides
+- [ ] Code documentation is up-to-date
+- [ ] Project documentation is up-to-date
