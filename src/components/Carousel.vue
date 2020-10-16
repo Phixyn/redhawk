@@ -14,6 +14,7 @@
   <b-carousel
     indicator-custom
     :indicator-inside="indicatorInside"
+    :autoplay="autoplay"
     :interval="interval"
     :pause-hover="pauseHover"
   >
@@ -61,6 +62,10 @@ export default {
     indicatorStyle: {
       type: String,
       default: "is-dots",
+    },
+    autoplay: {
+      type: Boolean,
+      default: false,
     },
     interval: {
       type: Number,

@@ -5,17 +5,43 @@
       <div class="container">
         <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
 
-        <div class="content">
-          <h2>{{ $page.strapi.homepage.biography.header }}</h2>
-          <span v-html="$page.strapi.homepage.biography.content"></span>
+        <!-- TODO: BiographyCard component -->
+        <div class="card">
+          <div class="card-content">
+            <div class="columns">
+              <div class="column is-narrow is-pulled-right">
+                <figure class="image is-128x128">
+                  <img
+                    :src="$page.strapi.homepage.biography.profile_picture.url"
+                    :alt="$page.strapi.homepage.biography.profile_picture.alt"
+                  />
+                </figure> <!-- .image -->
+              </div> <!-- .column -->
 
+              <div class="column">
+                <h2 class="title is-4">
+                  {{ $page.strapi.homepage.biography.header }}
+                </h2>
+                <div
+                  class="content"
+                  v-html="$page.strapi.homepage.biography.content"
+                ></div>
+              </div> <!-- .column -->
+            </div> <!-- .columns -->
+          </div> <!-- .card-content -->
+        </div> <!-- .card -->
+
+        <div class="content mt-5">
           <!-- TODO move to CMS at some point -->
           <h2>My projects</h2>
+
           <p>
             These are just some of my game projects. You can view the rest in
             the <a href="#">projects page</a>.
           </p>
-        </div>
+
+          <hr />
+        </div> <!-- .content -->
 
         <ProjectShowcase v-bind:projects="$page.strapi.projects" />
       </div> <!-- .container -->
@@ -41,7 +67,7 @@ query {
       }
     }
 
-    projects (limit: 3) {
+    projects (sort: "date_started:DESC", limit: 3) {
       id
       name
       description

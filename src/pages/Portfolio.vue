@@ -17,7 +17,7 @@ query {
       banner
     }
 
-    projects {
+    projects (sort: "date_started:DESC") {
       id
       name
       description
