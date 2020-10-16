@@ -95,6 +95,10 @@ $link-focus-border: map-get($custom-colors, "link-primary");
 $link-active: map-get($custom-colors, "link-bis");
 $link-active-border: map-get($custom-colors, "link-primary");
 
+a {
+  transition: color 0.3s ease-out;
+}
+
 // Only show outline on :focus for accessibility, not when mouse click is held
 // on a link.
 a:active {
@@ -135,9 +139,10 @@ $navbar-box-shadow-color: map-get($custom-colors, "accent-primary");
 
 $navbar-dropdown-background-color: map-get($custom-colors, "background-ter-transparent");
 
-// $navbar-dropdown-item-hover-color: $scheme-invert;
-// $navbar-dropdown-item-active-color: $link;
-// $navbar-dropdown-item-active-background-color: $background;
+.navbar-item,
+.navbar-link {
+  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+}
 
 // Bulma: Elements
 
