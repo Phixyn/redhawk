@@ -3,11 +3,7 @@
     <!-- Logo/site name -->
     <template slot="brand">
       <b-navbar-item tag="g-link" :to="{ path: '/' }">
-        <!-- <p class="title is-4 px-5 py-0 my-0 is-uppercase"> P h i x y n </p> -->
-        <img
-          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-          alt="Lightweight UI components for Vue.js based on Bulma"
-        />
+        <h1 class="px-5 py-0 my-0 is-size-5 is-uppercase">P h i x y n</h1>
       </b-navbar-item>
     </template> <!-- /brand -->
 
@@ -18,13 +14,15 @@
         to - part of <g-link> tag, like href but for routing
       -->
       <!-- TODO #73: Use 'active' property and a class to style active items -->
-      <b-navbar-item tag="g-link" :to="{ path: '/' }"> Home </b-navbar-item>
+      <b-navbar-item tag="g-link" :to="{ path: '/' }" exact>
+        Home
+      </b-navbar-item>
       <b-navbar-item tag="g-link" :to="{ path: '/portfolio/' }">
         Portfolio
       </b-navbar-item>
-      <b-navbar-item tag="g-link" :to="{ path: '/blog/' }">
+      <!-- <b-navbar-item tag="g-link" :to="{ path: '/blog/' }">
         Blog
-      </b-navbar-item>
+      </b-navbar-item> -->
       <b-navbar-item tag="g-link" :to="{ path: '/about/' }">
         About
       </b-navbar-item>
@@ -38,9 +36,9 @@
           used at "end"
       -->
       <b-navbar-dropdown label="Social Media" hoverable right arrowless>
-        <b-navbar-item href="#"> GitHub </b-navbar-item>
-        <b-navbar-item href="#"> Twitter </b-navbar-item>
-        <b-navbar-item href="#"> LinkedIn </b-navbar-item>
+        <b-navbar-item href="https://github.com/Phixyn" target="_blank"> GitHub </b-navbar-item>
+        <b-navbar-item href="https://www.twitter.com/Phixyn" target="_blank"> Twitter </b-navbar-item>
+        <b-navbar-item href="https://uk.linkedin.com/in/alpechepancha" target="_blank"> LinkedIn </b-navbar-item>
       </b-navbar-dropdown>
     </template> <!-- /end -->
   </b-navbar>
