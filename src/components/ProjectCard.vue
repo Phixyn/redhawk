@@ -8,7 +8,7 @@
 
     <div class="card-image">
       <figure class="image is-3by2">
-        <img :src="project.cover_image.url" :alt="project.cover_image.alt" />
+        <img :src="project.cover_image.url" :alt="project.cover_image.alt" :title="project.cover_image.caption" />
       </figure>
     </div> <!-- .card-image -->
 
