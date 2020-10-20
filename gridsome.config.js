@@ -23,7 +23,8 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: "Redhawk",
+  siteName: "Alpeche Pancha",
+  siteUrl: "http://www.phixyn.com",
   chainWebpack(config) {
     // https://gridsome.org/docs/assets-css/#global-preprocessor-files-ie-variables-mixins
     // Load variables for all vue-files
