@@ -27,6 +27,7 @@
 
         <!-- Project summary -->
         <div class="content" v-html="$page.strapi.projects[0].summary"></div>
+        <hr />
 
         <div class="columns">
           <!-- Project details -->
