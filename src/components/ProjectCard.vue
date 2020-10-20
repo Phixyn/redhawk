@@ -18,21 +18,18 @@
           {{ project.status.split("_").join(" ") }}
         </span> <!-- .block .tag -->
 
-        <p class="block">{{ project.description }}</p>
+        <div class="content" v-html="project.description"></div>
 
-        <div class="block">
+        <div class="content">
           <span v-if="project.repository_url">
-            <a :href="project.repository_url">GitHub</a> &bull;
+            <a :href="project.repository_url" :title="`${project.name}'s public GitHub repository`" target="_blank">GitHub</a> &bull;
           </span>
-          <span>{{ project.programming_language }} &bull; </span>
+
           <span>
-            {{
-              project.project_technologies
-                .map((technology) => technology.name)
-                .join(", ")
-            }}
+            {{ project.programming_language }} &bull;
+            {{ project.main_technology }}
           </span>
-        </div> <!-- .block -->
+        </div> <!-- .content -->
 
         <!-- Can't make tag="g-link" work without warning, and this
           seems to work -->
