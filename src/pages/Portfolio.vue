@@ -11,10 +11,19 @@
 
 <page-query>
 query {
+  metadata {
+    siteName
+    siteUrl
+  }
+
   strapi {
     portfolio {
       title
       banner
+      meta_info {
+        description
+        image
+      }
     }
 
     projects (sort: "date_started:DESC") {
@@ -69,6 +78,40 @@ export default {
   metaInfo() {
     return {
       title: this.$page.strapi.portfolio.title,
+      meta: [
+        {
+          property: "og:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          property: "og:title",
+          content: `${this.$page.strapi.portfolio.title} - ${this.$page.metadata.siteName}`,
+        },
+        {
+          property: "og:description",
+          content: this.$page.strapi.portfolio.meta_info.description,
+        },
+        {
+          property: "og:image",
+          content: this.$page.strapi.portfolio.meta_info.image,
+        },
+        {
+          name: "twitter:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          name: "twitter:title",
+          content: `${this.$page.strapi.portfolio.title} - ${this.$page.metadata.siteName}`,
+        },
+        {
+          name: "twitter:description",
+          content: this.$page.strapi.portfolio.meta_info.description,
+        },
+        {
+          name: "twitter:image",
+          content: this.$page.strapi.portfolio.meta_info.image,
+        },
+      ],
     };
   },
 };

@@ -116,6 +116,11 @@
 
 <page-query>
 query ($slug: String!) {
+  metadata {
+    siteName
+    siteUrl
+  }
+
   strapi {
     projects (where: { slug: $slug }) {
       id
@@ -152,6 +157,10 @@ query ($slug: String!) {
         name
         description
       }
+      meta_info {
+        description
+        image
+      }
     }
   }
 }
@@ -179,7 +188,41 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.strapi.projects[0].name,
+      title: `${this.$page.strapi.projects[0].name} - Portfolio`,
+      meta: [
+        {
+          property: "og:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          property: "og:title",
+          content: `${this.$page.strapi.projects[0].name} - Portfolio - ${this.$page.metadata.siteName}`,
+        },
+        {
+          property: "og:description",
+          content: this.$page.strapi.projects[0].meta_info.description,
+        },
+        {
+          property: "og:image",
+          content: this.$page.strapi.projects[0].meta_info.image,
+        },
+        {
+          name: "twitter:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          name: "twitter:title",
+          content: `${this.$page.strapi.projects[0].name} - Portfolio - ${this.$page.metadata.siteName}`,
+        },
+        {
+          name: "twitter:description",
+          content: this.$page.strapi.projects[0].meta_info.description,
+        },
+        {
+          name: "twitter:image",
+          content: this.$page.strapi.projects[0].meta_info.image,
+        },
+      ],
     };
   },
 };
