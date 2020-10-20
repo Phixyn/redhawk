@@ -100,7 +100,7 @@ $link-active: map-get($custom-colors, "link-bis");
 $link-active-border: map-get($custom-colors, "link-primary");
 
 a {
-  transition: color 0.3s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 a:active,
@@ -150,7 +150,7 @@ $navbar-dropdown-background-color: map-get($custom-colors, "background-ter-trans
 
 .navbar-item,
 .navbar-link {
-  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 // Bulma: Elements
