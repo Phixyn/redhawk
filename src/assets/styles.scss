@@ -103,9 +103,8 @@ a {
   transition: color 0.3s ease-out;
 }
 
-// Only show outline on :focus for accessibility, not when mouse click is held
-// on a link.
-a:active {
+a:active,
+a:focus {
   outline: none;
 }
 
