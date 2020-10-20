@@ -169,7 +169,7 @@ export default {
       carousels: [],
     };
   },
-  created() {
+  async mounted() {
     // Fetch preview images (TODO #108: make separate method for this?)
     this.carousels = this.$page.strapi.projects[0].preview_media.map(
       (val, index) => {
