@@ -134,11 +134,13 @@ query ($slug: String!) {
         id
         url
         alt
+        caption
       }
       preview_media {
         id
         url
         alt
+        caption
       }
       project_categories {
         id
@@ -171,7 +173,7 @@ export default {
     // Fetch preview images (TODO #108: make separate method for this?)
     this.carousels = this.$page.strapi.projects[0].preview_media.map(
       (val, index) => {
-        return { title: `Preview image ${index + 1}`, image: val.url };
+        return { title: val.caption, image: val.url, alt: val.alt };
       }
     );
   },

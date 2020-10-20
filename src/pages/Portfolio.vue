@@ -34,11 +34,13 @@ query {
         id
         url
         alt
+        caption
       }
       preview_media {
         id
         url
         alt
+        caption
       }
       project_categories {
         id
