@@ -6,10 +6,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function(api) {
-  api.loadSource(async store => {
-    store.addMetadata("version", "v1.0.0");
-    store.addMetadata("fromYear", "2012");
-  })
+  api.loadSource(({ addCollection }) => {
+    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  });
 
   api.createPages(async ({ createPage, graphql }) => {
     // Fetch all Strapi projects with GraphQL
