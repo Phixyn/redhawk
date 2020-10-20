@@ -31,7 +31,7 @@
                 :key="smLink.id"
                 v-for="smLink in $page.strapi.contact.social_media_links"
               >
-                <a :href="smLink.url">
+                <a :href="smLink.url" target="_blank">
                   <img
                     :src="smLink.icon.url"
                     :title="smLink.name"
