@@ -12,6 +12,6 @@ This is a [Jamstack](https://jamstack.org/) project.
 
 ![Preview image](http://cdn.phixyn.com/portfolio/preview.png)
 
-Version: 1.0.0 ([2a94a81](https://github.com/Phixyn/redhawk/commit/2a94a81ae2251d98fedd08195da141f11da7b7b1)) - built on October 21, 2020
+Version: 1.0.0 ([3f6e5c8](https://github.com/Phixyn/redhawk/commit/3f6e5c8a0d4b4a1d3c140f15c24a99a94770fde3)) - built on October 21, 2020
 
 © 2020 Alpeche Pancha. All rights reserved.
