@@ -9,7 +9,9 @@
 
 // Typography
 
-$family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", BlinkMacSystemFont, -apple-system, sans-serif;
+$family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, "Segoe UI",
+  Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", BlinkMacSystemFont,
+  -apple-system, sans-serif;
 
 // Responsiveness
 
@@ -132,7 +134,8 @@ $hr-height: 1px;
 // Card
 // (~bulma/sass/components/card.sass)
 
-$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"), 0 0 0 0.0625rem map-get($custom-colors, "background-bis");
+$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"),
+  0 0 0 0.0625rem map-get($custom-colors, "background-bis");
 
 $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 // $card-header-shadow: none;
@@ -146,7 +149,10 @@ $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 
 $navbar-box-shadow-color: map-get($custom-colors, "accent-primary");
 
-$navbar-dropdown-background-color: map-get($custom-colors, "background-ter-transparent");
+$navbar-dropdown-background-color: map-get(
+  $custom-colors,
+  "background-ter-transparent"
+);
 
 .navbar-item,
 .navbar-link {
@@ -159,7 +165,8 @@ $navbar-dropdown-background-color: map-get($custom-colors, "background-ter-trans
 // (~bulma/sass/elements/button.sass)
 
 .button {
-  transition: background-color 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out,
+    color 0.3s ease-out;
 }
 
 // Content

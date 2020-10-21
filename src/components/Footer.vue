@@ -2,8 +2,8 @@
   <footer class="footer">
     <div class="content">
       <p class="copyright-msg">
-        &copy; {{ $static.metadata.fromYear }} - {{ currentYear }} Alpeche Pancha. All rights
-        reserved. <br />
+        &copy; {{ $static.metadata.fromYear }} - {{ currentYear }} Alpeche
+        Pancha. All rights reserved. <br />
         {{ $static.metadata.version }}
       </p>
     </div> <!-- .content -->

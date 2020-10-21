@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header/>
-    <slot/>
-    <Footer/>
+    <Header />
+    <slot />
+    <Footer />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Footer from "@/components/Footer.vue";
 export default {
   components: {
     Header,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>

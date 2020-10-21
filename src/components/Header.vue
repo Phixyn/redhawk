@@ -36,9 +36,18 @@
           used at "end"
       -->
       <b-navbar-dropdown label="Social Media" hoverable right arrowless>
-        <b-navbar-item href="https://github.com/Phixyn" target="_blank"> GitHub </b-navbar-item>
-        <b-navbar-item href="https://www.twitter.com/Phixyn" target="_blank"> Twitter </b-navbar-item>
-        <b-navbar-item href="https://uk.linkedin.com/in/alpechepancha" target="_blank"> LinkedIn </b-navbar-item>
+        <b-navbar-item href="https://github.com/Phixyn" target="_blank">
+          GitHub
+        </b-navbar-item>
+        <b-navbar-item href="https://www.twitter.com/Phixyn" target="_blank">
+          Twitter
+        </b-navbar-item>
+        <b-navbar-item
+          href="https://uk.linkedin.com/in/alpechepancha"
+          target="_blank"
+        >
+          LinkedIn
+        </b-navbar-item>
       </b-navbar-dropdown>
     </template> <!-- /end -->
   </b-navbar>

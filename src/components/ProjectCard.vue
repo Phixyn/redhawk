@@ -8,7 +8,11 @@
 
     <div class="card-image">
       <figure class="image is-3by2">
-        <img :src="project.cover_image.url" :alt="project.cover_image.alt" :title="project.cover_image.caption" />
+        <img
+          :src="project.cover_image.url"
+          :alt="project.cover_image.alt"
+          :title="project.cover_image.caption"
+        />
       </figure>
     </div> <!-- .card-image -->
 
@@ -22,7 +26,12 @@
 
         <div class="content">
           <span v-if="project.repository_url">
-            <a :href="project.repository_url" :title="`${project.name}'s public GitHub repository`" target="_blank">GitHub</a> &bull;
+            <a
+              :href="project.repository_url"
+              :title="`${project.name}'s public GitHub repository`"
+              target="_blank"
+            >GitHub</a>
+            &bull;
           </span>
 
           <span>

@@ -103,9 +103,9 @@
             <li><g-link to="/">Home</g-link></li>
             <li><g-link to="/portfolio/">Portfolio</g-link></li>
             <li class="is-active">
-              <a href="#" aria-current="page">{{
-                $page.strapi.projects[0].name
-              }}</a>
+              <a href="#" aria-current="page">
+                {{ $page.strapi.projects[0].name }}
+              </a>
             </li>
           </ul>
         </nav> <!-- .breadcrumb -->

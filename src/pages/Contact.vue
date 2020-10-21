@@ -8,18 +8,20 @@
           <div class="media-content">
             <div class="content">
               <p>
-                <span class="subtitle is-5">{{
-                  $page.strapi.contact.full_name
-                }}</span><br />
-                <span class="subtitle is-5">{{
-                  $page.strapi.contact.email_address
-                }}</span>
+                <span class="subtitle is-5">
+                  {{ $page.strapi.contact.full_name }}
+                </span>
+                <br />
+                <span class="subtitle is-5">
+                  {{ $page.strapi.contact.email_address }}
+                </span>
               </p>
             </div> <!-- .content -->
 
             <div class="content">
               <p>
-                {{ $page.strapi.contact.city }}<br />
+                {{ $page.strapi.contact.city }}
+                <br />
                 {{ $page.strapi.contact.country }}
               </p>
             </div> <!-- .content -->
