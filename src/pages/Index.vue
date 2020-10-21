@@ -36,8 +36,8 @@
           <h2>My projects</h2>
 
           <p>
-            These are just some of my game projects. You can view the rest on
-            the <g-link to="/portfolio/">portfolio page</g-link>.
+            These are some of my latest projects. You can view the rest on the
+            <g-link to="/portfolio/">portfolio page</g-link>.
           </p>
 
           <hr />
