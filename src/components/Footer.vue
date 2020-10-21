@@ -2,22 +2,26 @@
   <footer class="footer">
     <div class="content">
       <p class="copyright-msg">
-        &copy; {{ fromYear }} - {{ currentYear }} Alpeche Pancha. All rights
-        reserved. <br />
-        v0.5.0
+        &copy; {{ $static.metadata.fromYear }} - {{ currentYear }} Alpeche
+        Pancha. All rights reserved. <br />
+        {{ $static.metadata.version }}
       </p>
     </div> <!-- .content -->
   </footer>
 </template>
 
+<static-query>
+query {
+  metadata {
+    version
+    fromYear
+  }
+}
+</static-query>
+
 <script>
 export default {
   name: "Footer",
-  data() {
-    return {
-      fromYear: 2012,
-    };
-  },
   computed: {
     currentYear() {
       return new Date().getFullYear();

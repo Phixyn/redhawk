@@ -1,23 +1,28 @@
 <template>
   <Layout>
-    <section class="section">
+    <section id="push-footer" class="section">
       <div class="container">
-        <ContentBanner :banner="$page.contact.banner" />
+        <ContentBanner :banner="$page.strapi.contact.banner" />
 
         <article class="contact-details media px-4 py-4">
           <div class="media-content">
             <div class="content">
               <p>
-                <span class="subtitle is-5">{{ $page.contact.name }}</span
-                ><br />
-                <span class="subtitle is-5">{{ $page.contact.email }}</span>
+                <span class="subtitle is-5">
+                  {{ $page.strapi.contact.full_name }}
+                </span>
+                <br />
+                <span class="subtitle is-5">
+                  {{ $page.strapi.contact.email_address }}
+                </span>
               </p>
             </div> <!-- .content -->
 
             <div class="content">
               <p>
-                {{ $page.contact.town }}<br />
-                {{ $page.contact.country }}
+                {{ $page.strapi.contact.city }}
+                <br />
+                {{ $page.strapi.contact.country }}
               </p>
             </div> <!-- .content -->
 
@@ -25,11 +30,15 @@
               <hr />
               <figure
                 class="sm-icon is-inline-flex image is-32x32 mx-3 my-0"
-                :key="smIcon.name"
-                v-for="smIcon in $page.contact.social_media_icons"
+                :key="smLink.id"
+                v-for="smLink in $page.strapi.contact.social_media_links"
               >
-                <a :href="smIcon.sm_url">
-                  <img :src="smIcon.icon_path" :title="smIcon.name"/>
+                <a :href="smLink.url" target="_blank">
+                  <img
+                    :src="smLink.icon.url"
+                    :title="smLink.name"
+                    :alt="smLink.icon.alt"
+                  />
                 </a>
               </figure> <!-- .image -->
             </div> <!-- .content -->
@@ -42,17 +51,32 @@
 
 <page-query>
 query {
-  contact: customPage (path: "/temp-content/pages/contact") {
-    title
-    banner
-    name
-    email
-    town
-    country
-    social_media_icons {
-      name
-      sm_url
-      icon_path
+  metadata {
+    siteName
+    siteUrl
+  }
+
+  strapi {
+    contact {
+      title
+      banner
+      full_name
+      email_address
+      city
+      country
+      social_media_links {
+        id
+        name
+        url
+        icon {
+          url
+          alt
+        }
+      }
+      meta_info {
+        description
+        image
+      }
     }
   }
 }
@@ -67,7 +91,41 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.contact.title,
+      title: this.$page.strapi.contact.title,
+      meta: [
+        {
+          property: "og:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          property: "og:title",
+          content: `${this.$page.strapi.contact.title} - ${this.$page.metadata.siteName}`,
+        },
+        {
+          property: "og:description",
+          content: this.$page.strapi.contact.meta_info.description,
+        },
+        {
+          property: "og:image",
+          content: this.$page.strapi.contact.meta_info.image,
+        },
+        {
+          name: "twitter:url",
+          content: `${this.$page.metadata.siteUrl}${this.$route.fullPath}`,
+        },
+        {
+          name: "twitter:title",
+          content: `${this.$page.strapi.contact.title} - ${this.$page.metadata.siteName}`,
+        },
+        {
+          name: "twitter:description",
+          content: this.$page.strapi.contact.meta_info.description,
+        },
+        {
+          name: "twitter:image",
+          content: this.$page.strapi.contact.meta_info.image,
+        },
+      ],
     };
   },
 };

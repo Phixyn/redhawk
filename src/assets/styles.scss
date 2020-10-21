@@ -7,6 +7,12 @@
 // Initial variables
 // (~bulma/sass/utilities/initial-variables.sass)
 
+// Typography
+
+$family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, "Segoe UI",
+  Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", BlinkMacSystemFont,
+  -apple-system, sans-serif;
+
 // Responsiveness
 
 // Needed to make containers smaller on desktop
@@ -27,7 +33,7 @@ $custom-colors: (
   "background-bis": hsl(0, 0%, 13%),
   "background-ter": hsl(0, 0%, 0%),
   "background-ter-transparent": hsla(0, 0%, 0%, 0.5),
-  // TODO: Improve this color. Maybe darker or more transparent?
+  // TODO #104: Improve this color. Maybe darker or more transparent?
   "container-primary": hsla(0, 0%, 10%, 0.8),
   "container-bis": hsl(0, 0%, 14%),
   "container-ter": hsl(0, 0%, 17%),
@@ -47,8 +53,8 @@ $custom-colors: (
   // Mainly used as shadow and can be lighter/darker than primary
   "accent-bis": hsl(349, 67%, 30%),
   // Text colors
-  // "text-primary": hsl(0, 0%, 85%), // too light?
-  "text-primary": hsl(0, 0%, 69%), // TODO: Might be too dark
+  "text-primary": hsl(0, 0%, 80%), // still too light?
+  // "text-primary": hsl(0, 0%, 77%), // can't decide lol
   "text-bis": hsl(0, 0%, 47%),
   "text-ter": hsl(0, 0%, 54%),
   "link-primary": hsl(343, 64%, 61%),
@@ -95,11 +101,20 @@ $link-focus-border: map-get($custom-colors, "link-primary");
 $link-active: map-get($custom-colors, "link-bis");
 $link-active-border: map-get($custom-colors, "link-primary");
 
-// Only show outline on :focus for accessibility, not when mouse click is held
-// on a link.
-a:active {
+a {
+  transition: color 0.2s ease-out;
+}
+
+a:active,
+a:focus {
   outline: none;
 }
+
+// TODO #73: Style the current active navbar link
+// .navbar-item.active--exact.active {
+//   background-color: $scheme-main-ter;
+//   color: $scheme-invert-ter;
+// }
 
 // Bulma: Base
 
@@ -119,7 +134,8 @@ $hr-height: 1px;
 // Card
 // (~bulma/sass/components/card.sass)
 
-$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"), 0 0 0 0.0625rem map-get($custom-colors, "background-bis");
+$card-shadow: 0 0 0 0.0625rem map-get($custom-colors, "background-bis"),
+  0 0 0 0.0625rem map-get($custom-colors, "background-bis");
 
 $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 // $card-header-shadow: none;
@@ -133,13 +149,25 @@ $card-header-shadow: 0 0.125rem 0 rgba($scheme-invert, 0.1);
 
 $navbar-box-shadow-color: map-get($custom-colors, "accent-primary");
 
-$navbar-dropdown-background-color: map-get($custom-colors, "background-ter-transparent");
+$navbar-dropdown-background-color: map-get(
+  $custom-colors,
+  "background-ter-transparent"
+);
 
-// $navbar-dropdown-item-hover-color: $scheme-invert;
-// $navbar-dropdown-item-active-color: $link;
-// $navbar-dropdown-item-active-background-color: $background;
+.navbar-item,
+.navbar-link {
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
 
 // Bulma: Elements
+
+// Button
+// (~bulma/sass/elements/button.sass)
+
+.button {
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out,
+    color 0.3s ease-out;
+}
 
 // Content
 // (~bulma/sass/elements/content.sass)
@@ -176,7 +204,25 @@ $footer-box-shadow-color: map-get($custom-colors, "accent-primary");
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 
-// Scrollbars -- TODO
+// Sticky bottom footer implementation. Pushes footer to bottom of page even
+// if the page doesn't have enough content to fill the viewport height.
+// Note: #app is injected in the layout.
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Note: This MUST be a direct child of an #app element. Most often, it will
+// be the element wrapping the main section of the website, such as the
+// element between the header and the footer.
+#push-footer {
+  flex-grow: 1;
+}
+
+// End of sticky bottom footer implementation
+
+// Scrollbars -- TODO #76: Dark scrollbars
 
 // Emerging W3C standard (currently Firefox only)
 // * {

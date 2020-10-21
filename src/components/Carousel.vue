@@ -1,5 +1,6 @@
 <template>
-  <!-- Normal indicators, no "gallery" -->
+  <!-- Normal indicators, no "gallery"
+    TODO #105: Maybe make this a separate component -->
   <!-- <b-carousel
     :indicator="indicator"
     :indicator-background="indicatorBackground"
@@ -10,24 +11,31 @@
     :pause-hover="pauseHover"
   > -->
 
-  <!-- Gallery-type carousel (TODO maybe make this a separate component) -->
+  <!-- Custom indicators (gallery-like carousel) -->
   <b-carousel
     indicator-custom
     :indicator-inside="indicatorInside"
+    :autoplay="autoplay"
     :interval="interval"
     :pause-hover="pauseHover"
   >
     <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-      <figure class="image is-5by3">
-        <img :src="carousel.image" />
-      </figure> <!-- .image .is-5by3 -->
+      <!-- TODO #116: Pass aspect ratio as a prop -->
+      <!-- <figure class="image is-5by3"> -->
+      <figure class="image is-fullwidth">
+        <img
+          :src="carousel.image"
+          :alt="carousel.alt"
+          :title="carousel.title"
+        />
+      </figure> <!-- .image .is-fullwidth -->
     </b-carousel-item>
     <template slot="indicators" slot-scope="props">
       <figure class="al image">
         <img
           :src="carousels[props.i].image"
           :title="carousels[props.i].title"
-          :alt="carousels[props.i].title"
+          :alt="carousels[props.i].alt"
         />
       </figure> <!-- .al .image -->
     </template>
@@ -61,6 +69,10 @@ export default {
     indicatorStyle: {
       type: String,
       default: "is-dots",
+    },
+    autoplay: {
+      type: Boolean,
+      default: false,
     },
     interval: {
       type: Number,

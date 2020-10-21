@@ -23,7 +23,12 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: "Redhawk",
+  siteName: "Alpeche Pancha",
+  siteUrl: "http://www.phixyn.com",
+  metadata: {
+    version: "v1.0.0",
+    fromYear: "2012",
+  },
   chainWebpack(config) {
     // https://gridsome.org/docs/assets-css/#global-preprocessor-files-ie-variables-mixins
     // Load variables for all vue-files
@@ -39,29 +44,12 @@ module.exports = {
   },
   plugins: [
     {
-      use: "@gridsome/source-filesystem",
+      use: "@gridsome/source-graphql",
       options: {
-        typeName: "CustomPage",
-        path: "./temp-content/pages/*.md",
-        remark: {
-          // Remark options
-        },
-      },
-    },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        typeName: "Project",
-        path: "./temp-content/projects/*.md",
-        remark: {
-          // Remark options
-        },
+        url: (process.env.STRAPI_URL || "http://localhost:1337") + "/graphql",
+        fieldName: "strapi",
+        typeName: "strapiTypes",
       },
     },
   ],
-  transformers: {
-    remark: {
-      // Global remark options
-    },
-  },
 };
