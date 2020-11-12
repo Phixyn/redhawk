@@ -24,7 +24,7 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: "Alpeche Pancha",
-  siteUrl: "http://www.phixyn.com",
+  siteUrl: "https://www.phixyn.com",
   metadata: {
     version: "v1.0.0 (3f6e5c8)",
     fromYear: "2012",
