@@ -1,6 +1,6 @@
 # Gridsome Personal Website
 
-My personal portfolio website and blog. Check it out at: [phixyn.com](http://phixyn.com/)
+My personal portfolio website and blog. Check it out at: [phixyn.com](https://phixyn.com/)
 
 ## Overview
 
@@ -10,7 +10,7 @@ This is a [Jamstack](https://jamstack.org/) project.
 
 - - -
 
-![Preview image](http://cdn.phixyn.com/portfolio/preview.png)
+![Preview image](https://cdn.phixyn.com/portfolio/preview.png)
 
 Version: 1.0.0 ([3f6e5c8](https://github.com/Phixyn/redhawk/commit/3f6e5c8a0d4b4a1d3c140f15c24a99a94770fde3)) - built on October 21, 2020
 
