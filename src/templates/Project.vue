@@ -55,7 +55,6 @@
             <p v-if="$page.strapi.projects[0].repository_url">
               <a
                 :href="$page.strapi.projects[0].repository_url"
-                title="Project repository"
                 target="_blank"
               >
                 {{ $page.strapi.projects[0].repository_url }}
