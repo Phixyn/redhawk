@@ -3,8 +3,7 @@
     <div class="content">
       <p class="copyright-msg">
         &copy; {{ $static.metadata.fromYear }} - {{ currentYear }} Alpeche
-        Pancha. All rights reserved. <br />
-        {{ $static.metadata.version }}
+        Pancha. All rights reserved.
       </p>
     </div> <!-- .content -->
   </footer>
@@ -13,7 +12,6 @@
 <static-query>
 query {
   metadata {
-    version
     fromYear
   }
 }
