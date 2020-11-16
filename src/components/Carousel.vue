@@ -26,7 +26,6 @@
         <img
           :src="carousel.image"
           :alt="carousel.alt"
-          :title="carousel.title"
         />
       </figure> <!-- .image .is-fullwidth -->
     </b-carousel-item>
