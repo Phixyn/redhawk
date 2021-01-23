@@ -26,7 +26,7 @@ module.exports = {
   siteName: "Alpeche Pancha",
   siteUrl: "https://www.phixyn.com",
   metadata: {
-    version: "v1.0.0 (3f6e5c8)",
+    version: "v1.0.1 (0e8bd22)",
     fromYear: "2012",
   },
   chainWebpack(config) {

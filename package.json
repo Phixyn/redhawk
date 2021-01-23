@@ -1,7 +1,7 @@
 {
   "name": "redhawk",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A personal portfolio website and blog built with Gridsome.",
   "scripts": {
     "build": "gridsome build",
