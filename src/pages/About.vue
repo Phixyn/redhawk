@@ -9,31 +9,7 @@
           v-html="$page.strapi.about.hero_text"
         ></h2>
 
-        <!-- TODO #106: BiographyCard component -->
-        <div class="card">
-          <div class="card-content">
-            <div class="columns">
-              <div class="column is-narrow is-pulled-right">
-                <figure class="image is-128x128">
-                  <img
-                    :src="$page.strapi.about.biography.profile_picture.url"
-                    :alt="$page.strapi.about.biography.profile_picture.alt"
-                  />
-                </figure> <!-- .image -->
-              </div> <!-- .column -->
-
-              <div class="column">
-                <h2 class="title is-4">
-                  {{ $page.strapi.about.biography.header }}
-                </h2>
-                <div
-                  class="content"
-                  v-html="$page.strapi.about.biography.content"
-                ></div>
-              </div> <!-- .column -->
-            </div> <!-- .columns -->
-          </div> <!-- .card-content -->
-        </div> <!-- .card -->
+        <BiographyCard v-bind:biography="$page.strapi.about.biography" />
 
         <div
           class="content mt-5"
@@ -77,10 +53,12 @@ query {
 
 <script>
 import ContentBanner from "@/components/ContentBanner.vue";
+import BiographyCard from "@/components/BiographyCard.vue";
 
 export default {
   components: {
     ContentBanner,
+    BiographyCard,
   },
   metaInfo() {
     return {
