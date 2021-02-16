@@ -5,31 +5,7 @@
       <div class="container">
         <ContentBanner v-bind:banner="$page.strapi.homepage.banner" />
 
-        <!-- TODO #106: BiographyCard component -->
-        <div class="card">
-          <div class="card-content">
-            <div class="columns">
-              <div class="column is-narrow is-pulled-right">
-                <figure class="image is-128x128">
-                  <img
-                    :src="$page.strapi.homepage.biography.profile_picture.url"
-                    :alt="$page.strapi.homepage.biography.profile_picture.alt"
-                  />
-                </figure> <!-- .image -->
-              </div> <!-- .column -->
-
-              <div class="column">
-                <h2 class="title is-4">
-                  {{ $page.strapi.homepage.biography.header }}
-                </h2>
-                <div
-                  class="content"
-                  v-html="$page.strapi.homepage.biography.content"
-                ></div>
-              </div> <!-- .column -->
-            </div> <!-- .columns -->
-          </div> <!-- .card-content -->
-        </div> <!-- .card -->
+        <BiographyCard v-bind:biography="$page.strapi.homepage.biography" />
 
         <div class="content mt-5">
           <!-- TODO #107: Move to CMS at some point -->
@@ -118,11 +94,13 @@ query {
 
 <script>
 import ContentBanner from "@/components/ContentBanner.vue";
+import BiographyCard from "@/components/BiographyCard.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
   components: {
     ContentBanner,
+    BiographyCard,
     ProjectShowcase,
   },
   metaInfo() {
