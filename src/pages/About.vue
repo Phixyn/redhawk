@@ -13,6 +13,11 @@
 
         <div
           class="content mt-5"
+          v-html="$page.strapi.about.hobbies"
+        ></div>
+
+        <div
+          class="content mt-5"
           v-html="$page.strapi.about.projects_summary"
         ></div>
       </div> <!-- .container -->
@@ -41,6 +46,7 @@ query {
           alt
         }
       }
+      hobbies
       projects_summary
       meta_info {
         description
