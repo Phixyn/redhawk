@@ -3,8 +3,7 @@
   <section class="hero is-medium is-dark">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <!-- TODO center image -->
-        <figure class="image is-128x128">
+        <figure class="image is-inline-block">
             <img
               class="is-rounded"
               src="https://cdn.phixyn.com/portfolio/me3.png"
