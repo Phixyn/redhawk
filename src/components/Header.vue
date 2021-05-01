@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="mb-2" shadow>
+  <b-navbar shadow>
     <!-- Logo/site name -->
     <template slot="brand">
       <b-navbar-item tag="g-link" :to="{ path: '/' }">

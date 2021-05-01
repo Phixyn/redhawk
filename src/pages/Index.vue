@@ -1,5 +1,13 @@
 <template>
   <Layout>
+    <!-- Hero -->
+    <Hero
+      :imageSrc="$page.strapi.homepage.biography.profile_picture.url"
+      :imageAlt="$page.strapi.homepage.biography.profile_picture.alt"
+      :title="'Alpeche Pancha'"
+      :subtitle="'Full Stack Developer'"
+    />
+
     <!-- Intro -->
     <section id="push-footer" class="section">
       <div class="container">
@@ -93,12 +101,14 @@ query {
 </page-query>
 
 <script>
+import Hero from "@/components/Hero.vue";
 import ContentBanner from "@/components/ContentBanner.vue";
 import BiographyCard from "@/components/BiographyCard.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
   components: {
+    Hero,
     ContentBanner,
     BiographyCard,
     ProjectShowcase,
