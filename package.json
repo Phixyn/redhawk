@@ -9,7 +9,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "buefy": "^0.9.4",
+    "buefy": "^0.9.7",
     "gridsome": "^0.7.23"
   },
   "devDependencies": {
