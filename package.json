@@ -9,12 +9,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "buefy": "^0.9.7",
+    "buefy": "^0.9.8",
     "gridsome": "^0.7.23"
   },
   "devDependencies": {
     "@gridsome/source-graphql": "^0.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "sass-loader": "^10.2.0",
     "style-resources-loader": "^1.4.1"
   },
