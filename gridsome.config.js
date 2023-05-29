@@ -46,7 +46,7 @@ module.exports = {
     {
       use: "@gridsome/source-graphql",
       options: {
-        url: (process.env.STRAPI_URL || "http://localhost:1337") + "/graphql",
+        url: (process.env.STRAPI_URL || "http://localhost:13337") + "/graphql",
         fieldName: "strapi",
         typeName: "strapiTypes",
       },
