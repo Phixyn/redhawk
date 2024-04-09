@@ -3,7 +3,7 @@
     <div class="card-content">
       <div class="columns">
         <div class="column is-narrow is-pulled-right">
-          <figure class="image is-128x128">
+          <figure class="image">
             <img
               :src="biography.profile_picture.url"
               :alt="biography.profile_picture.alt"
